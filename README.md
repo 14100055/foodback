@@ -72,7 +72,7 @@ _______
 
 Interview video: 
 
-Pivotal tracker:
+Pivotal tracker: https://www.pivotaltracker.com/n/projects/1539159
 
 _______
 _______

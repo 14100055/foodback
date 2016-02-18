@@ -4,6 +4,8 @@ CS 360 (Software Engineering) Project
 Group 12
 
 _______
+_______
+
 
 ### Summary:
 
@@ -20,6 +22,7 @@ The design for the application is as follows:
 - Every user can also have a friend list. This includes people who are also using the same application. Your friends may share information about what they just ate, and whether they liked that food or not. This may help you make a decision about what you wish to eat as well.
 - The web applications will have a responsive design, so that it is compatible with both mobiles and desktop machines.
 
+_______
 _______
 
 ### User Stories
@@ -62,4 +65,14 @@ As a foodie
 
 So that I know whenever I can afford my favourite meals.
 
+_______
+_______
+
+### Links
+
+Interview video: 
+
+Pivotal tracker:
+
+_______
 _______

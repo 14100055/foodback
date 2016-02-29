@@ -70,15 +70,9 @@ _______
 
 ### Links
 
-####Interview video:
+Interview video: https://drive.google.com/file/d/0B9CdUvq0fM8NRDVoY05XdlFibEE/view?usp=sharing
 
-Part1 - https://drive.google.com/file/d/0B1XFVz5bt1T4OHpnanV6T19xWkk/view?usp=sharing
-
-Part2 - https://drive.google.com/file/d/0B1XFVz5bt1T4Tkd6ZWtIbG4wU0k/view?usp=sharing
-
-####Pivotal tracker:
-
-https://www.pivotaltracker.com/n/projects/1539159
+Pivotal tracker: https://www.pivotaltracker.com/n/projects/1539159
 
 _______
 _______

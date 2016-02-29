@@ -70,7 +70,8 @@ _______
 
 ### Links
 
-Interview video: 
+Interview video: Part1 - 
+                 Part2 - https://drive.google.com/file/d/0B1XFVz5bt1T4Tkd6ZWtIbG4wU0k/view?usp=sharing
 
 Pivotal tracker: https://www.pivotaltracker.com/n/projects/1539159
 

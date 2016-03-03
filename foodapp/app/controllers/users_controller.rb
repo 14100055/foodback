@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
     def new
+        User.all_attributes
         @user = User.new
     end
     

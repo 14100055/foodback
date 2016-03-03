@@ -1,0 +1,10 @@
+<h1>Welcome</h1>
+
+<%= form_for(:session, url: mainpage_path) do |f| %>
+    <%= f.text_field :budget, :placeholder => "Enter the Budget" %>
+    <%= f.submit "Enter", class: "btn-submit" %>
+    
+<% end %>
+
+<p></p>
+<p>Weekly Budget: Rs. <%= @user.budget %></p>

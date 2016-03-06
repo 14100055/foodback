@@ -7,9 +7,10 @@ class UsersController < ApplicationController
     def create
         @user = User.new(user_params)
         if @user.save
-            session[:user_id] = @user.id
+            flash[:notice] = "Account created: #{user_params[:email]}"
             redirect_to '/'
         else
+            flash[:notice] = "Input information properly"
             redirect_to '/signup'
         end
     end

@@ -8,6 +8,8 @@
 </head>
 <body>
 
+<h1>Foodback</h1>
+
 <% if current_user %>
   <ul>
     <li><%= current_user.email %></li>
@@ -18,6 +20,10 @@
     <li><%= link_to "Login", 'login' %></a></li>
     <li><%= link_to "Signup", 'signup' %></a></li>
   </ul>
+<% end %>
+
+<% flash.each do |name, msg| %>
+  <%= content_tag :div, msg, class: "alert alert-info" %>
 <% end %>
 
 <%= yield %>

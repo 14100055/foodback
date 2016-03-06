@@ -8,24 +8,23 @@ class SessionsController < ApplicationController
             session[:user_id] = @user.id
             redirect_to '/mainpage'
         else
-            redirect_to 'login'
+            flash[:notice] = "Invalid email/password!"
+            redirect_to '/login'
         end
     end
     
     def mainpage
-        @id = session[:user_id]
-        @user = User.find(@id)
-        puts "Printing..."
-        puts @user.budget
-        puts "Printed"
+        if session[:user_id].nil?
+            redirect_to '/login'
+        else
+            @id = session[:user_id]
+            @user = User.find(@id)
+        end
     end
     
     def compute
-        @budget = params[:session][:budget].to_i
         @id = session[:user_id]
-        if @user = User.where(:id => @id)
-            User.update(@id, :budget => @budget)
-        end
+        User.update(@id, :budget => params[:session][:budget])
         redirect_to '/mainpage'
     end
     
@@ -33,4 +32,5 @@ class SessionsController < ApplicationController
         session[:user_id] = nil
         redirect_to '/login'
     end
+
 end

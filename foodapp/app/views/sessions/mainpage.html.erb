@@ -1,4 +1,4 @@
-<h3>Welcome <%= @user.first_name %></h3>
+<h1>Welcome <%= @user.first_name %></h1>
 
 <%= form_for(:session, url: mainpage_path) do |f| %>
     <%= f.text_field :budget, :placeholder => "Enter the Budget" %>
@@ -6,7 +6,6 @@
     
 <% end %>
 
-<p></p>
 <p>Weekly Budget: Rs. <%= @user.budget %></p>
 
 Meal Plan:
@@ -14,7 +13,7 @@ Meal Plan:
 <br>
 <b><u>Breakfast</u></b>
 <br>
-<table>
+<table border="1">
   <tr>
     <th>Restaurant</th>
     <th>Name</th>
@@ -32,7 +31,7 @@ Meal Plan:
 <br>
 <b><u>Lunch</u></b>
 <br>
-<table>
+<table border="1">
   <tr>
     <th>Restaurant</th>
     <th>Name</th> 
@@ -50,7 +49,7 @@ Meal Plan:
 <br>
 <b><u>Dinner</u></b>
 <br>
-<table>
+<table border="1">
   <tr>
     <th>Restaurant</th>
     <th>Name</th> 

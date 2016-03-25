@@ -39,7 +39,7 @@ class SessionsController < ApplicationController
             end
 
             @dinner = Hash.new
-            d = @user.breakfast.split("\n")
+            d = @user.dinner.split("\n")
             i = 0
             d.each do |f|
                 food = f.split(",")

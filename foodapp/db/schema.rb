@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160310171358) do
+ActiveRecord::Schema.define(version: 20160324095458) do
 
   create_table "foods", force: :cascade do |t|
     t.string   "restaurant"
@@ -28,10 +28,13 @@ ActiveRecord::Schema.define(version: 20160310171358) do
     t.string   "last_name"
     t.string   "email"
     t.string   "password_digest"
-    t.datetime "created_at",                                                  null: false
-    t.datetime "updated_at",                                                  null: false
+    t.datetime "created_at",                                                       null: false
+    t.datetime "updated_at",                                                       null: false
     t.integer  "budget",          default: 0
     t.text     "plan",            default: "You have no meal plan in place!"
+    t.text     "breakfast",       default: "You have no breakfast plan in place!"
+    t.text     "lunch",           default: "You have no lunch plan in place!"
+    t.text     "dinner",          default: "You have no dinner plan in place!"
   end
 
 end

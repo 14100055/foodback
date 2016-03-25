@@ -8,4 +8,60 @@
 
 <p></p>
 <p>Weekly Budget: Rs. <%= @user.budget %></p>
-<p>Meal Plan: <br><%= @user.plan %></p>
+
+Meal Plan:
+
+<br>
+<b><u>Breakfast</u></b>
+<br>
+<table>
+  <tr>
+    <th>Restaurant</th>
+    <th>Name</th>
+    <th>Price</th>
+  </tr>
+  <% @breakfast.each do |key,food| %>
+    <tr>
+      <td><%= food[:restaurant] %></td>
+      <td><%= food[:name] %></td>
+      <td><%= food[:price] %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br>
+<b><u>Lunch</u></b>
+<br>
+<table>
+  <tr>
+    <th>Restaurant</th>
+    <th>Name</th> 
+    <th>Price</th>
+  </tr>
+  <% @dinner.each do |key,food| %>
+    <tr>
+      <td><%= food[:restaurant] %></td>
+      <td><%= food[:name] %></td>
+      <td><%= food[:price] %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br>
+<b><u>Dinner</u></b>
+<br>
+<table>
+  <tr>
+    <th>Restaurant</th>
+    <th>Name</th> 
+    <th>Price</th>
+  </tr>
+  <% @dinner.each do |key,food| %>
+    <tr>
+      <td><%= food[:restaurant] %></td>
+      <td><%= food[:name] %></td>
+      <td><%= food[:price] %></td>
+    </tr>
+  <% end %>
+</table>
+<br>

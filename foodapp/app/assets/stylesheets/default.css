@@ -7,11 +7,6 @@ html, body {
   font-size: 10pt;
 }
 
-div#main {
-  margin: 0;
-  padding: 0 20px 20px;
-}
-
 a {
   background: transparent;
   color: maroon;
@@ -27,21 +22,10 @@ h1 {
   width: 100%;
   border-bottom: 1px solid DarkSlateGrey;
 }
-h1.title {
-  margin: 0 0 1em;
-  padding: 10px;
-  background-color: orange;
-  color: white;
-  border-bottom: 4px solid gold;
-  font-size: 2em;
-  font-style: normal;
-}
 
 table {
   margin: 10px;
-  /*border-collapse: collapse;*/
   width: 80%;
-  /*border-bottom: 2px solid black;*/
 }
 table th {
   /*border: 2px solid white;*/

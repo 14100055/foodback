@@ -28,6 +28,8 @@ foods = [   {:restaurant => 'Khokha', :name => 'Cheese roll', :price => 120, :st
             {:restaurant => 'Superstore', :name => 'Sandwich', :price => 180, :start => '10:00', :end => '01:00'},
 ]
 
+Food.delete_all
+
 foods.each do |food|
     Food.create!(food)
 end

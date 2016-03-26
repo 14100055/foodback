@@ -1,4 +1,4 @@
-<h1>Welcome <%= @user.first_name %></h1>
+<h1>Welcome: <%= @user.first_name %></h1>
 
 <%= form_for(:session, url: mainpage_path) do |f| %>
     <%= f.text_field :budget, :placeholder => "Enter the Budget" %>
@@ -37,7 +37,7 @@ Meal Plan:
     <th>Name</th> 
     <th>Price</th>
   </tr>
-  <% @dinner.each do |key,food| %>
+  <% @lunch.each do |key,food| %>
     <tr>
       <td><%= food[:restaurant] %></td>
       <td><%= food[:name] %></td>

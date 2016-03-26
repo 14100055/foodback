@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
         else
             @id = session[:user_id]
             @user = User.find(@id)
-
+            puts "This is it"
             @breakfast = parse_meals(@user.breakfast)
             @lunch = parse_meals(@user.lunch)
             @dinner = parse_meals(@user.dinner)

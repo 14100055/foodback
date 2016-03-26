@@ -8,6 +8,21 @@
 
 <p>Weekly Budget: Rs. <%= @user.budget %></p>
 
+<table border="1">
+  <tr>
+    <th>Restaurant</th>
+    <th>Name</th>
+    <th>Price</th>
+  </tr>
+  <% @foods.each do |food| %>
+    <tr>
+      <td><%= food.restaurant %></td>
+      <td><%= food.name %></td>
+      <td><%= food.price %></td>
+    </tr>
+  <% end %>
+</table>
+
 Meal Plan:
 
 <br>

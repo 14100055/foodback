@@ -23,6 +23,7 @@ class SessionsController < ApplicationController
             @breakfast = parse_meals(@user.breakfast)
             @lunch = parse_meals(@user.lunch)
             @dinner = parse_meals(@user.dinner)
+            @foods = Food.all
         end
     end
 

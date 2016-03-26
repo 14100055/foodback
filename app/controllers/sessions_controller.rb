@@ -36,17 +36,26 @@ class SessionsController < ApplicationController
 
             b_start = Time.utc(2000,01,01, 7,00,00)
             b_finish = Time.utc(2000,01,01, 11,00,00)
-            @breakfast = get_plan(budget, b_start, b_finish)
+            @breakfast = {1 => {:restaurant => "PDC", :name => "Omelette", :price => "30"},
+                          2 => {:restaurant => "PDC", :name => "Bread", :price => "10"},
+            }
+            # @breakfast = get_plan(budget, b_start, b_finish)
             @user.update(:breakfast => @breakfast)
 
             l_start = Time.utc(2000,01,01, 12,30,00)
             l_finish = Time.utc(2000,01,01, 16,00,00)
-            @lunch = get_plan(budget, l_start, l_finish)
+            @lunch = {1 => {:restaurant => "PDC", :name => "Omelette", :price => "30"},
+                      2 => {:restaurant => "PDC", :name => "Bread", :price => "10"},
+            }
+            # @lunch = get_plan(budget, l_start, l_finish)
             @user.update(:lunch => @lunch)
 
             d_start = Time.utc(2000,01,01, 19,00,00)
             d_finish = Time.utc(2000,01,01, 23,00,00)
-            @dinner = get_plan(budget, d_start, d_finish)
+            @dinner = {1 => {:restaurant => "PDC", :name => "Omelette", :price => "30"},
+                       2 => {:restaurant => "PDC", :name => "Bread", :price => "10"},
+            }
+            # @dinner = get_plan(budget, d_start, d_finish)
             @user.update(:dinner => @dinner)
 
         end

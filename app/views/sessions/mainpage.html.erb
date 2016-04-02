@@ -1,81 +1,96 @@
-<h1>Welcome: <%= @user.first_name %></h1>
-
-<%= form_for(:session, url: mainpage_path) do |f| %>
-    <%= f.text_field :budget, :placeholder => "Enter the Budget" %>
-    <%= f.submit "Enter", class: "btn-submit" %>
-    
-<% end %>
-
-<p>Weekly Budget: Rs. <%= @user.budget %></p>
-
-<table border="1">
-  <tr>
-    <th>Restaurant</th>
-    <th>Name</th>
-    <th>Price</th>
-  </tr>
-  <% @foods.each do |food| %>
+<div id="bodyCont">
+   
+  <h1 class="welcomeMsg">Welcome back, <%= @user.first_name %></h1>
+  
+  <div class="formContainer">
+    <%= form_for(:session, url: mainpage_path) do |f| %>
+        <%= f.text_field :budget, :placeholder => "Enter the Budget" %>
+        <%= f.submit "Enter", class: "btn-submit" %>
+        
+    <% end %>
+  </div>
+  
+  <div class="tableContainer">
+    <p>Weekly Budget: Rs. <%= @user.budget %></p>
+    <table border="1">
     <tr>
-      <td><%= food.restaurant %></td>
-      <td><%= food.name %></td>
-      <td><%= food.price %></td>
+      <th>Restaurant</th>
+      <th>Name</th>
+      <th>Price</th>
     </tr>
-  <% end %>
-</table>
+    <% @foods.each do |food| %>
+      <tr>
+        <td><%= food.restaurant %></td>
+        <td><%= food.name %></td>
+        <td><%= food.price %></td>
+      </tr>
+    <% end %>
+  </table>
+  
+  </div>
+  
+  <hr>
+  <p class="heading">Meal Plans</p>
+  <hr>
+  <div class="tableContainer">
 
-Meal Plan:
-
-<br>
-<b><u>Breakfast</u></b>
-<br>
-<table border="1">
-  <tr>
-    <th>Restaurant</th>
-    <th>Name</th>
-    <th>Price</th>
-  </tr>
-  <% @breakfast.each do |key,food| %>
+  <p>Breakfast</p>
+  
+  <table border="1">
     <tr>
-      <td><%= food[:restaurant] %></td>
-      <td><%= food[:name] %></td>
-      <td><%= food[:price] %></td>
+      <th>Restaurant</th>
+      <th>Name</th>
+      <th>Price</th>
     </tr>
-  <% end %>
-</table>
+    <% @breakfast.each do |key,food| %>
+      <tr>
+        <td><%= food[:restaurant] %></td>
+        <td><%= food[:name] %></td>
+        <td><%= food[:price] %></td>
+      </tr>
+    <% end %>
+  </table>
+  </div>
+  
 
-<br>
-<b><u>Lunch</u></b>
-<br>
-<table border="1">
-  <tr>
-    <th>Restaurant</th>
-    <th>Name</th> 
-    <th>Price</th>
-  </tr>
-  <% @lunch.each do |key,food| %>
-    <tr>
-      <td><%= food[:restaurant] %></td>
-      <td><%= food[:name] %></td>
-      <td><%= food[:price] %></td>
-    </tr>
-  <% end %>
-</table>
+  <div class="tableContainer">
+  <p>Lunch</p>
 
-<br>
-<b><u>Dinner</u></b>
-<br>
-<table border="1">
-  <tr>
-    <th>Restaurant</th>
-    <th>Name</th> 
-    <th>Price</th>
-  </tr>
-  <% @dinner.each do |key,food| %>
+  <table border="1">
     <tr>
-      <td><%= food[:restaurant] %></td>
-      <td><%= food[:name] %></td>
-      <td><%= food[:price] %></td>
+      <th>Restaurant</th>
+      <th>Name</th> 
+      <th>Price</th>
     </tr>
-  <% end %>
-</table>
-<br>
+    <% @lunch.each do |key,food| %>
+      <tr>
+        <td><%= food[:restaurant] %></td>
+        <td><%= food[:name] %></td>
+        <td><%= food[:price] %></td>
+      </tr>
+    <% end %>
+  </table>
+  </div>
+  
+
+  
+  <div class="tableContainer">
+  <p>Dinner</p>
+  
+  <table border="1">
+    <tr>
+      <th>Restaurant</th>
+      <th>Name</th> 
+      <th>Price</th>
+    </tr>
+    <% @dinner.each do |key,food| %>
+      <tr>
+        <td><%= food[:restaurant] %></td>
+        <td><%= food[:name] %></td>
+        <td><%= food[:price] %></td>
+      </tr>
+    <% end %>
+  </table>
+  </div>
+
+</div>

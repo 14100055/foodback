@@ -12,5 +12,29 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require turbolinks
 //= require_tree .
+$(document).ready(function(){
+    $(".openDlg").click(function() {
+        $(".dialog").dialog({
+          buttons: [
+            {
+              text: "Close",
+              click: function() {
+                $( this ).dialog( "close" );
+              }
+            }
+          ],
+          height: 300,
+          width: 500,
+          title: "Edit Budget",
+          modal: true,
+          draggable: false,
+          resizable: false  
+        });
+    })
+});
+
+    
+

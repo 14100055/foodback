@@ -1,32 +1,30 @@
 <div id="bodyCont">
    
   <h1 class="welcomeMsg">Welcome back, <%= @user.first_name %></h1>
-  
-  <div class="formContainer">
+
+  <a href="javascript:void;" class="openDlg bigButton">Update Budget</a>
+  <div class="formContainer dialog" style="display:none;">
     <%= form_for(:session, url: mainpage_path) do |f| %>
+        <h3>Update Budget</h3>
+     
         <%= f.text_field :budget, :placeholder => "Enter the Budget" %>
         <%= f.submit "Enter", class: "btn-submit" %>
-        
     <% end %>
   </div>
   
-  <div class="tableContainer">
-    <p>Weekly Budget: Rs. <%= @user.budget %></p>
-    <table border="1">
-    <tr>
-      <th>Restaurant</th>
-      <th>Name</th>
-      <th>Price</th>
-    </tr>
-    <% @foods.each do |food| %>
-      <tr>
-        <td><%= food.restaurant %></td>
-        <td><%= food.name %></td>
-        <td><%= food.price %></td>
-      </tr>
+  <a href="javascript:void;" class="openDlg bigButton">Edit budget</a>
+  <div class="formContainer dialog2" style="display:none;">
+    <%= form_for(:session, url: mainpage_path) do |f| %>
+        <h3>Amount spent</h3>
+     
+        <%= f.text_field :thevalue, :placeholder => "Enter the Amount you just spent" %>
+        <br/>
+        <h3>Meal Category</h3>
+        
+        <%= select :session, :meal_category, ['Breakfast','Lunch','Dinner', 'Miscellaneous'] %>
+        
+        <%= f.submit "Enter", class: "btn-submit" %>
     <% end %>
-  </table>
-  
   </div>
   
   <hr>

@@ -71,7 +71,7 @@ class SessionsController < ApplicationController
     def get_plan(budget, start, finish)
         plan = ""
 
-        foods = Food.where("(start between (?) and (?)) OR (end between (?) and (?)) OR (start < (?) and end > (?)) OR (start < (?) and end < start)", start, finish, start, finish, start, finish, start)
+        foods = Food.where("(start_at between (?) and (?)) OR (end_at between (?) and (?)) OR (start_at < (?) and end_at > (?)) OR (start_at < (?) and end_at < start_at)", start, finish, start, finish, start, finish, start)
         pdc = Array.new
         foods.each do |food|
             if food.restaurant == "PDC"

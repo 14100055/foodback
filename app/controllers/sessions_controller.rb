@@ -1,3 +1,10 @@
+$B_START = Time.utc(2000,01,01, 7,00,00)
+$B_FINISH = Time.utc(2000,01,01, 11,00,00)
+$L_START = Time.utc(2000,01,01, 12,30,00)
+$L_FINISH = Time.utc(2000,01,01, 16,00,00)
+$D_START = Time.utc(2000,01,01, 19,00,00)
+$D_FINISH = Time.utc(2000,01,01, 23,00,00)
+
 class SessionsController < ApplicationController
     def new
     end
@@ -29,31 +36,85 @@ class SessionsController < ApplicationController
         @id = session[:user_id]
         @user = User.find(@id)
 
-        if @user.update(:budget => params[:session][:budget])
-            budget = (params[:session][:budget].to_i)/3
-
-            b_start = Time.utc(2000,01,01, 7,00,00)
-            b_finish = Time.utc(2000,01,01, 11,00,00)
-            @breakfast = get_plan(budget, b_start, b_finish)
-            @user.update(:breakfast => @breakfast)
-
-            l_start = Time.utc(2000,01,01, 12,30,00)
-            l_finish = Time.utc(2000,01,01, 16,00,00)
-            @lunch = get_plan(budget, l_start, l_finish)
-            @user.update(:lunch => @lunch)
-
-            d_start = Time.utc(2000,01,01, 19,00,00)
-            d_finish = Time.utc(2000,01,01, 23,00,00)
-            @dinner = get_plan(budget, d_start, d_finish)
-            @user.update(:dinner => @dinner)
-
+        if !params[:session][:budget].nil?
+            update_budget(@user, params[:session][:budget])
         end
+        
+        if !params[:session][:amount].nil? and !params[:session][:meal].nil?
+            edit_budget(@user, params[:session][:amount], params[:session][:meal])
+        end
+
         redirect_to '/mainpage'
     end
     
     def destroy
         session[:user_id] = nil
         redirect_to '/login'
+    end
+
+    def update_budget(user, new_budget)
+        if user.update(:budget => new_budget)
+            budget = (new_budget.to_i)/3
+
+            breakfast = get_plan(budget, $B_START, $B_FINISH)
+            user.update(:breakfast => breakfast)
+
+            lunch = get_plan(budget, $L_START, $L_FINISH)
+            user.update(:lunch => lunch)
+
+            dinner = get_plan(budget, $D_START, $D_FINISH)
+            user.update(:dinner => dinner)
+        end
+    end
+    
+    def edit_budget(user, amount, meal)
+        amount_used = amount.to_i
+        budget = user.budget - amount_used
+        user.update(:budget => budget)
+        
+        if meal == 'Breakfast'
+            budget = budget/2
+            breakfast = "You have had breakfast,-,#{amount_used}"
+            user.update(:breakfast => breakfast)
+        elsif meal == 'Lunch'
+            lunch = "You have had lunch,-,#{amount_used}"
+            user.update(:lunch => lunch)
+        elsif meal == 'Dinner'
+            dinner = "You have had dinner,-,#{amount_used}"
+            user.update(:dinner => dinner)
+        elsif meal == 'Miscellaneous'
+            breakfast = user.breakfast
+            lunch = user.lunch
+            dinner  =user.dinner
+            meals_eaten = 0
+            if(breakfast.include?("You have had breakfast"))
+                meals_eaten = meals_eaten + 1;
+            end
+            if(lunch.include?("You have had lunch"))
+                meals_eaten = meals_eaten + 1;
+            end
+            if(dinner.include?("You have had dinner"))
+                meals_eaten = meals_eaten + 1;
+            end
+            
+            if meals_eaten != 3
+                budget = (budget)/(3-meals_eaten)
+            end
+        end
+
+        if(user.breakfast.exclude?("You have had breakfast"))
+            breakfast = get_plan(budget, $B_START, $B_FINISH)
+            user.update(:breakfast => breakfast)
+        end
+        if(user.lunch.exclude?("You have had lunch"))
+            lunch = get_plan(budget, $L_START, $L_FINISH)
+            user.update(:lunch => lunch)
+        end
+        if(user.dinner.exclude?("You have had dinner"))
+            dinner = get_plan(budget, $D_START, $D_FINISH)
+            user.update(:dinner => dinner)
+        end
+
     end
 
     def parse_meals(meals)

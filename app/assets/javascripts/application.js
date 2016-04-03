@@ -16,8 +16,8 @@
 //= require turbolinks
 //= require_tree .
 $(document).ready(function(){
-    $(".openDlg").click(function() {
-        $(".dialog").dialog({
+    $(".openDlg1").click(function() {
+        $(".dialog1").dialog({
           buttons: [
             {
               text: "Close",
@@ -28,7 +28,28 @@ $(document).ready(function(){
           ],
           height: 300,
           width: 500,
-          title: "Edit Budget",
+          title: "Update Budget",
+          modal: true,
+          draggable: false,
+          resizable: false
+        });
+    })
+});
+
+$(document).ready(function(){
+    $(".openDlg2").click(function() {
+        $(".dialog2").dialog({
+          buttons: [
+            {
+              text: "Close",
+              click: function() {
+                $( this ).dialog( "close" );
+              }
+            }
+          ],
+          height: 300,
+          width: 500,
+          title: "Input Meal Cost",
           modal: true,
           draggable: false,
           resizable: false  

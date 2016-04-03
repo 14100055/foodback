@@ -135,7 +135,6 @@ class SessionsController < ApplicationController
 
         foods = Food.where("((start_at between ? and ?) OR (end_at between ? and ?) OR (start_at < ? and end_at > ?) OR (start_at < ? and end_at < start_at)) AND (price <= ?)", start, finish, start, finish, start, finish, start, budget)
         pdc = Array.new
-        non_pdc = Array.new
         foods.each do |food|
             if food.restaurant == "PDC"
                 pdc.append(food)

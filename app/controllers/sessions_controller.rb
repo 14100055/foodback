@@ -141,7 +141,7 @@ class SessionsController < ApplicationController
         end
         pdc.each do |side|
             pdc.each do |main|
-                if (side.name == "Rice" or side.name == "Roti" or side.name == "Bread") and (main.name != "Rice" and main.name != "Roti" and main.name != "Bread")
+                if (side.name == "Rice" or side.name == "Roti" or side.name == "Bread") and !(main.name == "Rice" or main.name == "Roti" or main.name == "Bread")
                     combo = side
                     combo.name += "+#{main.name}"
                     combo.price += main.price

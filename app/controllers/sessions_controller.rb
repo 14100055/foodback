@@ -131,20 +131,21 @@ class SessionsController < ApplicationController
 
     def get_plan(budget, start, finish)
         plan = ""
+        sides = ["Rice", "Roti", "Bread"]
 
-        foods = Food.where("(start_at between (?) and (?)) OR (end_at between (?) and (?)) OR (start_at < (?) and end_at > (?)) OR (start_at < (?) and end_at < start_at)", start, finish, start, finish, start, finish, start)
+        foods = Food.where("((start_at between ? and ?) OR (end_at between ? and ?) OR (start_at < ? and end_at > ?) OR (start_at < ? and end_at < start_at)) AND (price <= ?)", start, finish, start, finish, start, finish, start, budget)
         pdc = Array.new
         non_pdc = Array.new
         foods.each do |food|
             if food.restaurant == "PDC"
                 pdc.append(food)
             else
-                non_pdc.append(food)
+                plan += "#{food.restaurant},#{food.name},#{food.price}\n"
             end
         end
         pdc.each do |side|
             pdc.each do |main|
-                if (side.name == "Rice" or side.name == "Roti" or side.name == "Bread") and !(main.name == "Rice" or main.name == "Roti" or main.name == "Bread")
+                if sides.include?(side.name) and !(sides.include(main.name)# == "Rice" or side.name == "Roti" or side.name == "Bread") and !(main.name == "Rice" or main.name == "Roti" or main.name == "Bread")
                     combo = side
                     combo.name += "+#{main.name}"
                     combo.price += main.price
@@ -152,12 +153,6 @@ class SessionsController < ApplicationController
                         plan += "#{combo.restaurant},#{combo.name},#{combo.price}\n"
                     end
                 end
-            end
-        end
-        
-        non_pdc.each do |food|
-            if food.price <= budget
-                plan += "#{food.restaurant},#{food.name},#{food.price}\n"
             end
         end
 

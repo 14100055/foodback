@@ -70,49 +70,48 @@ class SessionsController < ApplicationController
     def edit_budget(user, amount, meal)
         amount_used = amount.to_i
         budget = user.budget - amount_used
-        user.update(:budget => budget)
-        
-        if meal == 'Breakfast'
-            budget = budget/2
-            breakfast = "You have had breakfast,-,#{amount_used}"
-            user.update(:breakfast => breakfast)
-        elsif meal == 'Lunch'
-            lunch = "You have had lunch,-,#{amount_used}"
-            user.update(:lunch => lunch)
-        elsif meal == 'Dinner'
-            dinner = "You have had dinner,-,#{amount_used}"
-            user.update(:dinner => dinner)
-        elsif meal == 'Miscellaneous'
-            breakfast = user.breakfast
-            lunch = user.lunch
-            dinner  =user.dinner
-            meals_left = 3
-            if(breakfast.include?("You have had breakfast"))
-                meals_left = meals_left - 1;
-            end
-            if(lunch.include?("You have had lunch"))
-                meals_left = meals_left - 1;
-            end
-            if(dinner.include?("You have had dinner"))
-                meals_left = meals_left - 1;
-            end
+        if user.update(:budget => budget)
+            if meal == 'Breakfast'
+                budget = budget/2
+                breakfast = "You have had breakfast,-,#{amount_used}"
+                user.update(:breakfast => breakfast)
+            elsif meal == 'Lunch'
+                lunch = "You have had lunch,-,#{amount_used}"
+                user.update(:lunch => lunch)
+            elsif meal == 'Dinner'
+                dinner = "You have had dinner,-,#{amount_used}"
+                user.update(:dinner => dinner)
+            elsif meal == 'Miscellaneous'
+                breakfast = user.breakfast
+                lunch = user.lunch
+                dinner  =user.dinner
+                meals_left = 3
+                if(breakfast.include?("You have had breakfast"))
+                    meals_left = meals_left - 1
+                end
+                if(lunch.include?("You have had lunch"))
+                    meals_left = meals_left - 1
+                end
+                if(dinner.include?("You have had dinner"))
+                    meals_left = meals_left - 1
+                end
             
-            budget = budget / (meals_left.nonzero? || 1)
-        end
+                budget = budget / (meals_left.nonzero? || 1)
+            end
 
-        if(user.breakfast.exclude?("You have had breakfast"))
-            breakfast = get_plan(budget, $B_START, $B_FINISH)
-            user.update(:breakfast => breakfast)
+            if(user.breakfast.exclude?("You have had breakfast"))
+                breakfast = get_plan(budget, $B_START, $B_FINISH)
+                user.update(:breakfast => breakfast)
+            end
+            if(user.lunch.exclude?("You have had lunch"))
+                lunch = get_plan(budget, $L_START, $L_FINISH)
+                user.update(:lunch => lunch)
+            end
+            if(user.dinner.exclude?("You have had dinner"))
+                dinner = get_plan(budget, $D_START, $D_FINISH)
+                user.update(:dinner => dinner)
+            end
         end
-        if(user.lunch.exclude?("You have had lunch"))
-            lunch = get_plan(budget, $L_START, $L_FINISH)
-            user.update(:lunch => lunch)
-        end
-        if(user.dinner.exclude?("You have had dinner"))
-            dinner = get_plan(budget, $D_START, $D_FINISH)
-            user.update(:dinner => dinner)
-        end
-
     end
 
     def parse_meals(meals)

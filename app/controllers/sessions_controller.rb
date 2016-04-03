@@ -33,17 +33,25 @@ class SessionsController < ApplicationController
     end
 
     def compute
-        @id = session[:user_id]
-        @user = User.find(@id)
+        id = session[:user_id]
+        user = User.find(id)
 
         if !params[:session][:budget].nil?
-            update_budget(@user, params[:session][:budget])
+            if user.update(:budget => params[:session][:budget])
+                user.update(:meals => 3)
+                budget = (params[:session][:budget].to_i)/3
+                update_meals(user, budget)
+            end
         end
         
         if !params[:session][:amount].nil? and !params[:session][:meal].nil?
-            edit_budget(@user, params[:session][:amount], params[:session][:meal])
+            if user.update(:budget => user.budget - params[:session][:amount].to_i)
+                amount = params[:session][:amount].to_i
+                budget = user.budget.to_i
+                edit_budget(user, amount, budget, params[:session][:meal])
+            end
         end
-
+        
         redirect_to '/mainpage'
     end
     
@@ -52,66 +60,40 @@ class SessionsController < ApplicationController
         redirect_to '/login'
     end
 
-    def update_budget(user, new_budget)
-        if user.update(:budget => new_budget)
-            budget = (new_budget.to_i)/3
-
+    def update_meals(user, budget)
+        if user.meals >= 3
             breakfast = get_plan(budget, $B_START, $B_FINISH)
             user.update(:breakfast => breakfast)
+        end
 
+        if user.meals >= 2
             lunch = get_plan(budget, $L_START, $L_FINISH)
             user.update(:lunch => lunch)
+        end
 
+        if user.meals >= 1
             dinner = get_plan(budget, $D_START, $D_FINISH)
             user.update(:dinner => dinner)
         end
     end
     
-    def edit_budget(user, amount, meal)
-        amount_used = amount.to_i
-        budget = user.budget - amount_used
-        if user.update(:budget => budget)
-            if meal == 'Breakfast'
-                budget = budget/2
-                breakfast = "You have had breakfast,-,#{amount_used}"
-                user.update(:breakfast => breakfast)
-            elsif meal == 'Lunch'
-                lunch = "You have had lunch,-,#{amount_used}"
-                user.update(:lunch => lunch)
-            elsif meal == 'Dinner'
-                dinner = "You have had dinner,-,#{amount_used}"
-                user.update(:dinner => dinner)
-            elsif meal == 'Miscellaneous'
-                breakfast = user.breakfast
-                lunch = user.lunch
-                dinner  =user.dinner
-                meals_left = 3
-                if(breakfast.include?("You have had breakfast"))
-                    meals_left = meals_left - 1
-                end
-                if(lunch.include?("You have had lunch"))
-                    meals_left = meals_left - 1
-                end
-                if(dinner.include?("You have had dinner"))
-                    meals_left = meals_left - 1
-                end
-            
-                budget = budget / (meals_left.nonzero? || 1)
-            end
-
-            if(user.breakfast.exclude?("You have had breakfast"))
-                breakfast = get_plan(budget, $B_START, $B_FINISH)
-                user.update(:breakfast => breakfast)
-            end
-            if(user.lunch.exclude?("You have had lunch"))
-                lunch = get_plan(budget, $L_START, $L_FINISH)
-                user.update(:lunch => lunch)
-            end
-            if(user.dinner.exclude?("You have had dinner"))
-                dinner = get_plan(budget, $D_START, $D_FINISH)
-                user.update(:dinner => dinner)
-            end
+    def edit_budget(user, amount, budget, meal)
+        if meal == 'Breakfast'
+            user.update(:meals => 2)
+            breakfast = "You have had breakfast,-,#{amount}"
+            user.update(:breakfast => breakfast)
+        elsif meal == 'Lunch'
+            user.update(:meals => 1)
+            lunch = "You have had lunch,-,#{amount}"
+            user.update(:lunch => lunch)
+        elsif meal == 'Dinner'
+            user.update(:meals => 0)
+            dinner = "You have had dinner,-,#{amount}"
+            user.update(:dinner => dinner)
         end
+
+        budget = budget / (user.meals.nonzero? || 1)
+        update_meals(user, budget)
     end
 
     def parse_meals(meals)

@@ -86,20 +86,18 @@ class SessionsController < ApplicationController
             breakfast = user.breakfast
             lunch = user.lunch
             dinner  =user.dinner
-            meals_eaten = 0
+            meals_left = 3
             if(breakfast.include?("You have had breakfast"))
-                meals_eaten = meals_eaten + 1;
+                meals_left = meals_left - 1;
             end
             if(lunch.include?("You have had lunch"))
-                meals_eaten = meals_eaten + 1;
+                meals_left = meals_left - 1;
             end
             if(dinner.include?("You have had dinner"))
-                meals_eaten = meals_eaten + 1;
+                meals_left = meals_left - 1;
             end
             
-            if meals_eaten != 3
-                budget = (budget)/(3-meals_eaten)
-            end
+            budget = budget / (meals_left.nonzero? || 1)
         end
 
         if(user.breakfast.exclude?("You have had breakfast"))

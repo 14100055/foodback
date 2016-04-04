@@ -44,17 +44,15 @@ class SessionsController < ApplicationController
         id = session[:user_id]
         user = User.find(id)
 
-        if params[:session].nil?
-            if !params[:foods].nil?
-                update_favourites(user, params[:foods].keys)
-            end
-        elsif !params[:session][:budget].nil?
+        if params.has_key?(:foods)
+            update_favourites(user, params[:foods].keys)
+        elsif params[:session].has_key?(:budget)
             if user.update(:budget => params[:session][:budget])
                 user.update(:meals => 3)
                 budget = (params[:session][:budget].to_i)/3
                 update_meals(user, budget)
             end
-        elsif !params[:session][:amount].nil?
+        elsif params[:session].has_key?(:amount)
             if user.update(:budget => user.budget - params[:session][:amount].to_i)
                 amount = params[:session][:amount].to_i
                 budget = user.budget.to_i

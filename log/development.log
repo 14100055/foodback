@@ -23226,3 +23226,82 @@ Processing by SessionsController#mainpage as HTML
   Rendered sessions/mainpage.html.erb within layouts/application (2.8ms)
   [1m[36mCACHE (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
 Completed 200 OK in 316ms (Views: 312.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/mainpage" for 111.68.103.163 at 2016-04-04 06:31:42 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6pwPWHTOm9WGtkX0a3DwMfePvQZQVETDqvD2ri4TKWwyr6L5xbPyaC9P6+bXMkloiF1Vw6wHjDfx9S3fmDSSBg==", "foods"=>{"Khokha_Cheese roll"=>"yes", "Khokha_Mayo roll"=>"yes", "Khokha_Chicken roll"=>"yes"}, "commit"=>"Enter"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (1.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "favourites" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["favourites", "[\"Khokha_Cheese roll\", \"yes\"]\n[\"Khokha_Mayo roll\", \"yes\"]\n[\"Khokha_Chicken roll\", \"yes\"]\n"], ["updated_at", "2016-04-04 06:31:42.545172"], ["id", 1]]
+  [1m[35m (14.2ms)[0m  commit transaction
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 52ms (ActiveRecord: 18.5ms)
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-04 06:31:44 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (4.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 398ms (Views: 388.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-04 06:39:52 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (3.0ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 537ms (Views: 506.0ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/mainpage" for 221.120.220.12 at 2016-04-04 06:40:13 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FBozOaF71DM8LlIFQAQsIh6XHAmm8zHB6fAzUp/jg7vMKZ6YEAa9jpXX/Bf8RpV7YUX0zFqg+TWy9egjKcQ40Q==", "foods"=>{"Khokha_Cheese roll"=>"yes", "Khokha_Chicken roll"=>"yes", "PDC_Bread"=>"yes", "PDC_Roti"=>"yes"}, "commit"=>"Enter"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "favourites" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["favourites", "Khokha_Cheese roll\nKhokha_Chicken roll\nPDC_Bread\nPDC_Roti\n"], ["updated_at", "2016-04-04 06:40:13.830649"], ["id", 1]]
+  [1m[36m (11.0ms)[0m  [1mcommit transaction[0m
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 143ms (ActiveRecord: 12.5ms)
+
+
+Started GET "/mainpage" for 221.120.220.12 at 2016-04-04 06:40:15 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (7.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 432ms (Views: 428.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/mainpage" for 221.120.220.12 at 2016-04-04 06:44:20 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NKLIhtd1zsGBaSODIWmhEwhN0dhgyMyvpvZLfikQqozskWUnZginfCiQjZGdKxhKd585HZybBFv985APnzcR5g==", "foods"=>{"Khokha_Cheese roll"=>"yes", "Khokha_Mayo roll"=>"yes", "Khokha_Chicken roll"=>"yes", "PDC_Omelette"=>"yes", "PDC_Bread"=>"yes", "PDC_Rice"=>"yes", "PDC_Roti"=>"yes"}, "commit"=>"Enter"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "favourites" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["favourites", "Khokha_Cheese roll\nKhokha_Mayo roll\nKhokha_Chicken roll\nPDC_Omelette\nPDC_Bread\nPDC_Rice\nPDC_Roti\n"], ["updated_at", "2016-04-04 06:44:21.032593"], ["id", 1]]
+  [1m[36m (10.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 41ms (ActiveRecord: 13.1ms)
+
+
+Started GET "/mainpage" for 221.120.220.12 at 2016-04-04 06:44:22 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (2.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 394ms (Views: 388.3ms | ActiveRecord: 0.8ms)

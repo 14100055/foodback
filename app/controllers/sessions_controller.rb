@@ -46,22 +46,19 @@ class SessionsController < ApplicationController
 
         if params[:session].nil?
             if !params[:foods].nil?
-                update_favourites(user, params[:foods])
+                update_favourites(user, params[:foods].keys)
             end
-        else
-            if !params[:session][:budget].nil?
-                if user.update(:budget => params[:session][:budget])
-                    user.update(:meals => 3)
-                    budget = (params[:session][:budget].to_i)/3
-                    update_meals(user, budget)
-                end
+        elsif !params[:session][:budget].nil?
+            if user.update(:budget => params[:session][:budget])
+                user.update(:meals => 3)
+                budget = (params[:session][:budget].to_i)/3
+                update_meals(user, budget)
             end
-            if !params[:session][:amount].nil? and !params[:session][:meal].nil?
-                if user.update(:budget => user.budget - params[:session][:amount].to_i)
-                    amount = params[:session][:amount].to_i
-                    budget = user.budget.to_i
-                    edit_budget(user, amount, budget, params[:session][:meal])
-                end
+        elsif !params[:session][:amount].nil?
+            if user.update(:budget => user.budget - params[:session][:amount].to_i)
+                amount = params[:session][:amount].to_i
+                budget = user.budget.to_i
+                edit_budget(user, amount, budget, params[:session][:meal])
             end
         end
         
@@ -111,8 +108,8 @@ class SessionsController < ApplicationController
 
     def update_favourites(user, favs)
         favourites = ""
-        favs.each do |food, exist|
-            favourites += "#{food}\n"
+        favs.each do |food|
+            favourites << "#{food}\n"
         end
         user.update(:favourites => favourites)
     end
@@ -141,7 +138,7 @@ class SessionsController < ApplicationController
                 sides.append(food)
                 mains.append(food)
             else
-                plan += "#{food.restaurant},#{food.name},#{food.price}\n"
+                plan << "#{food.restaurant},#{food.name},#{food.price}\n"
             end
         end
         sides.each do |side|
@@ -151,7 +148,7 @@ class SessionsController < ApplicationController
                         name = "#{side.name}+#{main.name}"
                         price = side.price+main.price
                         if price <= budget
-                            plan += "PDC,#{name},#{price}\n"
+                            plan << "PDC,#{name},#{price}\n"
                         end
                     end
                 end

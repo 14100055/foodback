@@ -43,7 +43,7 @@
             <td><%= food[0] %></td>
             <td><%= food[1] %></td>
             <td><%= food[2] %></td>
-            <td><%= check_box_tag "foods[#{food[0]}_#{food[1]}]", 'yes', @favourites.include?("#{food[0]}_#{food[1]}") ? true : false %></td>
+            <td><%= check_box_tag "foods[#{food[0]},#{food[1]},#{food[2]}]", 'yes', @favourites.include?("#{food[0]}_#{food[1]}") ? true : false %></td>
           </tr>
         <% end %>
       </table>
@@ -66,9 +66,16 @@
     </tr>
     <% @breakfast.each do |key,food| %>
       <tr>
+        <% if @favourites.include?("#{food[:restaurant]}_#{food[:name]}") %>
+        <td bgcolor="#ffff4d"><%= food[:restaurant] %></td>
+        <td bgcolor="#ffff4d"><%= food[:name] %></td>
+        <td bgcolor="#ffff4d"><%= food[:price] %></td>
+        <% else %>
         <td><%= food[:restaurant] %></td>
         <td><%= food[:name] %></td>
         <td><%= food[:price] %></td>
+        <% end %>
+        
       </tr>
     <% end %>
   </table>
@@ -85,9 +92,16 @@
     </tr>
     <% @lunch.each do |key,food| %>
       <tr>
+        <% if @favourites.include?("#{food[:restaurant]}_#{food[:name]}") %>
+        <td bgcolor="#ffff4d"><%= food[:restaurant] %></td>
+        <td bgcolor="#ffff4d"><%= food[:name] %></td>
+        <td bgcolor="#ffff4d"><%= food[:price] %></td>
+        <% else %>
         <td><%= food[:restaurant] %></td>
         <td><%= food[:name] %></td>
         <td><%= food[:price] %></td>
+        <% end %>
+        
       </tr>
     <% end %>
   </table>
@@ -104,9 +118,15 @@
     </tr>
     <% @dinner.each do |key,food| %>
       <tr>
+        <% if @favourites.include?("#{food[:restaurant]}_#{food[:name]}") %>
+        <td bgcolor="#ffff4d"><%= food[:restaurant] %></td>
+        <td bgcolor="#ffff4d"><%= food[:name] %></td>
+        <td bgcolor="#ffff4d"><%= food[:price] %></td>
+        <% else %>
         <td><%= food[:restaurant] %></td>
         <td><%= food[:name] %></td>
         <td><%= food[:price] %></td>
+        <% end %>
       </tr>
     <% end %>
   </table>

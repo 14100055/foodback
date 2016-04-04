@@ -23467,3 +23467,888 @@ Processing by SessionsController#mainpage as HTML
   Rendered sessions/mainpage.html.erb within layouts/application (3.2ms)
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
 Completed 200 OK in 427ms (Views: 395.9ms | ActiveRecord: 2.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (22.2ms)[0m  DELETE FROM "foods"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "Khokha"], ["name", "Cheese roll"], ["price", 120], ["start_at", "2000-01-01 09:00:00.000000"], ["end_at", "2000-01-01 05:00:00.000000"], ["created_at", "2016-04-04 11:13:44.419075"], ["updated_at", "2016-04-04 11:13:44.419075"]]
+  [1m[36m (10.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "Khokha"], ["name", "Mayo roll"], ["price", 120], ["start_at", "2000-01-01 09:00:00.000000"], ["end_at", "2000-01-01 05:00:00.000000"], ["created_at", "2016-04-04 11:13:44.437139"], ["updated_at", "2016-04-04 11:13:44.437139"]]
+  [1m[35m (9.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "Khokha"], ["name", "Chicken roll"], ["price", 100], ["start_at", "2000-01-01 09:00:00.000000"], ["end_at", "2000-01-01 05:00:00.000000"], ["created_at", "2016-04-04 11:13:44.449700"], ["updated_at", "2016-04-04 11:13:44.449700"]]
+  [1m[36m (12.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "PDC"], ["name", "Omelette"], ["price", 30], ["start_at", "2000-01-01 07:00:00.000000"], ["end_at", "2000-01-01 10:30:00.000000"], ["created_at", "2016-04-04 11:13:44.465341"], ["updated_at", "2016-04-04 11:13:44.465341"]]
+  [1m[35m (11.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "PDC"], ["name", "Bread"], ["price", 10], ["start_at", "2000-01-01 07:00:00.000000"], ["end_at", "2000-01-01 10:30:00.000000"], ["created_at", "2016-04-04 11:13:44.479781"], ["updated_at", "2016-04-04 11:13:44.479781"]]
+  [1m[36m (8.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "PDC"], ["name", "Rice"], ["price", 50], ["start_at", "2000-01-01 13:00:00.000000"], ["end_at", "2000-01-01 15:30:00.000000"], ["created_at", "2016-04-04 11:13:44.490146"], ["updated_at", "2016-04-04 11:13:44.490146"]]
+  [1m[35m (11.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "PDC"], ["name", "Roti"], ["price", 10], ["start_at", "2000-01-01 13:00:00.000000"], ["end_at", "2000-01-01 15:30:00.000000"], ["created_at", "2016-04-04 11:13:44.504504"], ["updated_at", "2016-04-04 11:13:44.504504"]]
+  [1m[36m (9.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "PDC"], ["name", "Chicken"], ["price", 120], ["start_at", "2000-01-01 13:00:00.000000"], ["end_at", "2000-01-01 15:30:00.000000"], ["created_at", "2016-04-04 11:13:44.516686"], ["updated_at", "2016-04-04 11:13:44.516686"]]
+  [1m[35m (10.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "PDC"], ["name", "Daal"], ["price", 35], ["start_at", "2000-01-01 13:00:00.000000"], ["end_at", "2000-01-01 15:30:00.000000"], ["created_at", "2016-04-04 11:13:44.529422"], ["updated_at", "2016-04-04 11:13:44.529422"]]
+  [1m[36m (10.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "PDC"], ["name", "Rice"], ["price", 50], ["start_at", "2000-01-01 19:00:00.000000"], ["end_at", "2000-01-01 22:30:00.000000"], ["created_at", "2016-04-04 11:13:44.542169"], ["updated_at", "2016-04-04 11:13:44.542169"]]
+  [1m[35m (24.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "PDC"], ["name", "Roti"], ["price", 10], ["start_at", "2000-01-01 19:00:00.000000"], ["end_at", "2000-01-01 22:30:00.000000"], ["created_at", "2016-04-04 11:13:44.570004"], ["updated_at", "2016-04-04 11:13:44.570004"]]
+  [1m[36m (20.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "PDC"], ["name", "Chicken"], ["price", 120], ["start_at", "2000-01-01 19:00:00.000000"], ["end_at", "2000-01-01 22:30:00.000000"], ["created_at", "2016-04-04 11:13:44.593222"], ["updated_at", "2016-04-04 11:13:44.593222"]]
+  [1m[35m (15.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "PDC"], ["name", "Daal"], ["price", 35], ["start_at", "2000-01-01 19:00:00.000000"], ["end_at", "2000-01-01 22:30:00.000000"], ["created_at", "2016-04-04 11:13:44.611943"], ["updated_at", "2016-04-04 11:13:44.611943"]]
+  [1m[36m (10.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "Chop Chop"], ["name", "Chowmein"], ["price", 170], ["start_at", "2000-01-01 13:00:00.000000"], ["end_at", "2000-01-01 23:30:00.000000"], ["created_at", "2016-04-04 11:13:44.625164"], ["updated_at", "2016-04-04 11:13:44.625164"]]
+  [1m[35m (9.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "Chop Chop"], ["name", "Tamarind"], ["price", 240], ["start_at", "2000-01-01 13:00:00.000000"], ["end_at", "2000-01-01 23:30:00.000000"], ["created_at", "2016-04-04 11:13:44.637786"], ["updated_at", "2016-04-04 11:13:44.637786"]]
+  [1m[36m (9.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "Chop Chop"], ["name", "Mongolian"], ["price", 240], ["start_at", "2000-01-01 13:00:00.000000"], ["end_at", "2000-01-01 23:30:00.000000"], ["created_at", "2016-04-04 11:13:44.650007"], ["updated_at", "2016-04-04 11:13:44.650007"]]
+  [1m[35m (9.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "Chop Chop"], ["name", "Fried fish"], ["price", 160], ["start_at", "2000-01-01 13:00:00.000000"], ["end_at", "2000-01-01 23:30:00.000000"], ["created_at", "2016-04-04 11:13:44.662048"], ["updated_at", "2016-04-04 11:13:44.662048"]]
+  [1m[36m (11.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "Superstore"], ["name", "Roll"], ["price", 130], ["start_at", "2000-01-01 10:00:00.000000"], ["end_at", "2000-01-01 01:00:00.000000"], ["created_at", "2016-04-04 11:13:44.675864"], ["updated_at", "2016-04-04 11:13:44.675864"]]
+  [1m[35m (9.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "Superstore"], ["name", "Shawarma"], ["price", 120], ["start_at", "2000-01-01 10:00:00.000000"], ["end_at", "2000-01-01 01:00:00.000000"], ["created_at", "2016-04-04 11:13:44.688632"], ["updated_at", "2016-04-04 11:13:44.688632"]]
+  [1m[36m (10.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "Superstore"], ["name", "Pizza"], ["price", 60], ["start_at", "2000-01-01 10:00:00.000000"], ["end_at", "2000-01-01 01:00:00.000000"], ["created_at", "2016-04-04 11:13:44.701673"], ["updated_at", "2016-04-04 11:13:44.701673"]]
+  [1m[35m (9.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "Superstore"], ["name", "Burger"], ["price", 200], ["start_at", "2000-01-01 10:00:00.000000"], ["end_at", "2000-01-01 01:00:00.000000"], ["created_at", "2016-04-04 11:13:44.713809"], ["updated_at", "2016-04-04 11:13:44.713809"]]
+  [1m[36m (11.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "Superstore"], ["name", "Sandwich"], ["price", 180], ["start_at", "2000-01-01 10:00:00.000000"], ["end_at", "2000-01-01 01:00:00.000000"], ["created_at", "2016-04-04 11:13:44.727588"], ["updated_at", "2016-04-04 11:13:44.727588"]]
+  [1m[35m (9.4ms)[0m  commit transaction
+
+
+Started GET "/" for 221.120.220.11 at 2016-04-04 11:14:18 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#mainpage as HTML
+Redirected to https://project2-a17100010.c9users.io/login
+Completed 302 Found in 21ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 221.120.220.11 at 2016-04-04 11:14:19 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 3084ms (Views: 3083.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/default.self-989d146ab951c1a9534d0d51b28e7b4fa73d66a9062a289c96a74fa5ff070c47.css?body=1" for 110.93.234.9 at 2016-04-04 11:14:22 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 221.120.220.11 at 2016-04-04 11:14:23 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-5476d4b3f1d57d108d4a4d3e1746872248ffa719b748e4bea85e7e30be5145d5.css?body=1" for 111.68.103.163 at 2016-04-04 11:14:23 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 110.93.234.9 at 2016-04-04 11:14:23 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/core.self-23329dbe1961b938278306c019037fe36ff6ccb28193f1038e52ccbf52858163.css?body=1" for 110.93.234.9 at 2016-04-04 11:14:23 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/accordion.self-ab9f397561a07488cf14279bc7186619e859cdd485b81d3a6439e85b81d32a05.css?body=1" for 111.68.103.163 at 2016-04-04 11:14:23 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/theme.self-df1da30301997b52795cb0213bccd335f2897b65f84d1d7d7c63c04f048d902f.css?body=1" for 221.120.220.11 at 2016-04-04 11:14:23 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/datepicker.self-bf92a2196df590f06fad4ab5bb7ed4db1874a9bef0c9af85ea0490d2108b9966.css?body=1" for 110.93.234.9 at 2016-04-04 11:14:23 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/draggable.self-ff524fb7ae3023ef910b4e6c5cd7260e4f4dc6fb2eca9a525dd478017639bbba.css?body=1" for 111.68.103.163 at 2016-04-04 11:14:23 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/menu.self-5277268fc75b8d6e851ccb5ca12e162c7440315d70974f34db800bc70330f135.css?body=1" for 221.120.220.11 at 2016-04-04 11:14:23 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/autocomplete.self-2d6dfccae4fba2fe27d00372b974d4540d75a00cea6ceaa0a6aa33852b9d3ac3.css?body=1" for 221.120.220.11 at 2016-04-04 11:14:23 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/button.self-524bbf2d9cf9547e14eda3866ad90726890ff390563ea46013c1ca019694c320.css?body=1" for 221.120.220.11 at 2016-04-04 11:14:23 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/resizable.self-3a16663ae8d70cc7f633554daff3a5875f54915ae3071fc3f3a1aeb0f7c8ab24.css?body=1" for 110.93.234.9 at 2016-04-04 11:14:23 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/dialog.self-3e41d6ad769c697e76dceeef1bf376008c8e93e85c144fea25437fa3188d86b8.css?body=1" for 111.68.103.163 at 2016-04-04 11:14:23 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/slider.self-57c4d255d192836d85e1253fe091b5b01fed1c389b0dbdedd71c129dcf1cfd35.css?body=1" for 110.93.234.9 at 2016-04-04 11:14:24 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/progressbar.self-de3d9f82b3ceaaa88bb0686e77f2548a3cfea1cf4dc37df4f3bc70f99d86a95a.css?body=1" for 221.120.220.11 at 2016-04-04 11:14:24 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/selectable.self-fa1d88ada89c5a57dae84c7cb4f17bf153cb1cff063ed4ba2091b5b5f54e77e6.css?body=1" for 221.120.220.11 at 2016-04-04 11:14:24 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/selectmenu.self-9a2b20dc7f10d3a7b09d0dc5d038d02dd1aff160e97abf8eaa3d3f5ab09fbb4b.css?body=1" for 221.120.220.11 at 2016-04-04 11:14:24 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/spinner.self-2d292d2e83f1281032010a5acb9cb23492aeecdc95395a5d93f2a3bba9a2c400.css?body=1" for 111.68.103.163 at 2016-04-04 11:14:24 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/sortable.self-bd8078895e9d12cd8586eb9b507ccb4d533daadd0f103f7387554c30cc96313f.css?body=1" for 221.120.220.11 at 2016-04-04 11:14:24 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/tabs.self-3dec02555ec77af087a252cdd5be276e714d0059e052a2c92dc2c5401e9df63d.css?body=1" for 110.93.234.9 at 2016-04-04 11:14:24 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 111.68.103.163 at 2016-04-04 11:14:24 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/tooltip.self-a349b3ba7b1458eed72dc3ffba597af53b9ceb622e7a324cdfd1c01c7b351f1f.css?body=1" for 221.120.220.11 at 2016-04-04 11:14:24 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/base.self-1b94b6a8eaf399d6f662a2ffe0b9b52a958c6180e15b6e07a7ecab0087c9234d.css?body=1" for 221.120.220.11 at 2016-04-04 11:14:24 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/all.self-a9629accff9d629face2489f3b6d620ded83dd62f6f04f69e5b33eea2b8d73b6.css?body=1" for 221.120.220.11 at 2016-04-04 11:14:24 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 110.93.234.9 at 2016-04-04 11:14:24 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 221.120.220.11 at 2016-04-04 11:14:24 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 111.68.103.163 at 2016-04-04 11:14:24 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/menu.self-7abc1c9401509a7e4fc609b1e461be6fd17e8116e8fda19cc59d05ba79aefb68.js?body=1" for 111.68.103.163 at 2016-04-04 11:14:24 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 221.120.220.11 at 2016-04-04 11:14:24 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/autocomplete.self-3befc48aba87cead090cfd014562b2771a662ac6d2c8197b24c08b2d9f3d9f2d.js?body=1" for 110.93.234.9 at 2016-04-04 11:14:24 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 221.120.220.11 at 2016-04-04 11:14:24 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/accordion.self-c95f320275150a94241b004a91e21eef9c5ae9965a793cb3e2475f6078a1670d.js?body=1" for 221.120.220.11 at 2016-04-04 11:14:24 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 111.68.103.163 at 2016-04-04 11:14:25 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 111.68.103.163 at 2016-04-04 11:14:25 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 110.93.234.9 at 2016-04-04 11:14:25 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 110.93.234.9 at 2016-04-04 11:14:25 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 221.120.220.11 at 2016-04-04 11:14:25 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 221.120.220.11 at 2016-04-04 11:14:25 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/droppable.self-a7a2b4c2cec8fc176f51e4e4291d92bfd3eec40b6a580b47fc54c16334d52882.js?body=1" for 221.120.220.11 at 2016-04-04 11:14:25 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effect.self-3acdb29e7da09c8f0195b994d2f04d73bfef50dc539c84fd2c835d964d33e5c1.js?body=1" for 111.68.103.163 at 2016-04-04 11:14:25 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effect-blind.self-ed102209d7aa0b7374f3db8478cc7dcff5f9980d3146e8bf9fbfab959c6d5d8a.js?body=1" for 110.93.234.9 at 2016-04-04 11:14:26 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effect-drop.self-294aaa72126ad9c94d6558cca792eb3716754713aca98f18a9dd7c493150ed92.js?body=1" for 111.68.103.163 at 2016-04-04 11:14:26 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effect-explode.self-68e74dc114a52f3f4d7033e40c39196961bdcf439652daa2e98baa115c7bb44b.js?body=1" for 110.93.234.9 at 2016-04-04 11:14:26 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effect-clip.self-7368e4597c32360b162d264ff8bbd0cf9fb1535eb9b4564e6eb7c1db3c774bf3.js?body=1" for 221.120.220.11 at 2016-04-04 11:14:26 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effect-bounce.self-bfcb9288797ecd234ddeedf4fbc5b4c9de94a4e6d8d44e6faa5b5e9836fad9fd.js?body=1" for 221.120.220.11 at 2016-04-04 11:14:26 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effect-fade.self-42d542a5253e0a610717460102ee6bee339c656cc188e491d89eb0779043c963.js?body=1" for 111.68.103.163 at 2016-04-04 11:14:26 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effect-fold.self-ad9967f153423916300dbf1104b00f7ad7bbd6a222a0fcc1012ebe251bcb13c8.js?body=1" for 110.93.234.9 at 2016-04-04 11:14:26 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effect-scale.self-884a5abcb6d90fcd9f9a071aa8329638184df688afced1b1d3b6be6c69f4dd7f.js?body=1" for 221.120.220.11 at 2016-04-04 11:14:26 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effect-highlight.self-f922b7179ab8ccfa7865141f38865bba0a3d2bdceba7561c27ca14544dbfd996.js?body=1" for 221.120.220.11 at 2016-04-04 11:14:26 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effect-size.self-368aecefa09656a2be5c72dc8e685b120363a3df812134cbd2dd998bafa179fd.js?body=1" for 221.120.220.11 at 2016-04-04 11:14:26 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effect-puff.self-93415831093923a70f671d73e8d0b3d94deb37ac7472a036a4add545f565c166.js?body=1" for 110.93.234.9 at 2016-04-04 11:14:27 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effect-pulsate.self-eb107c0d136eccdfbd8a2f0f2ee71e0f6911cb300c6b63cc2fe4f6532e6a9a97.js?body=1" for 111.68.103.163 at 2016-04-04 11:14:27 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/progressbar.self-a259ff5a2a5e7aef0ec21bda94edd0f6bc1e9821128d901de415956edf212b0d.js?body=1" for 111.68.103.163 at 2016-04-04 11:14:27 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/selectable.self-42e53fc2f95211314e36a8094c42560f869c207f16d68cfc206aa37201dcdc03.js?body=1" for 110.93.234.9 at 2016-04-04 11:14:27 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effect-shake.self-63bcc14897aac5b84e10690be94d64d5724f864aa14c913b4d1030c461a256ad.js?body=1" for 221.120.220.11 at 2016-04-04 11:14:27 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effect-slide.self-c93054a4a80d1f986760806d81ab067e4a4120bf103337e152ecc24d36e785f6.js?body=1" for 221.120.220.11 at 2016-04-04 11:14:27 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/effect-transfer.self-181245634ec522320fc1081f6dbf94fd982f34eefa03555f76817dedfcdea336.js?body=1" for 221.120.220.11 at 2016-04-04 11:14:27 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/selectmenu.self-09dbcac573f0e508194bd9deff254db090889b380d030261857860309c0918e8.js?body=1" for 111.68.103.163 at 2016-04-04 11:14:27 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/slider.self-8af8d2a0661743ba88b4cfb99d5c8c874cfa3fc6528ae4e9252366b388def0b7.js?body=1" for 110.93.234.9 at 2016-04-04 11:14:27 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/tooltip.self-38f04ac3a6c8fb2391ec6832b68845671cc9013a94371b7eb239478f4835eb73.js?body=1" for 111.68.103.163 at 2016-04-04 11:14:27 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 221.120.220.11 at 2016-04-04 11:14:27 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/spinner.self-3c8c95a7bc9c877d0f9c16789246bbedda6b8e8fbf5927951babdab775aed02e.js?body=1" for 221.120.220.11 at 2016-04-04 11:14:27 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 221.120.220.11 at 2016-04-04 11:14:27 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui.self-52111578aa54225c9ebfe06f78a62771020ee548bb27d62228ee3f5e6633969d.js?body=1" for 110.93.234.9 at 2016-04-04 11:14:27 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 111.68.103.163 at 2016-04-04 11:14:27 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 111.68.103.163 at 2016-04-04 11:14:28 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-83013928ce1eb5711c0372ed38d40f9f5e9d63ea2dcefe049b7a936c864c568e.js?body=1" for 110.93.234.9 at 2016-04-04 11:14:28 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 221.120.220.11 at 2016-04-04 11:14:28 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/login" for 221.120.220.11 at 2016-04-04 11:14:35 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eMzJBRPUkGolb6ln1txetSqU46AW4ysTou9FOl4ZXDgs5h49GjOuOm0dV1CIPUrWHnFbRN0vhjATvOjbJ7LoeQ==", "session"=>{"email"=>"tooba.a17@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "tooba.a17@gmail.com"]]
+Redirected to https://project2-a17100010.c9users.io/login
+Completed 302 Found in 114ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 221.120.220.11 at 2016-04-04 11:14:35 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 387ms (Views: 386.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 221.120.220.11 at 2016-04-04 11:14:43 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UwWXnrABzTXWPcp3F6cd0rmVrsR8Ta9QMFlcH8E8asgHL0CmuebzZZ5PNEBJRgmxjXAWILeBAnOBCvH+uJfeiQ==", "session"=>{"email"=>"tooba.a17@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "tooba.a17@gmail.com"]]
+Redirected to https://project2-a17100010.c9users.io/login
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 221.120.220.11 at 2016-04-04 11:14:44 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 442ms (Views: 440.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 221.120.220.11 at 2016-04-04 11:15:16 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 286ms (Views: 272.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/signup" for 221.120.220.11 at 2016-04-04 11:15:22 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 253ms (Views: 251.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 110.93.234.9 at 2016-04-04 11:15:32 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xGax4SFKIu9kE/RG51jQpWBkHclORvxx1XNKHXpyH0KQTGbZKK0cvyxhCnG5ucTGVIGlLYWKUVJkIOf8A9mrAw==", "user"=>{"first_name"=>"Tooba", "last_name"=>"ahsen", "email"=>"tooba.a17@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Create an account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'tooba.a17@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Tooba"], ["last_name", "ahsen"], ["email", "tooba.a17@gmail.com"], ["password_digest", "$2a$10$5IZkp5tQh.PCdyiWT07vuedzOVv9.t2mfcwMs9UarjgvbGHRuoQ.K"], ["created_at", "2016-04-04 11:15:32.926482"], ["updated_at", "2016-04-04 11:15:32.926482"]]
+  [1m[36m (16.0ms)[0m  [1mcommit transaction[0m
+Redirected to https://project2-a17100010.c9users.io/
+Completed 302 Found in 125ms (ActiveRecord: 16.7ms)
+
+
+Started GET "/" for 110.93.234.9 at 2016-04-04 11:15:33 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+Redirected to https://project2-a17100010.c9users.io/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 110.93.234.9 at 2016-04-04 11:15:33 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 235ms (Views: 234.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 110.93.234.9 at 2016-04-04 11:15:40 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TljdaQB1fQDF8PrTpDrcPyZlk0U43nTWyzt6UIQkjxMacgpRCZJDUI2CBOT628hcEoArofMS2fV6aNex/Y87Ug==", "session"=>{"email"=>"tooba.a17@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "tooba.a17@gmail.com"]]
+Redirected to https://project2-a17100010.c9users.io/mainpage
+Completed 302 Found in 75ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 11:15:40 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (7.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 383ms (Views: 376.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery-ui/ui-bg_highlight-soft_75_cccccc_1x100-54270656df079c4da5182629a080fc633b6f84b87985eb016d25a560e2c38d4a.png" for 110.93.234.9 at 2016-04-04 11:15:47 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/ui-bg_flat_0_aaaaaa_40x100-9a8492a580bf85d3e98ae8861fbd45567e5a1f83eeafcf9574da0399d5f602ab.png" for 110.93.234.9 at 2016-04-04 11:15:47 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/ui-icons_888888_256x240-ea2e29625de3463465e93b002b065f5833e05b97f7a052b1c141e754d62e1a8b.png" for 111.68.103.163 at 2016-04-04 11:15:47 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/ui-bg_flat_75_ffffff_40x100-39ab7ccd9f4e82579da78a9241265df288d8eb65dbbd7cf48aed2d0129887df5.png" for 110.93.234.9 at 2016-04-04 11:15:47 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/ui-bg_glass_75_e6e6e6_1x400-ddf5dd4e0ef2b185e8bb0af7b6e90ebe74a84384cb4700658e76e754c8bfe550.png" for 221.120.220.11 at 2016-04-04 11:15:47 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/mainpage" for 221.120.220.11 at 2016-04-04 11:15:53 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5VqzmY2BS/g6cuSXmS+NIBXfVeNRjmbpmBxMFyT4v/mxcGShhGZ1qHIAGqDHzplDITrtB5pCy8opT+H2XVMLuA==", "session"=>{"budget"=>"5000"}, "commit"=>"Enter"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "budget" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["budget", 5000], ["updated_at", "2016-04-04 11:15:53.643911"], ["id", 4]]
+  [1m[35m (10.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "meals" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["meals", 3], ["updated_at", "2016-04-04 11:15:53.658382"], ["id", 4]]
+  [1m[35m (11.0ms)[0m  commit transaction
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 07:00:00.000000' and '2000-01-01 11:00:00.000000') OR (end_at between '2000-01-01 07:00:00.000000' and '2000-01-01 11:00:00.000000') OR (start_at < '2000-01-01 07:00:00.000000' and end_at > '2000-01-01 11:00:00.000000') OR (start_at < '2000-01-01 07:00:00.000000' and end_at < start_at)) AND (price <= 1666))[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "breakfast" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["breakfast", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\nKhokha,Chicken roll,100\nSuperstore,Roll,130\nSuperstore,Shawarma,120\nSuperstore,Pizza,60\nSuperstore,Burger,200\nSuperstore,Sandwich,180\nPDC,Bread+Omelette,40\n"], ["updated_at", "2016-04-04 11:15:53.678216"], ["id", 4]]
+  [1m[36m (11.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mFood Load (0.3ms)[0m  SELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (end_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at > '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at < start_at)) AND (price <= 1666))
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "lunch" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["lunch", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\nKhokha,Chicken roll,100\nChop Chop,Chowmein,170\nChop Chop,Tamarind,240\nChop Chop,Mongolian,240\nChop Chop,Fried fish,160\nSuperstore,Roll,130\nSuperstore,Shawarma,120\nSuperstore,Pizza,60\nSuperstore,Burger,200\nSuperstore,Sandwich,180\nPDC,Rice+Chicken,170\nPDC,Rice+Daal,85\nPDC,Roti+Chicken,130\nPDC,Roti+Daal,45\n"], ["updated_at", "2016-04-04 11:15:53.694016"], ["id", 4]]
+  [1m[35m (9.8ms)[0m  commit transaction
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (end_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at > '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at < start_at)) AND (price <= 1666))[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "dinner" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["dinner", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\nKhokha,Chicken roll,100\nChop Chop,Chowmein,170\nChop Chop,Tamarind,240\nChop Chop,Mongolian,240\nChop Chop,Fried fish,160\nSuperstore,Roll,130\nSuperstore,Shawarma,120\nSuperstore,Pizza,60\nSuperstore,Burger,200\nSuperstore,Sandwich,180\nPDC,Rice+Chicken,170\nPDC,Rice+Daal,85\nPDC,Roti+Chicken,130\nPDC,Roti+Daal,45\n"], ["updated_at", "2016-04-04 11:15:53.708069"], ["id", 4]]
+  [1m[36m (9.7ms)[0m  [1mcommit transaction[0m
+Redirected to https://project2-a17100010.c9users.io/mainpage
+Completed 302 Found in 80ms (ActiveRecord: 56.5ms)
+
+
+Started GET "/mainpage" for 221.120.220.11 at 2016-04-04 11:15:54 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (2.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 361ms (Views: 358.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery-ui/ui-bg_glass_75_dadada_1x400-c108f5cbf2dd9ec07a26530695ddd95e1664597ce6c056ae44c162cc2e28cec4.png" for 221.120.220.11 at 2016-04-04 11:16:07 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/mainpage" for 221.120.220.11 at 2016-04-04 11:16:07 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"49ONCbYL4bopvHPS7l5jCxpBoCiu1AxvQDLz+7Pm0j+3+Voxv+zf6mHOjeWwv3doLqQYzGUYoUzxYV4ayk1mfg==", "session"=>{"amount"=>"200", "meal"=>"Lunch"}, "commit"=>"Enter"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "budget" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["budget", 4800], ["updated_at", "2016-04-04 11:16:07.504804"], ["id", 4]]
+  [1m[36m (148.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "meals" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["meals", 1], ["updated_at", "2016-04-04 11:16:07.657621"], ["id", 4]]
+  [1m[36m (9.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "lunch" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["lunch", "You have had lunch,-,200"], ["updated_at", "2016-04-04 11:16:07.670992"], ["id", 4]]
+  [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mFood Load (0.3ms)[0m  SELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (end_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at > '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at < start_at)) AND (price <= 4800))
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://project2-a17100010.c9users.io/mainpage
+Completed 302 Found in 183ms (ActiveRecord: 169.0ms)
+
+
+Started GET "/assets/jquery-ui/ui-bg_glass_65_ffffff_1x400-f0e6cd91b837d5c5644d026e5ffeccd907953317cd5c0f689901733afda260b2.png" for 221.120.220.11 at 2016-04-04 11:16:07 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 11:16:07 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (2.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 294ms (Views: 291.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/mainpage" for 221.120.220.11 at 2016-04-04 11:16:29 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fmZUcQJLi+5HOH3UuWgYhmfZfwRTxBVTcPwQKqJdEWQqTINJC6y1vg9Kg+PniQzlUzzH4JgIuHDBr73L2/alJQ==", "session"=>{"amount"=>"400", "meal"=>"Dinner"}, "commit"=>"Enter"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "budget" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["budget", 4400], ["updated_at", "2016-04-04 11:16:29.646515"], ["id", 4]]
+  [1m[36m (10.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "meals" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["meals", 0], ["updated_at", "2016-04-04 11:16:29.662351"], ["id", 4]]
+  [1m[36m (9.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "dinner" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["dinner", "You have had dinner,-,400"], ["updated_at", "2016-04-04 11:16:29.677895"], ["id", 4]]
+  [1m[36m (10.0ms)[0m  [1mcommit transaction[0m
+Redirected to https://project2-a17100010.c9users.io/mainpage
+Completed 302 Found in 159ms (ActiveRecord: 32.5ms)
+
+
+Started GET "/mainpage" for 221.120.220.11 at 2016-04-04 11:16:30 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (2.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 358ms (Views: 355.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/mainpage" for 221.120.220.11 at 2016-04-04 11:16:49 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p6QPyc3yi39Wwvb07+9atGf6LgvWsaPIXYiYm7xM397zjtjxxBW1Lx6wCMOxDk7XUx+W7x19Duvs2zV6xedrnw==", "foods"=>{"Khokha_Cheese roll"=>"yes", "Khokha_Mayo roll"=>"yes", "Superstore_Burger"=>"yes"}, "commit"=>"Enter"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "favourites" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["favourites", "Khokha_Cheese roll\nKhokha_Mayo roll\nSuperstore_Burger\n"], ["updated_at", "2016-04-04 11:16:49.578223"], ["id", 4]]
+  [1m[36m (71.7ms)[0m  [1mcommit transaction[0m
+Redirected to https://project2-a17100010.c9users.io/mainpage
+Completed 302 Found in 78ms (ActiveRecord: 72.4ms)
+
+
+Started GET "/mainpage" for 221.120.220.11 at 2016-04-04 11:16:50 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (2.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 358ms (Views: 356.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/mainpage" for 111.68.103.163 at 2016-04-04 11:17:01 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XDh9LL2D/vsyexApJ+fz24XottYlq527dJCnMWp/DJkIEqoUtGTAq3oJ7h55Bue4sQ0OMu5nMJjFwwrQE9S42A==", "session"=>{"budget"=>"5000"}, "commit"=>"Enter"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "budget" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["budget", 5000], ["updated_at", "2016-04-04 11:17:01.445878"], ["id", 4]]
+  [1m[36m (17.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "meals" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["meals", 3], ["updated_at", "2016-04-04 11:17:01.467519"], ["id", 4]]
+  [1m[36m (10.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mFood Load (0.7ms)[0m  SELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 07:00:00.000000' and '2000-01-01 11:00:00.000000') OR (end_at between '2000-01-01 07:00:00.000000' and '2000-01-01 11:00:00.000000') OR (start_at < '2000-01-01 07:00:00.000000' and end_at > '2000-01-01 11:00:00.000000') OR (start_at < '2000-01-01 07:00:00.000000' and end_at < start_at)) AND (price <= 1666))
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mFood Load (0.5ms)[0m  SELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (end_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at > '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at < start_at)) AND (price <= 1666))
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "lunch" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["lunch", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\nKhokha,Chicken roll,100\nChop Chop,Chowmein,170\nChop Chop,Tamarind,240\nChop Chop,Mongolian,240\nChop Chop,Fried fish,160\nSuperstore,Roll,130\nSuperstore,Shawarma,120\nSuperstore,Pizza,60\nSuperstore,Burger,200\nSuperstore,Sandwich,180\nPDC,Rice+Chicken,170\nPDC,Rice+Daal,85\nPDC,Roti+Chicken,130\nPDC,Roti+Daal,45\n"], ["updated_at", "2016-04-04 11:17:01.489598"], ["id", 4]]
+  [1m[35m (14.1ms)[0m  commit transaction
+  [1m[36mFood Load (0.5ms)[0m  [1mSELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (end_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at > '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at < start_at)) AND (price <= 1666))[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "dinner" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["dinner", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\nKhokha,Chicken roll,100\nChop Chop,Chowmein,170\nChop Chop,Tamarind,240\nChop Chop,Mongolian,240\nChop Chop,Fried fish,160\nSuperstore,Roll,130\nSuperstore,Shawarma,120\nSuperstore,Pizza,60\nSuperstore,Burger,200\nSuperstore,Sandwich,180\nPDC,Rice+Chicken,170\nPDC,Rice+Daal,85\nPDC,Roti+Chicken,130\nPDC,Roti+Daal,45\n"], ["updated_at", "2016-04-04 11:17:01.510164"], ["id", 4]]
+  [1m[36m (16.4ms)[0m  [1mcommit transaction[0m
+Redirected to https://project2-a17100010.c9users.io/mainpage
+Completed 302 Found in 164ms (ActiveRecord: 63.6ms)
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-04 11:17:01 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (2.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 363ms (Views: 360.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 11:23:51 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (2.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 397ms (Views: 359.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.self-a1aae5cb72bc287eee97d0fa616314faefa6ca3048dc69087327fab54a85c56b.css?body=1" for 110.93.234.9 at 2016-04-04 11:23:52 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/ui-icons_454545_256x240-07460e843c3e59aaadbb34231e699e856a2980753c7a47b66447da5d9f93fb7f.png" for 221.120.220.11 at 2016-04-04 11:23:57 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 11:28:30 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (3.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 322ms (Views: 319.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 11:29:14 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.4ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (8.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 280ms (Views: 276.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-04 11:33:27 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (3.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 232ms (Views: 230.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/mainpage" for 221.120.220.11 at 2016-04-04 11:34:18 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R4oc2F23JutqwjfAYPq9/BsB2iTlqXo+11N8/sIDfPkToMvgVFAYuyKwyfc+G6mfL+RiwC5l1x1mANEfu6jIuA==", "foods"=>{"Khokha,Cheese roll,120"=>"yes", "Khokha,Chicken roll,100"=>"yes", "Superstore,Burger,200"=>"yes"}, "commit"=>"Enter"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "favourites" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["favourites", "Khokha,Cheese roll,120\nKhokha,Chicken roll,100\nSuperstore,Burger,200\n"], ["updated_at", "2016-04-04 11:34:18.036826"], ["id", 4]]
+  [1m[36m (12.0ms)[0m  [1mcommit transaction[0m
+Redirected to https://project2-a17100010.c9users.io/mainpage
+Completed 302 Found in 20ms (ActiveRecord: 12.9ms)
+
+
+Started GET "/mainpage" for 221.120.220.11 at 2016-04-04 11:34:18 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (4.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 257ms (Views: 254.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/mainpage" for 110.93.234.9 at 2016-04-04 11:36:56 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uP3Tw2i8R0HHIIILeX0O+wozZ/sHRUIW4k7Ob1O9RxLs1wT7YVt5EY9SfDwnnBqYPtbfH8yJ7zVTHWOOKhbzUw==", "foods"=>{"Khokha,Cheese roll,120"=>"yes", "Khokha,Mayo roll,120"=>"yes"}, "commit"=>"Enter"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "favourites" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["favourites", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\n"], ["updated_at", "2016-04-04 11:36:56.881542"], ["id", 4]]
+  [1m[36m (13.3ms)[0m  [1mcommit transaction[0m
+Redirected to https://project2-a17100010.c9users.io/mainpage
+Completed 302 Found in 42ms (ActiveRecord: 16.2ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 11:36:57 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (2.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 265ms (Views: 260.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 11:41:15 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (3.7ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 517ms (Views: 475.7ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/mainpage" for 110.93.234.9 at 2016-04-04 11:41:38 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KObDwU3YHwW9riGAGDtuzGbKMiTvderG3O3c3wcEPAl8zBT5RD8hVfXc37dG2nqvUi+KwCS5R+VtvnE+fq+ISA==", "foods"=>{"PDC,Omelette,30"=>"yes", "PDC,Chicken,120"=>"yes"}, "commit"=>"Enter"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "favourites" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["favourites", "PDC,Omelette,30\nPDC,Chicken,120\n"], ["updated_at", "2016-04-04 11:41:38.592146"], ["id", 4]]
+  [1m[35m (11.2ms)[0m  commit transaction
+Redirected to https://project2-a17100010.c9users.io/mainpage
+Completed 302 Found in 72ms (ActiveRecord: 12.2ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 11:41:38 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.4ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (3.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 352ms (Views: 347.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 12:00:25 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (8.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 457ms (Views: 454.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/mainpage" for 221.120.220.11 at 2016-04-04 12:00:47 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ktlIk9Ecgh0X/q/LH94Ig+Q3ZWdjbM6p+oDKi0bf0yHG85+r2Pu8TV+MUfxBPxzg0NLdg6igY4pL02dqP3RnYA==", "foods"=>{"Khokha,Cheese roll,120"=>"yes"}, "commit"=>"Enter"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "favourites" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["favourites", "Khokha,Cheese roll,120\n"], ["updated_at", "2016-04-04 12:00:47.174799"], ["id", 4]]
+  [1m[36m (14.9ms)[0m  [1mcommit transaction[0m
+Redirected to https://project2-a17100010.c9users.io/mainpage
+Completed 302 Found in 75ms (ActiveRecord: 15.6ms)
+
+
+Started GET "/mainpage" for 221.120.220.11 at 2016-04-04 12:00:47 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (2.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 266ms (Views: 263.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 12:03:26 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (6.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 246ms (Views: 243.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 12:03:50 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (6.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 418ms (Views: 415.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 12:05:26 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.5ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (4.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 276ms (Views: 273.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-04 12:05:58 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.5ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (4.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 296ms (Views: 292.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 12:07:15 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (4.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 286ms (Views: 266.8ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/mainpage" for 110.93.234.9 at 2016-04-04 12:07:31 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eohQKuCGVI0riKWv2LwH3/IT0FXkJi4wTrfj1e1Bw7ouoocS6WFq3WP6W5iGXRO8xvZosS/qgxP/5E40lOp3+w==", "foods"=>{"Khokha,Cheese roll,120"=>"yes", "PDC,Bread,10"=>"yes", "PDC,Chicken,120"=>"yes", "Chop Chop,Tamarind,240"=>"yes", "Superstore,Pizza,60"=>"yes"}, "commit"=>"Enter"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'tooba.a17@gmail.com' AND "users"."id" != 4) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "favourites" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["favourites", "Khokha,Cheese roll,120\nPDC,Bread,10\nPDC,Chicken,120\nChop Chop,Tamarind,240\nSuperstore,Pizza,60\n"], ["updated_at", "2016-04-04 12:07:31.663122"], ["id", 4]]
+  [1m[35m (182.4ms)[0m  commit transaction
+Redirected to https://project2-a17100010.c9users.io/mainpage
+Completed 302 Found in 194ms (ActiveRecord: 183.7ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 12:07:32 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.4ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (5.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 367ms (Views: 364.1ms | ActiveRecord: 0.7ms)

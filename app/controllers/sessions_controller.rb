@@ -34,7 +34,8 @@ class SessionsController < ApplicationController
             @favourites = Array.new
             favs = @user.favourites.split("\n")
             favs.each do |fav|
-                @favourites.append(fav)
+                f = fav.split(",")
+                @favourites.append("#{f[0]}_#{f[1]}")
             end
 
         end

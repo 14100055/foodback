@@ -14,22 +14,22 @@
  *= require_self
  *= require jquery-ui
  */
-tbody:hover td {
-  color: transparent;
-  text-shadow: 0 0 5px #aaa;
-}
-tbody:hover a {
-  color: transparent;
-  text-shadow: 0 0 5px #aaa;
-}
+/*tbody:hover td {*/
+/*  color: transparent;*/
+/*  text-shadow: 0 0 5px #aaa;*/
+/*}*/
+/*tbody:hover a {*/
+/*  color: transparent;*/
+/*  text-shadow: 0 0 5px #aaa;*/
+/*}*/
 
-tbody:hover tr:hover td {
-  color: white;
-  text-shadow: 0 1px 0 #fff;
-  background: #004F5E;
-  font-weight: bold;
-  font-size: 16px;
-}
+/*tbody:hover tr:hover td {*/
+/*  color: white;*/
+/*  text-shadow: 0 1px 0 #fff;*/
+/*  background: #004F5E;*/
+/*  font-weight: bold;*/
+/*  font-size: 16px;*/
+/*}*/
 tbody:hover tr:hover a {
   color: #444;
   text-shadow: 0 1px 0 #fff;

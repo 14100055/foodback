@@ -1,5 +1,5 @@
 html, body {
-  margin: 0px;
+  margin: 0;
   background: white;
   color: #003D5E;
   font-family: Tahoma, Verdana, sans-serif;
@@ -75,11 +75,6 @@ input[type="submit"]:hover {
   
 }
 
-.header h1 {
-  padding: 10px;
-  font-size: 30px;
-}
-
 .header .second {
   width: 50%;
   height: 100%;
@@ -108,8 +103,6 @@ input[type="submit"]:hover {
   border-radius: 40px;
   font-weight: bold;
   color: white;
-  /*font-size: 15px;*/
-  /*float: right;*/
 }
 
 .bigButton {
@@ -129,8 +122,6 @@ input[type="submit"]:hover {
 
 .header ul li:hover {
   background: #008FAA;
-  /*font-size: 15px;*/
-  /*float: right;*/
 }
 
 .formContainer {
@@ -168,7 +159,6 @@ hr {
   text-align: left;
   margin-top: 15px;
   width: 60%;
-  /*background: #004F5E;*/
   margin-left: 0;
   border-top: 2px solid #004F5E;
 }
@@ -176,9 +166,8 @@ hr {
   margin-top: 15px;
   margin-bottom: 30px;
 }
+
 /* table styles */
-
-
 table {
   margin: 10px;
   margin-bottom: 30px;
@@ -191,7 +180,6 @@ table th, table td {
 }
 
 table th {
-  /*border: 2px solid white;*/
   font-weight: bold;
   background-color: #69D2E7;
 }

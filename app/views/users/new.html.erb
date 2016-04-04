@@ -1,5 +1,5 @@
 <div id="bodyCont">
-<h3>Sign up</h3>
+<h1 class="welcomeMsg">Sign up</h1>
 <div class="formContainer signup">
     <%= form_for(@user) do |f| %>
         <%= f.text_field :first_name, :placeholder => "First name" %>
@@ -9,4 +9,4 @@
         <%= f.submit "Create an account", class: "btn-submit" %>
     <% end %>
 </div>
-<//div>
+</div>

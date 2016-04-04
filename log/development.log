@@ -21940,3 +21940,1289 @@ Processing by SessionsController#mainpage as HTML
   Rendered sessions/mainpage.html.erb within layouts/application (1.4ms)
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
 Completed 200 OK in 449ms (Views: 447.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 01:44:29 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered sessions/mainpage.html.erb within layouts/application (2.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 364ms (Views: 361.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery-ui/ui-icons_454545_256x240-07460e843c3e59aaadbb34231e699e856a2980753c7a47b66447da5d9f93fb7f.png" for 221.120.220.12 at 2016-04-04 01:44:36 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 03:44:04 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (9.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered sessions/mainpage.html.erb within layouts/application (6.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 535ms (Views: 519.3ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/assets/application.self-575d6ae14d037f241352fb13a4d56dabb71b9b4bae1ce2150989c5d17d44168b.js?body=1" for 110.93.234.9 at 2016-04-04 03:44:07 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 03:49:07 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mFood Load (0.8ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (19.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 368ms (Views: 338.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 03:49:54 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mFood Load (0.5ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (5.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 580ms (Views: 577.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-62bbd317a7cfe8f60b045fad11b75b9460ac9ce130c8fbecc83ed4c9b49bb4b3.js?body=1" for 110.93.234.9 at 2016-04-04 03:49:56 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/mainpage" for 221.120.220.12 at 2016-04-04 03:51:33 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mFood Load (0.5ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (70.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 591ms (Views: 587.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-4112fa39453a9b83e77edc080f09a9e73e0104076696449917a24a5fb3dc42f8.js?body=1" for 221.120.220.12 at 2016-04-04 03:51:36 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-04 03:52:32 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mFood Load (0.5ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (7.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 618ms (Views: 488.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-e0edaad35c4e653f1f4685380de65c7eeedf0911c66ed5d4564740f4d9befe10.js?body=1" for 111.68.103.163 at 2016-04-04 03:52:34 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 03:53:15 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mFood Load (0.6ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (134.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 588ms (Views: 584.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.self-a4e1240b5ef49ab71e41088e953ed52477e5329187345e4c798f01732aa7d96d.js?body=1" for 110.93.234.9 at 2016-04-04 03:53:18 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 03:53:57 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mFood Load (0.7ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (16.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 477ms (Views: 472.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 03:54:22 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mFood Load (0.4ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (5.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 454ms (Views: 451.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-fddbf3927ac2595c7991be90976d11b7d9d450789d405742137f23642be1726a.js?body=1" for 110.93.234.9 at 2016-04-04 03:54:25 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 03:55:02 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mFood Load (0.7ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (7.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 476ms (Views: 473.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.self-bdd75738703c9d75d5223a628b4abaa79a2c57187c1279d24236eea09308fb69.js?body=1" for 110.93.234.9 at 2016-04-04 03:55:05 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 03:55:21 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mFood Load (0.6ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (4.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 566ms (Views: 563.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-8af4b8d2476cb6c7286a22507f8355a5e4e52264e225091ade0522c660f2dbc0.js?body=1" for 110.93.234.9 at 2016-04-04 03:55:24 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/mainpage" for 221.120.220.12 at 2016-04-04 03:55:35 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mFood Load (0.4ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (8.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 491ms (Views: 487.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-4739dce97c2772f9d66ef7ab4f9820bf87dae9ea2c6824aec73402ca53e74fd8.js?body=1" for 221.120.220.12 at 2016-04-04 03:55:37 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 03:55:54 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mFood Load (1.0ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (12.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 550ms (Views: 546.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.self-34665ed753a33ee2cb1cb2bde63d58c95e4db9530c9ddc6a692473bd6637b07f.js?body=1" for 110.93.234.9 at 2016-04-04 03:55:57 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 03:56:10 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mFood Load (0.4ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (4.8ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 581ms (Views: 578.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-83013928ce1eb5711c0372ed38d40f9f5e9d63ea2dcefe049b7a936c864c568e.js?body=1" for 110.93.234.9 at 2016-04-04 03:56:13 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 03:56:47 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mFood Load (0.6ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (14.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 339ms (Views: 335.9ms | ActiveRecord: 1.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (13.3ms)[0m  DELETE FROM "foods"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "Khokha"], ["name", "Cheese roll"], ["price", 120], ["start_at", "2000-01-01 09:00:00.000000"], ["end_at", "2000-01-01 05:00:00.000000"], ["created_at", "2016-04-04 04:08:37.252401"], ["updated_at", "2016-04-04 04:08:37.252401"]]
+  [1m[36m (11.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "Khokha"], ["name", "Mayo roll"], ["price", 120], ["start_at", "2000-01-01 09:00:00.000000"], ["end_at", "2000-01-01 05:00:00.000000"], ["created_at", "2016-04-04 04:08:37.272781"], ["updated_at", "2016-04-04 04:08:37.272781"]]
+  [1m[35m (15.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "Khokha"], ["name", "Chicken roll"], ["price", 100], ["start_at", "2000-01-01 09:00:00.000000"], ["end_at", "2000-01-01 05:00:00.000000"], ["created_at", "2016-04-04 04:08:37.291576"], ["updated_at", "2016-04-04 04:08:37.291576"]]
+  [1m[36m (11.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "PDC"], ["name", "Omelette"], ["price", 30], ["start_at", "2000-01-01 07:00:00.000000"], ["end_at", "2000-01-01 10:30:00.000000"], ["created_at", "2016-04-04 04:08:37.306771"], ["updated_at", "2016-04-04 04:08:37.306771"]]
+  [1m[35m (12.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "PDC"], ["name", "Bread"], ["price", 10], ["start_at", "2000-01-01 07:00:00.000000"], ["end_at", "2000-01-01 10:30:00.000000"], ["created_at", "2016-04-04 04:08:37.321708"], ["updated_at", "2016-04-04 04:08:37.321708"]]
+  [1m[36m (9.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "PDC"], ["name", "Rice"], ["price", 50], ["start_at", "2000-01-01 13:00:00.000000"], ["end_at", "2000-01-01 15:30:00.000000"], ["created_at", "2016-04-04 04:08:37.334804"], ["updated_at", "2016-04-04 04:08:37.334804"]]
+  [1m[35m (7.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "PDC"], ["name", "Roti"], ["price", 10], ["start_at", "2000-01-01 13:00:00.000000"], ["end_at", "2000-01-01 15:30:00.000000"], ["created_at", "2016-04-04 04:08:37.346831"], ["updated_at", "2016-04-04 04:08:37.346831"]]
+  [1m[36m (10.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "PDC"], ["name", "Chicken"], ["price", 120], ["start_at", "2000-01-01 13:00:00.000000"], ["end_at", "2000-01-01 15:30:00.000000"], ["created_at", "2016-04-04 04:08:37.361851"], ["updated_at", "2016-04-04 04:08:37.361851"]]
+  [1m[35m (12.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "PDC"], ["name", "Daal"], ["price", 35], ["start_at", "2000-01-01 13:00:00.000000"], ["end_at", "2000-01-01 15:30:00.000000"], ["created_at", "2016-04-04 04:08:37.378285"], ["updated_at", "2016-04-04 04:08:37.378285"]]
+  [1m[36m (12.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "PDC"], ["name", "Rice"], ["price", 50], ["start_at", "2000-01-01 19:00:00.000000"], ["end_at", "2000-01-01 22:30:00.000000"], ["created_at", "2016-04-04 04:08:37.394512"], ["updated_at", "2016-04-04 04:08:37.394512"]]
+  [1m[35m (12.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "PDC"], ["name", "Roti"], ["price", 10], ["start_at", "2000-01-01 19:00:00.000000"], ["end_at", "2000-01-01 22:30:00.000000"], ["created_at", "2016-04-04 04:08:37.410479"], ["updated_at", "2016-04-04 04:08:37.410479"]]
+  [1m[36m (9.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "PDC"], ["name", "Chicken"], ["price", 120], ["start_at", "2000-01-01 19:00:00.000000"], ["end_at", "2000-01-01 22:30:00.000000"], ["created_at", "2016-04-04 04:08:37.423060"], ["updated_at", "2016-04-04 04:08:37.423060"]]
+  [1m[35m (11.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "PDC"], ["name", "Daal"], ["price", 35], ["start_at", "2000-01-01 19:00:00.000000"], ["end_at", "2000-01-01 22:30:00.000000"], ["created_at", "2016-04-04 04:08:37.437101"], ["updated_at", "2016-04-04 04:08:37.437101"]]
+  [1m[36m (9.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "Chop Chop"], ["name", "Chowmein"], ["price", 170], ["start_at", "2000-01-01 13:00:00.000000"], ["end_at", "2000-01-01 23:30:00.000000"], ["created_at", "2016-04-04 04:08:37.449378"], ["updated_at", "2016-04-04 04:08:37.449378"]]
+  [1m[35m (9.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "Chop Chop"], ["name", "Tamarind"], ["price", 240], ["start_at", "2000-01-01 13:00:00.000000"], ["end_at", "2000-01-01 23:30:00.000000"], ["created_at", "2016-04-04 04:08:37.462425"], ["updated_at", "2016-04-04 04:08:37.462425"]]
+  [1m[36m (10.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "Chop Chop"], ["name", "Mongolian"], ["price", 240], ["start_at", "2000-01-01 13:00:00.000000"], ["end_at", "2000-01-01 23:30:00.000000"], ["created_at", "2016-04-04 04:08:37.476723"], ["updated_at", "2016-04-04 04:08:37.476723"]]
+  [1m[35m (9.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "Chop Chop"], ["name", "Fried fish"], ["price", 160], ["start_at", "2000-01-01 13:00:00.000000"], ["end_at", "2000-01-01 23:30:00.000000"], ["created_at", "2016-04-04 04:08:37.488849"], ["updated_at", "2016-04-04 04:08:37.488849"]]
+  [1m[36m (9.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "Superstore"], ["name", "Roll"], ["price", 130], ["start_at", "2000-01-01 10:00:00.000000"], ["end_at", "2000-01-01 01:00:00.000000"], ["created_at", "2016-04-04 04:08:37.501140"], ["updated_at", "2016-04-04 04:08:37.501140"]]
+  [1m[35m (9.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "Superstore"], ["name", "Shawarma"], ["price", 120], ["start_at", "2000-01-01 10:00:00.000000"], ["end_at", "2000-01-01 01:00:00.000000"], ["created_at", "2016-04-04 04:08:37.514636"], ["updated_at", "2016-04-04 04:08:37.514636"]]
+  [1m[36m (9.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "Superstore"], ["name", "Pizza"], ["price", 60], ["start_at", "2000-01-01 10:00:00.000000"], ["end_at", "2000-01-01 01:00:00.000000"], ["created_at", "2016-04-04 04:08:37.526680"], ["updated_at", "2016-04-04 04:08:37.526680"]]
+  [1m[35m (9.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["restaurant", "Superstore"], ["name", "Burger"], ["price", 200], ["start_at", "2000-01-01 10:00:00.000000"], ["end_at", "2000-01-01 01:00:00.000000"], ["created_at", "2016-04-04 04:08:37.538450"], ["updated_at", "2016-04-04 04:08:37.538450"]]
+  [1m[36m (9.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "foods" ("restaurant", "name", "price", "start_at", "end_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["restaurant", "Superstore"], ["name", "Sandwich"], ["price", 180], ["start_at", "2000-01-01 10:00:00.000000"], ["end_at", "2000-01-01 01:00:00.000000"], ["created_at", "2016-04-04 04:08:37.550797"], ["updated_at", "2016-04-04 04:08:37.550797"]]
+  [1m[35m (9.7ms)[0m  commit transaction
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 04:08:57 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mFood Load (0.7ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (7.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 417ms (Views: 413.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-04 04:10:05 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mFood Load (0.5ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (6.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 618ms (Views: 456.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/mainpage" for 221.120.220.12 at 2016-04-04 04:10:22 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"me9AfcG/Gf5R7PSQdwdfgZ4toRP3uoUYVc9m8adH8+xB3O3ccMJwQ/gVWoLLRebY4f9J1gvpTewOyr2AEWBIhg==", "session"=>{"budget"=>"300"}, "commit"=>"Enter"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mFood Load (0.5ms)[0m  SELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 07:00:00.000000' and '2000-01-01 11:00:00.000000') OR (end_at between '2000-01-01 07:00:00.000000' and '2000-01-01 11:00:00.000000') OR (start_at < '2000-01-01 07:00:00.000000' and end_at > '2000-01-01 11:00:00.000000') OR (start_at < '2000-01-01 07:00:00.000000' and end_at < start_at)) AND (price <= 100))
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mFood Load (0.4ms)[0m  SELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (end_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at > '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at < start_at)) AND (price <= 100))
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "lunch" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["lunch", "Khokha,Chicken roll,100\nSuperstore,Pizza,60\nPDC,Rice+Daal,85\nPDC,Roti+Daal,45\n"], ["updated_at", "2016-04-04 04:10:22.218810"], ["id", 1]]
+  [1m[35m (12.9ms)[0m  commit transaction
+  [1m[36mFood Load (0.5ms)[0m  [1mSELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (end_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at > '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at < start_at)) AND (price <= 100))[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "dinner" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["dinner", "Khokha,Chicken roll,100\nSuperstore,Pizza,60\nPDC,Rice+Daal,85\nPDC,Roti+Daal,45\n"], ["updated_at", "2016-04-04 04:10:22.242122"], ["id", 1]]
+  [1m[36m (10.5ms)[0m  [1mcommit transaction[0m
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 63ms (ActiveRecord: 27.5ms)
+
+
+Started GET "/mainpage" for 221.120.220.12 at 2016-04-04 04:10:23 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mFood Load (0.6ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (73.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 520ms (Views: 517.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-04 04:13:39 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mFood Load (0.3ms)[0m  SELECT DISTINCT restaurant AND name FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 2.1ms)
+
+ActionView::Template::Error (missing attribute: restaurant):
+    40:         </tr>
+    41:         <% @foods.each do |food| %>
+    42:           <tr>
+    43:             <td><%= food[:restaurant] %></td>
+    44:             <td><%= food[:name] %></td>
+    45:             <td><%= food[:price] %></td>
+    46:             <td><%= check_box_tag "#{food[:name]}", "yes" %></td>
+  app/views/sessions/mainpage.html.erb:43:in `block (2 levels) in _app_views_sessions_mainpage_html_erb___23906795849156137_70118182222600'
+  app/views/sessions/mainpage.html.erb:41:in `block in _app_views_sessions_mainpage_html_erb___23906795849156137_70118182222600'
+  app/views/sessions/mainpage.html.erb:32:in `_app_views_sessions_mainpage_html_erb___23906795849156137_70118182222600'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (25.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (107.2ms)
+
+
+Started GET "/mainpage" for 221.120.220.12 at 2016-04-04 04:13:58 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mFood Load (0.3ms)[0m  SELECT DISTINCT name FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 2.5ms)
+
+ActionView::Template::Error (missing attribute: restaurant):
+    40:         </tr>
+    41:         <% @foods.each do |food| %>
+    42:           <tr>
+    43:             <td><%= food[:restaurant] %></td>
+    44:             <td><%= food[:name] %></td>
+    45:             <td><%= food[:price] %></td>
+    46:             <td><%= check_box_tag "#{food[:name]}", "yes" %></td>
+  app/views/sessions/mainpage.html.erb:43:in `block (2 levels) in _app_views_sessions_mainpage_html_erb___23906795849156137_70118182222600'
+  app/views/sessions/mainpage.html.erb:41:in `block in _app_views_sessions_mainpage_html_erb___23906795849156137_70118182222600'
+  app/views/sessions/mainpage.html.erb:32:in `_app_views_sessions_mainpage_html_erb___23906795849156137_70118182222600'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (109.2ms)
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-04 04:14:48 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT DISTINCT "foods"."name" FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 2.1ms)
+
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+    40:         </tr>
+    41:         <% @foods.each do |food| %>
+    42:           <tr>
+    43:             <td><%= food[:restaurant] %></td>
+    44:             <td><%= food[:name] %></td>
+    45:             <td><%= food[:price] %></td>
+    46:             <td><%= check_box_tag "#{food[:name]}", "yes" %></td>
+  app/views/sessions/mainpage.html.erb:43:in `[]'
+  app/views/sessions/mainpage.html.erb:43:in `block (2 levels) in _app_views_sessions_mainpage_html_erb___23906795849156137_70118182222600'
+  app/views/sessions/mainpage.html.erb:41:in `each'
+  app/views/sessions/mainpage.html.erb:41:in `block in _app_views_sessions_mainpage_html_erb___23906795849156137_70118182222600'
+  app/views/sessions/mainpage.html.erb:32:in `_app_views_sessions_mainpage_html_erb___23906795849156137_70118182222600'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (29.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (102.1ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 04:15:03 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT DISTINCT "foods"."restaurant" FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 1.8ms)
+
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+    40:         </tr>
+    41:         <% @foods.each do |food| %>
+    42:           <tr>
+    43:             <td><%= food[:restaurant] %></td>
+    44:             <td><%= food[:name] %></td>
+    45:             <td><%= food[:price] %></td>
+    46:             <td><%= check_box_tag "#{food[:name]}", "yes" %></td>
+  app/views/sessions/mainpage.html.erb:43:in `[]'
+  app/views/sessions/mainpage.html.erb:43:in `block (2 levels) in _app_views_sessions_mainpage_html_erb___23906795849156137_70118182222600'
+  app/views/sessions/mainpage.html.erb:41:in `each'
+  app/views/sessions/mainpage.html.erb:41:in `block in _app_views_sessions_mainpage_html_erb___23906795849156137_70118182222600'
+  app/views/sessions/mainpage.html.erb:32:in `_app_views_sessions_mainpage_html_erb___23906795849156137_70118182222600'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.5ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 04:16:53 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mFood Load (0.2ms)[0m  SELECT "foods".* FROM "foods" WHERE "foods"."id" IN (NULL, NULL)
+Completed 404 Not Found in 46ms (ActiveRecord: 2.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Foods with 'id': (all, {:select=>"DISTINCT restaurant, name"}) (found 0 results, but was looking for 2)):
+  app/controllers/sessions_controller.rb:32:in `mainpage'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (101.2ms)
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-04 04:17:09 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mFood Load (0.2ms)[0m  SELECT "foods".* FROM "foods" WHERE "foods"."id" IN (NULL, NULL)
+Completed 404 Not Found in 110ms (ActiveRecord: 2.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find all Foods with 'id': (all, {:select=>"DISTINCT name"}) (found 0 results, but was looking for 2)):
+  app/controllers/sessions_controller.rb:32:in `mainpage'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (123.5ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 04:20:35 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT "foods".* FROM "foods"
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 2.3ms)
+
+ArgumentError (wrong number of arguments (3 for 0)):
+  app/controllers/sessions_controller.rb:32:in `uniq'
+  app/controllers/sessions_controller.rb:32:in `mainpage'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (107.3ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 04:21:31 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 5.0ms)
+
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+    40:         </tr>
+    41:         <% @foods.each do |food| %>
+    42:           <tr>
+    43:             <td><%= food[:restaurant] %></td>
+    44:             <td><%= food[:name] %></td>
+    45:             <td><%= food[:price] %></td>
+    46:             <td><%= check_box_tag "#{food[:name]}", "yes" %></td>
+  app/views/sessions/mainpage.html.erb:43:in `[]'
+  app/views/sessions/mainpage.html.erb:43:in `block (2 levels) in _app_views_sessions_mainpage_html_erb___23906795849156137_70118182222600'
+  app/views/sessions/mainpage.html.erb:41:in `each'
+  app/views/sessions/mainpage.html.erb:41:in `block in _app_views_sessions_mainpage_html_erb___23906795849156137_70118182222600'
+  app/views/sessions/mainpage.html.erb:32:in `_app_views_sessions_mainpage_html_erb___23906795849156137_70118182222600'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (106.3ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 04:21:46 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 2.6ms)
+
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+    40:         </tr>
+    41:         <% @foods.each do |food| %>
+    42:           <tr>
+    43:             <td><%= food[:restaurant] %></td>
+    44:             <td><%= food[:name] %></td>
+    45:             <td><%= food[:price] %></td>
+    46:             <td><%= check_box_tag "#{food[:name]}", "yes" %></td>
+  app/views/sessions/mainpage.html.erb:43:in `[]'
+  app/views/sessions/mainpage.html.erb:43:in `block (2 levels) in _app_views_sessions_mainpage_html_erb___23906795849156137_70118182222600'
+  app/views/sessions/mainpage.html.erb:41:in `each'
+  app/views/sessions/mainpage.html.erb:41:in `block in _app_views_sessions_mainpage_html_erb___23906795849156137_70118182222600'
+  app/views/sessions/mainpage.html.erb:32:in `_app_views_sessions_mainpage_html_erb___23906795849156137_70118182222600'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (20.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.1ms)
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-04 04:22:35 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (4.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 427ms (Views: 351.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-04 04:27:07 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.8ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (15.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 556ms (Views: 548.7ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/mainpage" for 111.68.103.163 at 2016-04-04 04:27:24 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nvf6TY3pvI5xAoFoUDsZfHVOtLSOxAqmhYNKviRF7NFGxFfsPJTVM9j7L3rseaAlCpxccXKXwlLehpHPkmJXuw==", "120"=>"yes", "commit"=>"Enter"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/sessions_controller.rb:40:in `compute'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (127.8ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 04:46:56 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (undefined method `include?' for nil:NilClass):
+    43:             <td><%= food[0] %></td>
+    44:             <td><%= food[1] %></td>
+    45:             <td><%= food[2] %></td>
+    46:             <td><%= check_box_tag "foods[#{food[0]}_#{food[1]}]", @favourites.include?("#{food[0]}_#{food[1]}") ? true : false %></td>
+    47:           </tr>
+    48:         <% end %>
+    49:       </table>
+  app/views/sessions/mainpage.html.erb:46:in `block (2 levels) in _app_views_sessions_mainpage_html_erb___23906795849156137_42641020'
+  app/views/sessions/mainpage.html.erb:41:in `each'
+  app/views/sessions/mainpage.html.erb:41:in `block in _app_views_sessions_mainpage_html_erb___23906795849156137_42641020'
+  app/views/sessions/mainpage.html.erb:32:in `_app_views_sessions_mainpage_html_erb___23906795849156137_42641020'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (102.3ms)
+
+
+Started GET "/mainpage" for 221.120.220.12 at 2016-04-04 04:50:33 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 2.8ms)
+
+NoMethodError (undefined method `favourites' for #<Class:0x007f8b517b2648>):
+  app/models/user.rb:14:in `favs'
+  app/controllers/sessions_controller.rb:34:in `mainpage'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (18.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (96.8ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 04:51:08 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 2.1ms)
+
+ActionView::Template::Error (undefined method `include?' for nil:NilClass):
+    43:             <td><%= food[0] %></td>
+    44:             <td><%= food[1] %></td>
+    45:             <td><%= food[2] %></td>
+    46:             <td><%= check_box_tag "foods[#{food[0]}_#{food[1]}]", @favourites.include?("#{food[0]}_#{food[1]}") ? true : false %></td>
+    47:           </tr>
+    48:         <% end %>
+    49:       </table>
+  app/views/sessions/mainpage.html.erb:46:in `block (2 levels) in _app_views_sessions_mainpage_html_erb___23906795849156137_42641020'
+  app/views/sessions/mainpage.html.erb:41:in `each'
+  app/views/sessions/mainpage.html.erb:41:in `block in _app_views_sessions_mainpage_html_erb___23906795849156137_42641020'
+  app/views/sessions/mainpage.html.erb:32:in `_app_views_sessions_mainpage_html_erb___23906795849156137_42641020'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (29.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (104.8ms)
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-04 04:56:40 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/home/ubuntu/workspace/app/controllers/sessions_controller.rb:38: syntax error, unexpected '}', expecting =>
+/home/ubuntu/workspace/app/controllers/sessions_controller.rb:153: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/sessions_controller.rb:38: syntax error, unexpected '}', expecting =>
+  app/controllers/sessions_controller.rb:153: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (120.3ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 04:58:19 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.7ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 2.6ms)
+
+NoMethodError (undefined method `favourites' for #<User:0x007f8b51337168>):
+  app/controllers/sessions_controller.rb:35:in `mainpage'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (110.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeColumnName (20160404050033)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (10.4ms)[0m  [1mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "budget" integer DEFAULT 0, "favourites" text DEFAULT 'You have no meal plan in place!', "breakfast" text DEFAULT 'You have no breakfast plan in place!', "lunch" text DEFAULT 'You have no lunch plan in place!', "dinner" text DEFAULT 'You have no dinner plan in place!', "meals" integer DEFAULT 0, "good_days" integer DEFAULT 0, "bad_days" integer DEFAULT 0) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "users"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "ausers" ("id","first_name","last_name","email","password_digest","created_at","updated_at","budget","favourites","breakfast","lunch","dinner","meals","good_days","bad_days") VALUES (1, 'Saad', 'Ismail', 'saad.nismail@gmail.com', '$2a$10$6Nd2JtQckMgC5dRdZyBwdOWamI145ldTLFZ8C7TERNKDrK79msvoK', '2016-03-02 08:39:01.800622', '2016-04-04 04:10:22.242122', 300, 'PDC - Bread+Omelette (Rs. 40)
+Khokha - Cheese roll (Rs. 120)
+Khokha - Mayo roll (Rs. 120)
+Khokha - Chicken roll (Rs. 100)
+Superstore - Roll (Rs. 130)
+Superstore - Shawarma (Rs. 120)
+Superstore - Pizza (Rs. 60)
+Superstore - Burger (Rs. 200)
+Superstore - Sandwich (Rs. 180)
+', 'Khokha,Chicken roll,100
+Superstore,Pizza,60
+PDC,Bread+Omelette,40
+', 'Khokha,Chicken roll,100
+Superstore,Pizza,60
+PDC,Rice+Daal,85
+PDC,Roti+Daal,45
+', 'Khokha,Chicken roll,100
+Superstore,Pizza,60
+PDC,Rice+Daal,85
+PDC,Roti+Daal,45
+', 3, 0, 0)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "ausers" ("id","first_name","last_name","email","password_digest","created_at","updated_at","budget","favourites","breakfast","lunch","dinner","meals","good_days","bad_days") VALUES (2, 'asd', 'fasd', '', '$2a$10$GvzXPYm2WJMtuOWC/VejHeFcHpTHQI3xQbm3LVmnwU8q1vOYQrGCi', '2016-03-06 11:46:02.377058', '2016-03-06 11:46:02.377058', 0, 'You have no meal plan in place!', 'You have no breakfast plan in place!', 'You have no lunch plan in place!', 'You have no dinner plan in place!', 0, 0, 0)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "ausers" ("id","first_name","last_name","email","password_digest","created_at","updated_at","budget","favourites","breakfast","lunch","dinner","meals","good_days","bad_days") VALUES (3, 'asd', 'asd', 'saad@gmail.com', '$2a$10$LrwgNQeGmTX43JjvL52HgeYRmiXjRie1F/rWdnMwWDHqYKYYQJDzq', '2016-03-06 15:33:39.150225', '2016-03-06 15:33:39.150225', 0, 'You have no meal plan in place!', 'You have no breakfast plan in place!', 'You have no lunch plan in place!', 'You have no dinner plan in place!', 0, 0, 0)[0m
+  [1m[35m (1.1ms)[0m  DROP TABLE "users"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "budget" integer DEFAULT 0, "favourites" text DEFAULT 'You have no meal plan in place!', "breakfast" text DEFAULT 'You have no breakfast plan in place!', "lunch" text DEFAULT 'You have no lunch plan in place!', "dinner" text DEFAULT 'You have no dinner plan in place!', "meals" integer DEFAULT 0, "good_days" integer DEFAULT 0, "bad_days" integer DEFAULT 0) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "users" ("id","first_name","last_name","email","password_digest","created_at","updated_at","budget","favourites","breakfast","lunch","dinner","meals","good_days","bad_days") VALUES (1, 'Saad', 'Ismail', 'saad.nismail@gmail.com', '$2a$10$6Nd2JtQckMgC5dRdZyBwdOWamI145ldTLFZ8C7TERNKDrK79msvoK', '2016-03-02 08:39:01.800622', '2016-04-04 04:10:22.242122', 300, 'PDC - Bread+Omelette (Rs. 40)
+Khokha - Cheese roll (Rs. 120)
+Khokha - Mayo roll (Rs. 120)
+Khokha - Chicken roll (Rs. 100)
+Superstore - Roll (Rs. 130)
+Superstore - Shawarma (Rs. 120)
+Superstore - Pizza (Rs. 60)
+Superstore - Burger (Rs. 200)
+Superstore - Sandwich (Rs. 180)
+', 'Khokha,Chicken roll,100
+Superstore,Pizza,60
+PDC,Bread+Omelette,40
+', 'Khokha,Chicken roll,100
+Superstore,Pizza,60
+PDC,Rice+Daal,85
+PDC,Roti+Daal,45
+', 'Khokha,Chicken roll,100
+Superstore,Pizza,60
+PDC,Rice+Daal,85
+PDC,Roti+Daal,45
+', 3, 0, 0)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "users" ("id","first_name","last_name","email","password_digest","created_at","updated_at","budget","favourites","breakfast","lunch","dinner","meals","good_days","bad_days") VALUES (2, 'asd', 'fasd', '', '$2a$10$GvzXPYm2WJMtuOWC/VejHeFcHpTHQI3xQbm3LVmnwU8q1vOYQrGCi', '2016-03-06 11:46:02.377058', '2016-03-06 11:46:02.377058', 0, 'You have no meal plan in place!', 'You have no breakfast plan in place!', 'You have no lunch plan in place!', 'You have no dinner plan in place!', 0, 0, 0)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "users" ("id","first_name","last_name","email","password_digest","created_at","updated_at","budget","favourites","breakfast","lunch","dinner","meals","good_days","bad_days") VALUES (3, 'asd', 'asd', 'saad@gmail.com', '$2a$10$LrwgNQeGmTX43JjvL52HgeYRmiXjRie1F/rWdnMwWDHqYKYYQJDzq', '2016-03-06 15:33:39.150225', '2016-03-06 15:33:39.150225', 0, 'You have no meal plan in place!', 'You have no breakfast plan in place!', 'You have no lunch plan in place!', 'You have no dinner plan in place!', 0, 0, 0)[0m
+  [1m[35m (1.2ms)[0m  DROP TABLE "ausers"
+  [1m[36m (0.2ms)[0m  [1mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "budget" integer DEFAULT 0, "favourites" text DEFAULT 'You have no meal plan in place!', "breakfast" text DEFAULT 'You have no breakfast plan in place!', "lunch" text DEFAULT 'You have no lunch plan in place!', "dinner" text DEFAULT 'You have no dinner plan in place!', "meals" integer DEFAULT 0, "good_days" integer DEFAULT 0, "bad_days" integer DEFAULT 0) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "users"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "ausers" ("id","first_name","last_name","email","password_digest","created_at","updated_at","budget","favourites","breakfast","lunch","dinner","meals","good_days","bad_days") VALUES (1, 'Saad', 'Ismail', 'saad.nismail@gmail.com', '$2a$10$6Nd2JtQckMgC5dRdZyBwdOWamI145ldTLFZ8C7TERNKDrK79msvoK', '2016-03-02 08:39:01.800622', '2016-04-04 04:10:22.242122', 300, 'PDC - Bread+Omelette (Rs. 40)
+Khokha - Cheese roll (Rs. 120)
+Khokha - Mayo roll (Rs. 120)
+Khokha - Chicken roll (Rs. 100)
+Superstore - Roll (Rs. 130)
+Superstore - Shawarma (Rs. 120)
+Superstore - Pizza (Rs. 60)
+Superstore - Burger (Rs. 200)
+Superstore - Sandwich (Rs. 180)
+', 'Khokha,Chicken roll,100
+Superstore,Pizza,60
+PDC,Bread+Omelette,40
+', 'Khokha,Chicken roll,100
+Superstore,Pizza,60
+PDC,Rice+Daal,85
+PDC,Roti+Daal,45
+', 'Khokha,Chicken roll,100
+Superstore,Pizza,60
+PDC,Rice+Daal,85
+PDC,Roti+Daal,45
+', 3, 0, 0)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "ausers" ("id","first_name","last_name","email","password_digest","created_at","updated_at","budget","favourites","breakfast","lunch","dinner","meals","good_days","bad_days") VALUES (2, 'asd', 'fasd', '', '$2a$10$GvzXPYm2WJMtuOWC/VejHeFcHpTHQI3xQbm3LVmnwU8q1vOYQrGCi', '2016-03-06 11:46:02.377058', '2016-03-06 11:46:02.377058', 0, 'You have no meal plan in place!', 'You have no breakfast plan in place!', 'You have no lunch plan in place!', 'You have no dinner plan in place!', 0, 0, 0)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "ausers" ("id","first_name","last_name","email","password_digest","created_at","updated_at","budget","favourites","breakfast","lunch","dinner","meals","good_days","bad_days") VALUES (3, 'asd', 'asd', 'saad@gmail.com', '$2a$10$LrwgNQeGmTX43JjvL52HgeYRmiXjRie1F/rWdnMwWDHqYKYYQJDzq', '2016-03-06 15:33:39.150225', '2016-03-06 15:33:39.150225', 0, 'You have no meal plan in place!', 'You have no breakfast plan in place!', 'You have no lunch plan in place!', 'You have no dinner plan in place!', 0, 0, 0)[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "users"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "budget" integer DEFAULT 0, "favourites" text DEFAULT '', "breakfast" text DEFAULT 'You have no breakfast plan in place!', "lunch" text DEFAULT 'You have no lunch plan in place!', "dinner" text DEFAULT 'You have no dinner plan in place!', "meals" integer DEFAULT 0, "good_days" integer DEFAULT 0, "bad_days" integer DEFAULT 0) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "users" ("id","first_name","last_name","email","password_digest","created_at","updated_at","budget","favourites","breakfast","lunch","dinner","meals","good_days","bad_days") VALUES (1, 'Saad', 'Ismail', 'saad.nismail@gmail.com', '$2a$10$6Nd2JtQckMgC5dRdZyBwdOWamI145ldTLFZ8C7TERNKDrK79msvoK', '2016-03-02 08:39:01.800622', '2016-04-04 04:10:22.242122', 300, 'PDC - Bread+Omelette (Rs. 40)
+Khokha - Cheese roll (Rs. 120)
+Khokha - Mayo roll (Rs. 120)
+Khokha - Chicken roll (Rs. 100)
+Superstore - Roll (Rs. 130)
+Superstore - Shawarma (Rs. 120)
+Superstore - Pizza (Rs. 60)
+Superstore - Burger (Rs. 200)
+Superstore - Sandwich (Rs. 180)
+', 'Khokha,Chicken roll,100
+Superstore,Pizza,60
+PDC,Bread+Omelette,40
+', 'Khokha,Chicken roll,100
+Superstore,Pizza,60
+PDC,Rice+Daal,85
+PDC,Roti+Daal,45
+', 'Khokha,Chicken roll,100
+Superstore,Pizza,60
+PDC,Rice+Daal,85
+PDC,Roti+Daal,45
+', 3, 0, 0)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "users" ("id","first_name","last_name","email","password_digest","created_at","updated_at","budget","favourites","breakfast","lunch","dinner","meals","good_days","bad_days") VALUES (2, 'asd', 'fasd', '', '$2a$10$GvzXPYm2WJMtuOWC/VejHeFcHpTHQI3xQbm3LVmnwU8q1vOYQrGCi', '2016-03-06 11:46:02.377058', '2016-03-06 11:46:02.377058', 0, 'You have no meal plan in place!', 'You have no breakfast plan in place!', 'You have no lunch plan in place!', 'You have no dinner plan in place!', 0, 0, 0)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "users" ("id","first_name","last_name","email","password_digest","created_at","updated_at","budget","favourites","breakfast","lunch","dinner","meals","good_days","bad_days") VALUES (3, 'asd', 'asd', 'saad@gmail.com', '$2a$10$LrwgNQeGmTX43JjvL52HgeYRmiXjRie1F/rWdnMwWDHqYKYYQJDzq', '2016-03-06 15:33:39.150225', '2016-03-06 15:33:39.150225', 0, 'You have no meal plan in place!', 'You have no breakfast plan in place!', 'You have no lunch plan in place!', 'You have no dinner plan in place!', 0, 0, 0)[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "ausers"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160404050033"]]
+  [1m[35m (15.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/mainpage" for 221.120.220.12 at 2016-04-04 05:01:44 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 2.4ms)
+
+NoMethodError (undefined method `f' for #<SessionsController:0x007f8b52b35508>):
+  app/controllers/sessions_controller.rb:38:in `block in mainpage'
+  app/controllers/sessions_controller.rb:36:in `each'
+  app/controllers/sessions_controller.rb:36:in `mainpage'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (129.2ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 05:02:05 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (3.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 469ms (Views: 425.8ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/mainpage" for 221.120.220.12 at 2016-04-04 05:02:21 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BGDDL5Drj1QlZvIiZbwNTTLwhQRHwwNNu/x4bNnavSXcU26OIZbm6YyfXDDZ/rQUTSJtwbuQy7ng+aMdb/0GTw==", "foods"=>{"Khokha_Cheese roll"=>"false", "Khokha_Mayo roll"=>"false"}, "commit"=>"Enter"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/sessions_controller.rb:48:in `compute'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (25.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (93.4ms)
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-04 05:02:46 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (4.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 411ms (Views: 405.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/mainpage" for 111.68.103.163 at 2016-04-04 05:03:17 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8SYQ4hhNMWIg/XZ1scTOsvvLZPbHYtNYU3sfUvZ48WgpFb1DqTBY34kE2GcNhnfrhBmMMzsxG6wIfsQjQF9KAg==", "session"=>{"budget"=>"1200"}, "commit"=>"Enter"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (5.8ms)[0m  [1mUPDATE "users" SET "budget" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["budget", 1200], ["updated_at", "2016-04-04 05:03:17.763806"], ["id", 1]]
+  [1m[35m (12.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mFood Load (0.4ms)[0m  SELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 07:00:00.000000' and '2000-01-01 11:00:00.000000') OR (end_at between '2000-01-01 07:00:00.000000' and '2000-01-01 11:00:00.000000') OR (start_at < '2000-01-01 07:00:00.000000' and end_at > '2000-01-01 11:00:00.000000') OR (start_at < '2000-01-01 07:00:00.000000' and end_at < start_at)) AND (price <= 400))
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "breakfast" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["breakfast", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\nKhokha,Chicken roll,100\nSuperstore,Roll,130\nSuperstore,Shawarma,120\nSuperstore,Pizza,60\nSuperstore,Burger,200\nSuperstore,Sandwich,180\nPDC,Bread+Omelette,40\n"], ["updated_at", "2016-04-04 05:03:17.841276"], ["id", 1]]
+  [1m[35m (11.2ms)[0m  commit transaction
+  [1m[36mFood Load (0.5ms)[0m  [1mSELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (end_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at > '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at < start_at)) AND (price <= 400))[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "lunch" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["lunch", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\nKhokha,Chicken roll,100\nChop Chop,Chowmein,170\nChop Chop,Tamarind,240\nChop Chop,Mongolian,240\nChop Chop,Fried fish,160\nSuperstore,Roll,130\nSuperstore,Shawarma,120\nSuperstore,Pizza,60\nSuperstore,Burger,200\nSuperstore,Sandwich,180\nPDC,Rice+Chicken,170\nPDC,Rice+Daal,85\nPDC,Roti+Chicken,130\nPDC,Roti+Daal,45\n"], ["updated_at", "2016-04-04 05:03:17.858447"], ["id", 1]]
+  [1m[36m (12.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mFood Load (0.4ms)[0m  SELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (end_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at > '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at < start_at)) AND (price <= 400))
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "dinner" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["dinner", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\nKhokha,Chicken roll,100\nChop Chop,Chowmein,170\nChop Chop,Tamarind,240\nChop Chop,Mongolian,240\nChop Chop,Fried fish,160\nSuperstore,Roll,130\nSuperstore,Shawarma,120\nSuperstore,Pizza,60\nSuperstore,Burger,200\nSuperstore,Sandwich,180\nPDC,Rice+Chicken,170\nPDC,Rice+Daal,85\nPDC,Roti+Chicken,130\nPDC,Roti+Daal,45\n"], ["updated_at", "2016-04-04 05:03:17.876413"], ["id", 1]]
+  [1m[35m (11.7ms)[0m  commit transaction
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 136ms (ActiveRecord: 58.4ms)
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-04 05:03:19 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (3.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 336ms (Views: 332.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/mainpage" for 111.68.103.163 at 2016-04-04 05:03:27 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZfYCDvXkvtCnk3u6oCANB13BXQV4EoLBuqs1g/6AEUK9xa+vRJnXbQ5q1agcYrReIhO1wIRBSjXhru7ySKeqKA==", "session"=>{"amount"=>"800", "meal"=>"Breakfast"}, "commit"=>"Enter"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "budget" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["budget", 400], ["updated_at", "2016-04-04 05:03:27.307972"], ["id", 1]]
+  [1m[35m (18.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "meals" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["meals", 2], ["updated_at", "2016-04-04 05:03:27.330808"], ["id", 1]]
+  [1m[35m (12.5ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "breakfast" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["breakfast", "You have had breakfast,-,800"], ["updated_at", "2016-04-04 05:03:27.347527"], ["id", 1]]
+  [1m[35m (11.2ms)[0m  commit transaction
+  [1m[36mFood Load (0.5ms)[0m  [1mSELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (end_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at > '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at < start_at)) AND (price <= 200))[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "lunch" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["lunch", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\nKhokha,Chicken roll,100\nChop Chop,Chowmein,170\nChop Chop,Fried fish,160\nSuperstore,Roll,130\nSuperstore,Shawarma,120\nSuperstore,Pizza,60\nSuperstore,Burger,200\nSuperstore,Sandwich,180\nPDC,Rice+Chicken,170\nPDC,Rice+Daal,85\nPDC,Roti+Chicken,130\nPDC,Roti+Daal,45\n"], ["updated_at", "2016-04-04 05:03:27.363964"], ["id", 1]]
+  [1m[36m (10.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mFood Load (0.4ms)[0m  SELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (end_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at > '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at < start_at)) AND (price <= 200))
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "dinner" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["dinner", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\nKhokha,Chicken roll,100\nChop Chop,Chowmein,170\nChop Chop,Fried fish,160\nSuperstore,Roll,130\nSuperstore,Shawarma,120\nSuperstore,Pizza,60\nSuperstore,Burger,200\nSuperstore,Sandwich,180\nPDC,Rice+Chicken,170\nPDC,Rice+Daal,85\nPDC,Roti+Chicken,130\nPDC,Roti+Daal,45\n"], ["updated_at", "2016-04-04 05:03:27.379912"], ["id", 1]]
+  [1m[35m (8.8ms)[0m  commit transaction
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 88ms (ActiveRecord: 66.0ms)
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-04 05:03:28 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (2.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 384ms (Views: 381.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/mainpage" for 111.68.103.163 at 2016-04-04 05:05:01 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5MaxzkHqEmAWLWwfvODTsnv05uQu3Ys98/kWK6nh9oo89Rxv8Jd73b/Uwg0AomrrBCYOIdKOQ8mo/M1aH8ZN4A==", "foods"=>{"Khokha_Cheese roll"=>"false", "Khokha_Mayo roll"=>"false"}, "commit"=>"Enter"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 2.2ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/sessions_controller.rb:48:in `compute'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (49.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (145.5ms)
+
+
+Started GET "/mainpage" for 221.120.220.12 at 2016-04-04 05:05:20 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (3.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 418ms (Views: 409.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 06:04:59 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (3.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 360ms (Views: 330.9ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/mainpage" for 221.120.220.12 at 2016-04-04 06:05:12 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s7gP8i29cz/JfrTOuAYHfRXXmAaXTj8p8CcVQSjjVBxri6JTnMAagmCHGtwERL4kagVww2sd992rIs4wnsTvdg==", "foods"=>{"Khokha_Cheese roll"=>"false", "Khokha_Mayo roll"=>"false"}, "commit"=>"Enter"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/sessions_controller.rb:47:in `compute'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (96.0ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 06:05:35 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (3.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 555ms (Views: 551.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/mainpage" for 111.68.103.163 at 2016-04-04 06:06:08 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i6drIFmaNmqLvfI4TM/MFOnASnIQc9uVjnXLaJBFTGNTlMaB6Odf1yJEXCrwjXVNlhKit+wgE2HVcBAZJmL3CQ==", "session"=>{"budget"=>"1200"}, "commit"=>"Enter"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "budget" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["budget", 1200], ["updated_at", "2016-04-04 06:06:08.661184"], ["id", 1]]
+  [1m[36m (168.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "meals" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["meals", 3], ["updated_at", "2016-04-04 06:06:08.841229"], ["id", 1]]
+  [1m[36m (12.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mFood Load (0.4ms)[0m  SELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 07:00:00.000000' and '2000-01-01 11:00:00.000000') OR (end_at between '2000-01-01 07:00:00.000000' and '2000-01-01 11:00:00.000000') OR (start_at < '2000-01-01 07:00:00.000000' and end_at > '2000-01-01 11:00:00.000000') OR (start_at < '2000-01-01 07:00:00.000000' and end_at < start_at)) AND (price <= 400))
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "breakfast" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["breakfast", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\nKhokha,Chicken roll,100\nSuperstore,Roll,130\nSuperstore,Shawarma,120\nSuperstore,Pizza,60\nSuperstore,Burger,200\nSuperstore,Sandwich,180\nPDC,Bread+Omelette,40\n"], ["updated_at", "2016-04-04 06:06:08.874194"], ["id", 1]]
+  [1m[35m (12.5ms)[0m  commit transaction
+  [1m[36mFood Load (0.4ms)[0m  [1mSELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (end_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at > '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at < start_at)) AND (price <= 400))[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "lunch" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["lunch", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\nKhokha,Chicken roll,100\nChop Chop,Chowmein,170\nChop Chop,Tamarind,240\nChop Chop,Mongolian,240\nChop Chop,Fried fish,160\nSuperstore,Roll,130\nSuperstore,Shawarma,120\nSuperstore,Pizza,60\nSuperstore,Burger,200\nSuperstore,Sandwich,180\nPDC,Rice+Chicken,170\nPDC,Rice+Daal,85\nPDC,Roti+Chicken,130\nPDC,Roti+Daal,45\n"], ["updated_at", "2016-04-04 06:06:08.894396"], ["id", 1]]
+  [1m[36m (12.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mFood Load (0.4ms)[0m  SELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (end_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at > '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at < start_at)) AND (price <= 400))
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "dinner" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["dinner", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\nKhokha,Chicken roll,100\nChop Chop,Chowmein,170\nChop Chop,Tamarind,240\nChop Chop,Mongolian,240\nChop Chop,Fried fish,160\nSuperstore,Roll,130\nSuperstore,Shawarma,120\nSuperstore,Pizza,60\nSuperstore,Burger,200\nSuperstore,Sandwich,180\nPDC,Rice+Chicken,170\nPDC,Rice+Daal,85\nPDC,Roti+Chicken,130\nPDC,Roti+Daal,45\n"], ["updated_at", "2016-04-04 06:06:08.914542"], ["id", 1]]
+  [1m[35m (24.0ms)[0m  commit transaction
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 290ms (ActiveRecord: 235.4ms)
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-04 06:06:10 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (9.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 356ms (Views: 351.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/mainpage" for 110.93.234.9 at 2016-04-04 06:06:20 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aPKtdJX3oZbJBDIyvj53jjMetOl+wuTm5g7UyyEfjBawwQDVJIrIK2D9nCACfM7XTMxcLIKRLBK9Cw+6lzg3fA==", "foods"=>{"Khokha_Cheese roll"=>"false", "Khokha_Mayo roll"=>"false"}, "commit"=>"Enter"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/sessions_controller.rb:47:in `compute'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (18.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (123.6ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 06:13:39 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (11.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 356ms (Views: 350.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/mainpage" for 111.68.103.163 at 2016-04-04 06:13:52 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Fzy+9cf0MsMbFs34CrVKGZmTWGux89baFH7vdAOqqK3PDxNUdolbfrLvY+q29/NA5kGwrk2gHi5PezQFtY0Txw==", "\"session\" => {foods"=>{"Khokha_Cheese roll"=>{"}"=>"false"}, "Khokha_Mayo roll"=>{"}"=>"false"}}, "commit"=>"Enter"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/sessions_controller.rb:47:in `compute'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (119.5ms)
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-04 06:16:09 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (7.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 567ms (Views: 537.4ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/mainpage" for 221.120.220.12 at 2016-04-04 06:16:21 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O6MoyPiJOjIEnRDPWah6HvRQmd0/AShz0wbYv64N2jfjkIVpSfRTj61kvt3l6sNHi4JxGMNS4IeIAwPOGCphXQ==", "foods"=>{"Khokha_Cheese roll"=>"false", "Khokha_Mayo roll"=>"false"}, "commit"=>"Enter"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "favourites" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["favourites", "[\"Khokha_Cheese roll\", \"false\"]\n[\"Khokha_Mayo roll\", \"false\"]\n"], ["updated_at", "2016-04-04 06:16:21.530342"], ["id", 1]]
+  [1m[35m (11.8ms)[0m  commit transaction
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 30ms (ActiveRecord: 13.6ms)
+
+
+Started GET "/mainpage" for 221.120.220.12 at 2016-04-04 06:16:23 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (4.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 471ms (Views: 467.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/mainpage" for 110.93.234.9 at 2016-04-04 06:18:11 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"77/7fACpUuw0dNHcNd12VqVZT/+TDp4rzeIWhBav6ek3jFbdsdQ7UZ2Nf86Jn88P2ounOm9dVt+W5831oIhSgw==", "foods"=>{"Khokha_Cheese roll"=>"false", "Khokha_Mayo roll"=>"false"}, "commit"=>"Enter"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 39ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 06:18:13 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (4.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 660ms (Views: 647.7ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/mainpage" for 221.120.220.12 at 2016-04-04 06:18:46 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k7AcNtyU5S2EsWt7PG/BL4v+rG7P929NsP/rRcaw5MJLg7GXbemMkC1IxWmALXh29CxEqzOkp7nr+jA0cJdfqA==", "foods"=>{"Khokha_Cheese roll"=>"false", "Khokha_Mayo roll"=>"false"}, "commit"=>"Enter"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "favourites" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["favourites", "Khokha_Cheese roll\nKhokha_Mayo roll\n"], ["updated_at", "2016-04-04 06:18:47.168588"], ["id", 1]]
+  [1m[36m (23.5ms)[0m  [1mcommit transaction[0m
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 92ms (ActiveRecord: 27.7ms)
+
+
+Started GET "/mainpage" for 221.120.220.12 at 2016-04-04 06:18:48 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (8.0ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 806ms (Views: 786.5ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/mainpage" for 110.93.234.9 at 2016-04-04 06:21:08 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kkIRaqczfbuOix1+Ny/i14qNGnjl8AQzcrr6zarMN6BKcbzLFk4UBidys2yLbVuO9V/yvRmjzMcpvyG8HOuMyg==", "foods"=>{"Khokha_Cheese roll"=>"true", "Khokha_Mayo roll"=>"true"}, "commit"=>"Enter"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 36ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 06:21:10 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (9.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 537ms (Views: 522.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/mainpage" for 111.68.103.163 at 2016-04-04 06:22:35 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"szR8gsTpPR/s/wy7vgEBFmKM8BQTU8/AZ+N6xR65zpRrB9EjdZRUokUGoqkCQ7hPHV4Y0e8ABzQ85qG0qJ51/g==", "foods"=>{"Khokha_Cheese roll"=>"true", "Khokha_Mayo roll"=>"true"}, "commit"=>"Enter"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 26ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-04 06:22:37 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (3.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 467ms (Views: 459.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-04-04 06:24:21 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (3.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 305ms (Views: 282.1ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/mainpage" for 221.120.220.12 at 2016-04-04 06:24:37 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PuIpGHlBoPBgKUIcJL+F9tnGPMr4WLZHqCkV8vLeEubm0YS5yDzJTcnQ7A6Y/TyvphTUDwQLfrPzLM6DRPmpjA==", "foods"=>{"Khokha_Cheese roll"=>"true", "Khokha_Mayo roll"=>"true"}, "commit"=>"Enter"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 19ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/mainpage" for 221.120.220.12 at 2016-04-04 06:24:39 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (1.2ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (4.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 467ms (Views: 463.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/mainpage" for 221.120.220.12 at 2016-04-04 06:25:47 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NF463w/uS2x+MTHejKuoLnXysf1rdg5NtSaAE65ljBTsbZd+vpMi0dfIn8ww6RF3CiBZOJclxrnuI1tiGEI3fg==", "foods"=>{"Khokha_Cheese roll"=>"true", "Khokha_Mayo roll"=>"true"}, "commit"=>"Enter"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 7ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/mainpage" for 221.120.220.12 at 2016-04-04 06:25:49 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (12.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 321ms (Views: 315.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/mainpage" for 221.120.220.12 at 2016-04-04 06:25:58 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#compute as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4R3WLVaNqfNv1kA1jlSr8fK9FLiTXW5qARBjCiDYnu45LnuM5/DATsYv7icyFhKojW/8fW8Opp5aFbh7lv8lhA==", "foods"=>{"Khokha_Cheese roll"=>"yes"}, "commit"=>"Enter"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "favourites" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["favourites", "Khokha_Cheese roll\n"], ["updated_at", "2016-04-04 06:25:58.777383"], ["id", 1]]
+  [1m[35m (13.2ms)[0m  commit transaction
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 21ms (ActiveRecord: 14.1ms)
+
+
+Started GET "/mainpage" for 221.120.220.12 at 2016-04-04 06:26:00 +0000
+Cannot render console from 221.120.220.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (2.8ms)
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 316ms (Views: 312.2ms | ActiveRecord: 0.8ms)

@@ -8,4 +8,5 @@ class User < ActiveRecord::Base
     def self.all_attributes
         puts self.inspect
     end
+    
 end

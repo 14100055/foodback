@@ -29,6 +29,14 @@ class SessionsController < ApplicationController
             @breakfast = parse_meals(@user.breakfast)
             @lunch = parse_meals(@user.lunch)
             @dinner = parse_meals(@user.dinner)
+            @foods = Food.pluck('DISTINCT restaurant, name, price')
+            
+            @favourites = Array.new
+            favs = @user.favourites.split("\n")
+            favs.each do |fav|
+                @favourites.append(fav)
+            end
+
         end
     end
 
@@ -36,19 +44,24 @@ class SessionsController < ApplicationController
         id = session[:user_id]
         user = User.find(id)
 
-        if !params[:session][:budget].nil?
-            if user.update(:budget => params[:session][:budget])
-                user.update(:meals => 3)
-                budget = (params[:session][:budget].to_i)/3
-                update_meals(user, budget)
+        if params[:session].nil?
+            if !params[:foods].nil?
+                update_favourites(user, params[:foods])
             end
-        end
-        
-        if !params[:session][:amount].nil? and !params[:session][:meal].nil?
-            if user.update(:budget => user.budget - params[:session][:amount].to_i)
-                amount = params[:session][:amount].to_i
-                budget = user.budget.to_i
-                edit_budget(user, amount, budget, params[:session][:meal])
+        else
+            if !params[:session][:budget].nil?
+                if user.update(:budget => params[:session][:budget])
+                    user.update(:meals => 3)
+                    budget = (params[:session][:budget].to_i)/3
+                    update_meals(user, budget)
+                end
+            end
+            if !params[:session][:amount].nil? and !params[:session][:meal].nil?
+                if user.update(:budget => user.budget - params[:session][:amount].to_i)
+                    amount = params[:session][:amount].to_i
+                    budget = user.budget.to_i
+                    edit_budget(user, amount, budget, params[:session][:meal])
+                end
             end
         end
         
@@ -96,6 +109,14 @@ class SessionsController < ApplicationController
         update_meals(user, budget)
     end
 
+    def update_favourites(user, favs)
+        favourites = ""
+        favs.each do |food, exist|
+            favourites += "#{food}\n"
+        end
+        user.update(:favourites => favourites)
+    end
+
     def parse_meals(meals)
         meal = Hash.new
         m = meals.split("\n")
@@ -119,7 +140,6 @@ class SessionsController < ApplicationController
             if food.restaurant == "PDC"
                 sides.append(food)
                 mains.append(food)
-                puts food.name
             else
                 plan += "#{food.restaurant},#{food.name},#{food.price}\n"
             end

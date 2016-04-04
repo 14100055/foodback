@@ -5,28 +5,53 @@
   <a href="javascript:void;" class="openDlg1 bigButton">Update Budget</a>
   <div class="formContainer dialog1" style="display:none;">
     <%= form_for(:session, url: mainpage_path) do |f| %>
-        <h3>Update Budget</h3>
+      <h3>Update Budget</h3>
 
-        <%= f.text_field :budget, :placeholder => "Enter the Budget" %>
-        <%= f.submit "Enter", class: "btn-submit" %>
+      <%= f.text_field :budget, :placeholder => "Enter the budget" %>
+      <%= f.submit "Enter", class: "btn-submit" %>
     <% end %>
   </div>
   
   <a href="javascript:void;" class="openDlg2 bigButton">Input Meal Cost</a>
   <div class="formContainer dialog2" style="display:none;">
     <%= form_for(:session, url: mainpage_path) do |f| %>
-        <h3>Amount spent</h3>
+      <h3>Amount spent</h3>
      
-        <%= f.text_field :amount, :placeholder => "Enter the Amount you just spent" %>
-        <br/>
-        <h3>Meal Category</h3>
+      <%= f.text_field :amount, :placeholder => "Enter amount spent" %>
+      <br/>
+      <h3>Meal Category</h3>
         
-        <%= select :session, :meal, ['Breakfast','Lunch','Dinner', 'Miscellaneous'] %>
+      <%= select :session, :meal, ['Breakfast','Lunch','Dinner','Miscellaneous'] %>
         
-        <%= f.submit "Enter", class: "btn-submit" %>
+      <%= f.submit "Enter", class: "btn-submit" %>
     <% end %>
   </div>
   
+  <a href="javascript:void;" class="openDlg3 bigButton">Select Favourites</a>
+  <div class="formContainer dialog3" style="display:none;">
+    <%= form_for(:session, url: mainpage_path) do |f| %>
+      <div class="tableContainer">
+      <table border="1">
+        <tr>
+          <th>Restaurant</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Add to Favourites</th>
+        </tr>
+        <% @foods.each do |food| %>
+          <tr>
+            <td><%= food[0] %></td>
+            <td><%= food[1] %></td>
+            <td><%= food[2] %></td>
+            <td><%= check_box_tag "foods[#{food[0]}_#{food[1]}]", 'yes', @favourites.include?("#{food[0]}_#{food[1]}") ? true : false %></td>
+          </tr>
+        <% end %>
+      </table>
+      </div>
+      <%= f.submit "Enter", class: "btn-submit" %>
+    <% end %>
+  </div>
+
   <hr>
   <p class="heading">Meal Plans - Daily Budget: Rs. <%= @user.budget %></p>
   <hr>

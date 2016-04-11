@@ -16,64 +16,62 @@
 //= require turbolinks
 //= require_tree .
 $(document).ready(function(){
-    $(".openDlg1").click(function() {
-        $(".dialog1").dialog({
-          buttons: [
-            {
-              text: "Close",
-              click: function() {
-                $( this ).dialog( "close" );
-              }
-            }
-          ],
-          height: 300,
-          width: 325,
-          title: "Update Budget",
-          modal: true,
-          draggable: false,
-          resizable: false
-        });
-    })
+  $(".openDlg1").click(function() {
+    $(".dialog1").dialog({
+      buttons: [
+        {
+          text: "Close",
+          click: function() {
+            $( this ).dialog( "close" );
+          }
+        }
+      ],
+      height: 300,
+      width: 325,
+      title: "Update Budget",
+      modal: true,
+      draggable: false,
+      resizable: false
+    });
+  })
+
+  $(".openDlg2").click(function() {
+    $(".dialog2").dialog({
+      buttons: [
+        {
+          text: "Close",
+          click: function() {
+            $( this ).dialog( "close" );
+          }
+        }
+      ],
+      height: 300,
+      width: 250,
+      title: "Input Meal Cost",
+      modal: true,
+      draggable: false,
+      resizable: false  
+    });
+  })
+  
+  $(".openDlg3").click(function() {
+    $(".dialog3").dialog({
+      buttons: [
+        {
+          text: "Close",
+          click: function() {
+            $( this ).dialog( "close" );
+          }
+        }
+      ],
+      height: $(window).height()*0.95,
+      width: 500,
+      title: "Select Favourites",
+      modal: true,
+      draggable: false,
+      resizable: false  
+    });
+  })
+
 });
 
-$(document).ready(function(){
-    $(".openDlg2").click(function() {
-        $(".dialog2").dialog({
-          buttons: [
-            {
-              text: "Close",
-              click: function() {
-                $( this ).dialog( "close" );
-              }
-            }
-          ],
-          height: 300,
-          width: 250,
-          title: "Input Meal Cost",
-          modal: true,
-          draggable: false,
-          resizable: false  
-        });
-    })
-});
-
-$(document).ready(function(){
-    $(".openDlg3").click(function() {
-        $(".dialog3").dialog({
-          buttons: [
-            {
-              text: "Close",
-              click: function() {
-                $( this ).dialog( "close" );
-              }
-            }
-          ],
-          height: $(window).height()*0.95,
-          width: 500,
-          title: "Select Favourites",
-          modal: true,
-          draggable: false,
-          resizable: false  
-        });
-    })
-});

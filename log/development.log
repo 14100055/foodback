@@ -24534,3 +24534,25 @@ Processing by SessionsController#mainpage as HTML
   Rendered sessions/mainpage.html.erb within layouts/application (80.8ms)
   [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
 Completed 200 OK in 472ms (Views: 468.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery-ui/ui-icons_454545_256x240-07460e843c3e59aaadbb34231e699e856a2980753c7a47b66447da5d9f93fb7f.png" for 110.93.234.9 at 2016-04-11 14:23:43 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-ui/ui-bg_glass_65_ffffff_1x400-f0e6cd91b837d5c5644d026e5ffeccd907953317cd5c0f689901733afda260b2.png" for 110.93.234.9 at 2016-04-11 14:23:44 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/mainpage" for 111.68.103.163 at 2016-04-11 14:30:30 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.9ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (11.1ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 869ms (Views: 862.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-238b927760796702f49a12a9cbc2f00aa11dcbae485cc6f418e9a9010ac5c1d1.js?body=1" for 111.68.103.163 at 2016-04-11 14:30:34 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255

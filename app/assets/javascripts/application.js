@@ -26,7 +26,7 @@ $(document).ready(function(){
           }
         }
       ],
-      height: 300,
+      height: $(window).height()*0.4,
       width: 325,
       title: "Update Budget",
       modal: true,
@@ -45,7 +45,7 @@ $(document).ready(function(){
           }
         }
       ],
-      height: 300,
+      height: $(window).height()*0.4,
       width: 250,
       title: "Input Meal Cost",
       modal: true,

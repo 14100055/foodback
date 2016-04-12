@@ -16,80 +16,31 @@
 //= require turbolinks
 //= require_tree .
 $(document).ready(function(){
-  $(".openDlg1").click(function() {
-    $(".dialog1").dialog({
-      buttons: [
-        {
-          text: "Close",
-          click: function() {
-            $( this ).dialog( "close" );
-          }
-        }
-      ],
-      height: 300,
-      width: 325,
-      title: "Update Budget",
-      modal: true,
-      draggable: false,
-      resizable: false
-    });
-  })
-
-  $(".openDlg2").click(function() {
-    $(".dialog2").dialog({
-      buttons: [
-        {
-          text: "Close",
-          click: function() {
-            $( this ).dialog( "close" );
-          }
-        }
-      ],
-      height: 300,
-      width: 250,
-      title: "Input Meal Cost",
-      modal: true,
-      draggable: false,
-      resizable: false  
-    });
-  })
-
-  $(".openDlg3").click(function() {
-    $(".dialog3").dialog({
-      buttons: [
-        {
-          text: "Close",
-          click: function() {
-            $( this ).dialog( "close" );
-          }
-        }
-      ],
-      height: $(window).height()*0.95,
-      width: 500,
-      title: "Select Favourites",
-      modal: true,
-      draggable: false,
-      resizable: false  
-    });
-  })
-
-  $(".openDlg4").click(function() {
-    $(".dialog4").dialog({
-      buttons: [
-        {
-          text: "Close",
-          click: function() {
-            $( this ).dialog( "close" );
-          }
-        }
-      ],
-      height: 400,
-      width: 500,
-      title: "New Day",
-      modal: true,
-      draggable: false,
-      resizable: false  
-    });
-  })
   
+  addDlg(".openDlg1", ".dialog1", "Update Budget", 300, 325);
+  addDlg(".openDlg2", ".dialog2", "Input Meal Cost", 300, 250);
+  addDlg(".openDlg3", ".dialog3", "Select Favourites", $(window).height()*0.95, 500);
+  addDlg(".openDlg4", ".dialog4", "New Day", 400, 500);
+
+  function addDlg(dom1, dom2, title1, height1, width1) {
+    $(dom1).click(function() {
+      $(dom2).dialog({
+        buttons: [
+          {
+            text: "Close",
+            click: function() {
+              $( this ).dialog( "close" );
+            }
+          }
+        ],
+        height: height1,
+        width: width1,
+        title: title1,
+        modal: true,
+        draggable: false,
+        resizable: false
+      });
+    });
+  }
+
 });

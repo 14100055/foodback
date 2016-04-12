@@ -1,3 +1,4 @@
+require 'date'
 $B_START = Time.utc(2000,01,01, 7,00,00)
 $B_FINISH = Time.utc(2000,01,01, 11,00,00)
 $L_START = Time.utc(2000,01,01, 12,30,00)
@@ -50,12 +51,21 @@ class SessionsController < ApplicationController
         id = session[:user_id]
         user = User.find(id)
 
-        if user.update(:budget => params[:session][:budget])
+        if user.update(:original_budget => params[:session][:budget])
+            user.update(:start_days => 0)
+            user.update(:middle_days => 30)
+            user.update(:remaining_days => 30)
+            user.update(:end_days => 30)
+
+            original_budget = user.original_budget
+            budget = original_budget/30
+
+            user.update(:month_budget => original_budget - budget)
+            user.update(:budget => budget)
             user.update(:meals => 3)
-            budget = (params[:session][:budget].to_i)/3
-            update_meals(user, budget)
+            update_meals(user, budget/3)
         end
-        
+
         redirect_to '/mainpage'
     end
     
@@ -103,6 +113,27 @@ class SessionsController < ApplicationController
         redirect_to '/mainpage'
     end
 
+    def new_day
+        id = session[:user_id]
+        user = User.find(id)
+
+        if user.start_days != -1
+            remaining_days = user.remaining_days - 1
+            month_budget = user.month_budget + user.budget
+            budget = month_budget/remaining_days
+            month_budget = month_budget - budget
+
+            user.update(:remaining_days => remaining_days)
+            user.update(:month_budget => month_budget)
+            user.update(:budget => budget)
+            user.update(:meals => 3)
+            update_meals(user, budget/3)
+        end
+        
+        redirect_to '/mainpage'
+    end
+
+
     def update_meals(user, budget)
         if user.meals >= 3
             breakfast = get_plan(budget, $B_START, $B_FINISH)
@@ -120,9 +151,6 @@ class SessionsController < ApplicationController
         end
     end
     
-    def edit_budget(user, amount, budget, meal)
-    end
-
     def parse_meals(meals)
         meal = Hash.new
         m = meals.split("\n")

@@ -4,16 +4,19 @@
 
   <a href="javascript:void;" class="openDlg1 bigButton">Update Budget</a>
   <div class="formContainer dialog1" style="display:none;">
+    <center>
     <%= form_for(:session, url: update_budget_path) do |f| %>
-      <h3>Update Budget</h3>
+      <h3>Enter the new monthly budget</h3>
 
       <%= f.text_field :budget, :placeholder => "Enter the budget" %>
       <%= f.submit "Enter", class: "btn-submit" %>
     <% end %>
+    </center>
   </div>
   
   <a href="javascript:void;" class="openDlg2 bigButton">Input Meal Cost</a>
   <div class="formContainer dialog2" style="display:none;">
+    <center>
     <%= form_for(:session, url: input_meal_path) do |f| %>
       <h3>Amount spent</h3>
      
@@ -25,10 +28,12 @@
         
       <%= f.submit "Enter", class: "btn-submit" %>
     <% end %>
+    </center>
   </div>
   
   <a href="javascript:void;" class="openDlg3 bigButton">Select Favourites</a>
   <div class="formContainer dialog3" style="display:none;">
+    <center>
     <%= form_for(:session, url: favourites_path) do |f| %>
       <div class="tableContainer">
       <table border="1">
@@ -50,16 +55,17 @@
       </div>
       <%= f.submit "Enter", class: "btn-submit" %>
     <% end %>
+    </center>
   </div>
 
   <a href="javascript:void;" class="openDlg4 bigButton">New Day</a>
   <div class="formContainer dialog4" style="display:none;">
+    <center>
     <%= form_for(:session, url: new_day_path) do |f| %>
-      <center>
       <h3>Are you sure you want to start a new day?</h3>
       <%= f.submit "Yes", class: "btn-submit" %>
-      </center>
     <% end %>
+    </center>
   </div>
 
   <hr>

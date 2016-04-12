@@ -16,7 +16,6 @@ Rails.application.routes.draw do
   post 'input_meal' => 'sessions#input_meal'
   post 'favourites' => 'sessions#favourites'
   post 'new_day' => 'sessions#new_day'
-  # post 'monthlybudget' => 'sessions#add_monthly_budget'
   resources :sessions
 
   # Example of regular route:

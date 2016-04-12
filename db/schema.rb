@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160404050033) do
+ActiveRecord::Schema.define(version: 20160412082902) do
 
   create_table "foods", force: :cascade do |t|
     t.string   "restaurant"
@@ -38,6 +38,12 @@ ActiveRecord::Schema.define(version: 20160404050033) do
     t.integer  "meals",           default: 0
     t.integer  "good_days",       default: 0
     t.integer  "bad_days",        default: 0
+    t.integer  "original_budget", default: 0
+    t.integer  "month_budget",    default: 0
+    t.integer  "start_days",      default: -1
+    t.integer  "middle_days",     default: 0
+    t.integer  "end_days",        default: 0
+    t.integer  "remaining_days",  default: 0
   end
 
 end

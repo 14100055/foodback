@@ -26,7 +26,7 @@ $(document).ready(function(){
           }
         }
       ],
-      height: $(window).height()*0.4,
+      height: 300,
       width: 325,
       title: "Update Budget",
       modal: true,
@@ -34,7 +34,9 @@ $(document).ready(function(){
       resizable: false
     });
   })
+});
 
+$(document).ready(function(){
   $(".openDlg2").click(function() {
     $(".dialog2").dialog({
       buttons: [
@@ -45,7 +47,7 @@ $(document).ready(function(){
           }
         }
       ],
-      height: $(window).height()*0.4,
+      height: 300,
       width: 250,
       title: "Input Meal Cost",
       modal: true,
@@ -53,7 +55,9 @@ $(document).ready(function(){
       resizable: false  
     });
   })
-  
+});
+
+$(document).ready(function(){
   $(".openDlg3").click(function() {
     $(".dialog3").dialog({
       buttons: [
@@ -72,6 +76,25 @@ $(document).ready(function(){
       resizable: false  
     });
   })
-
 });
 
+$(document).ready(function(){
+  $(".openDlg4").click(function() {
+    $(".dialog4").dialog({
+      buttons: [
+        {
+          text: "Close",
+          click: function() {
+            $( this ).dialog( "close" );
+          }
+        }
+      ],
+      height: 400,
+      width: 500,
+      title: "New Day",
+      modal: true,
+      draggable: false,
+      resizable: false  
+    });
+  })
+});

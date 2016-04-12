@@ -12,7 +12,11 @@ Rails.application.routes.draw do
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
   get 'mainpage' => 'sessions#mainpage'
-  post 'mainpage' => 'sessions#compute'
+  post 'update_budget' => 'sessions#update_budget'
+  post 'input_meal' => 'sessions#input_meal'
+  post 'favourites' => 'sessions#favourites'
+  post 'new_day' => 'sessions#new_day'
+  # post 'monthlybudget' => 'sessions#add_monthly_budget'
   resources :sessions
 
   # Example of regular route:

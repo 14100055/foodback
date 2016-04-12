@@ -41,32 +41,68 @@ class SessionsController < ApplicationController
         end
     end
 
-    def compute
+    def destroy
+        session[:user_id] = nil
+        redirect_to '/login'
+    end
+
+    def update_budget
         id = session[:user_id]
         user = User.find(id)
 
-        if params.has_key?(:foods)
-            update_favourites(user, params[:foods].keys)
-        elsif params[:session].has_key?(:budget)
-            if user.update(:budget => params[:session][:budget])
-                user.update(:meals => 3)
-                budget = (params[:session][:budget].to_i)/3
-                update_meals(user, budget)
-            end
-        elsif params[:session].has_key?(:amount)
-            if user.update(:budget => user.budget - params[:session][:amount].to_i)
-                amount = params[:session][:amount].to_i
-                budget = user.budget.to_i
-                edit_budget(user, amount, budget, params[:session][:meal])
-            end
+        if user.update(:budget => params[:session][:budget])
+            user.update(:meals => 3)
+            budget = (params[:session][:budget].to_i)/3
+            update_meals(user, budget)
         end
         
         redirect_to '/mainpage'
     end
     
-    def destroy
-        session[:user_id] = nil
-        redirect_to '/login'
+    def input_meal
+        id = session[:user_id]
+        user = User.find(id)
+
+        if user.update(:budget => (user.budget - (params[:session][:amount].to_i)))
+            amount = params[:session][:amount].to_i
+            budget = user.budget.to_i
+            meal = params[:session][:meal]
+
+            if meal == 'Breakfast'
+                user.update(:meals => 2)
+                breakfast = "You have had breakfast,-,#{amount}"
+                user.update(:breakfast => breakfast)
+            elsif meal == 'Lunch'
+                user.update(:meals => 1)
+                lunch = "You have had lunch,-,#{amount}"
+                user.update(:lunch => lunch)
+            elsif meal == 'Dinner'
+                user.update(:meals => 0)
+                dinner = "You have had dinner,-,#{amount}"
+                user.update(:dinner => dinner)
+            end
+
+            budget = budget / (user.meals.nonzero? || 1)
+            update_meals(user, budget)
+
+            # edit_budget(user, amount, budget, params[:session][:meal])
+        end
+        
+        redirect_to '/mainpage'
+    end
+
+    def favourites
+        id = session[:user_id]
+        user = User.find(id)
+
+        favs = params[:foods].keys
+        favourites = ""
+        favs.each do |food|
+            favourites << "#{food}\n"
+        end
+        user.update(:favourites => favourites)
+        
+        redirect_to '/mainpage'
     end
 
     def update_meals(user, budget)
@@ -87,30 +123,6 @@ class SessionsController < ApplicationController
     end
     
     def edit_budget(user, amount, budget, meal)
-        if meal == 'Breakfast'
-            user.update(:meals => 2)
-            breakfast = "You have had breakfast,-,#{amount}"
-            user.update(:breakfast => breakfast)
-        elsif meal == 'Lunch'
-            user.update(:meals => 1)
-            lunch = "You have had lunch,-,#{amount}"
-            user.update(:lunch => lunch)
-        elsif meal == 'Dinner'
-            user.update(:meals => 0)
-            dinner = "You have had dinner,-,#{amount}"
-            user.update(:dinner => dinner)
-        end
-
-        budget = budget / (user.meals.nonzero? || 1)
-        update_meals(user, budget)
-    end
-
-    def update_favourites(user, favs)
-        favourites = ""
-        favs.each do |food|
-            favourites << "#{food}\n"
-        end
-        user.update(:favourites => favourites)
     end
 
     def parse_meals(meals)

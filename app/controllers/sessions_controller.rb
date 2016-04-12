@@ -84,8 +84,6 @@ class SessionsController < ApplicationController
 
             budget = budget / (user.meals.nonzero? || 1)
             update_meals(user, budget)
-
-            # edit_budget(user, amount, budget, params[:session][:meal])
         end
         
         redirect_to '/mainpage'

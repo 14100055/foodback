@@ -34,9 +34,7 @@ $(document).ready(function(){
       resizable: false
     });
   })
-});
 
-$(document).ready(function(){
   $(".openDlg2").click(function() {
     $(".dialog2").dialog({
       buttons: [
@@ -55,9 +53,7 @@ $(document).ready(function(){
       resizable: false  
     });
   })
-});
 
-$(document).ready(function(){
   $(".openDlg3").click(function() {
     $(".dialog3").dialog({
       buttons: [
@@ -76,9 +72,7 @@ $(document).ready(function(){
       resizable: false  
     });
   })
-});
 
-$(document).ready(function(){
   $(".openDlg4").click(function() {
     $(".dialog4").dialog({
       buttons: [
@@ -97,4 +91,5 @@ $(document).ready(function(){
       resizable: false  
     });
   })
+  
 });

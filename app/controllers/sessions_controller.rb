@@ -6,6 +6,12 @@ $L_FINISH = Time.utc(2000,01,01, 16,00,00)
 $D_START = Time.utc(2000,01,01, 19,00,00)
 $D_FINISH = Time.utc(2000,01,01, 23,00,00)
 
+# Splitting budget
+# Good days - exotic food items
+# Login through Facebook
+# Profile page
+# Graphs - date vs money
+
 class SessionsController < ApplicationController
     def new
     end
@@ -20,11 +26,18 @@ class SessionsController < ApplicationController
             redirect_to '/login'
         end
     end
-    
+
+    def profile
+        session[:profile] = true
+        @id = session[:user_id]
+        @user = User.find(@id)
+    end
+
     def mainpage
         if session[:user_id].nil?
             redirect_to '/login'
         else
+            session[:profile] = false
             @id = session[:user_id]
             @user = User.find(@id)
             @breakfast = parse_meals(@user.breakfast)
@@ -38,7 +51,6 @@ class SessionsController < ApplicationController
                 f = fav.split(",")
                 @favourites.append("#{f[0]}_#{f[1]}")
             end
-
         end
     end
 
@@ -52,6 +64,9 @@ class SessionsController < ApplicationController
         user = User.find(id)
 
         if user.update(:original_budget => params[:session][:budget])
+            user.update(:good_days => 0)
+            user.update(:bad_days => 0)
+
             user.update(:start_days => 0)
             user.update(:middle_days => 30)
             user.update(:remaining_days => 30)
@@ -118,6 +133,12 @@ class SessionsController < ApplicationController
         user = User.find(id)
 
         if user.start_days != -1
+            if user[:budget] >= 0
+                user.update(:good_days => user[:good_days]+1)
+            else
+                user.update(:bad_days => user[:bad_days]+1)
+            end
+
             remaining_days = user.remaining_days - 1
             month_budget = user.month_budget + user.budget
             budget = month_budget/remaining_days

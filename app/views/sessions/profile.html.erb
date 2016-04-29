@@ -1,0 +1,24 @@
+<div id="bodyCont">
+   
+<h1 class="welcomeMsg"><%= @user.first_name %>'s Profile</h1>
+
+<div class="tableContainer">
+  <b>
+  <table>
+  <tr>
+    <td>Name: <%= @user.first_name %> <%= @user.last_name %></td>
+    <td>Email: <%= @user.email %></td>
+  </tr>
+  <tr>
+    <td>Monthly Budget: <%= @user.original_budget %></td>
+    <td>Daily Budget: <%= @user.budget %></td>
+  </tr>
+  <tr>
+    <td>Good Days: <%= @user.good_days %></td>
+    <td>Bad Days: <%= @user.bad_days %></td>
+  </tr>
+  </table>
+  </b>
+</div>
+
+</div>

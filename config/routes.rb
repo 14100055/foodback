@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
+  get 'profile' => 'sessions#profile'
   get 'mainpage' => 'sessions#mainpage'
   post 'update_budget' => 'sessions#update_budget'
   post 'input_meal' => 'sessions#input_meal'

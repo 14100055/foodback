@@ -1,13 +1,11 @@
 <div id="bodyCont">
-   
-  <h1 class="welcomeMsg">Welcome back, <%= @user.first_name %></h1>
+<h1 class="welcomeMsg">Welcome back, <%= @user.first_name %></h1>
 
   <a href="javascript:void;" class="openDlg1 bigButton">Update Budget</a>
   <div class="formContainer dialog1" style="display:none;">
     <center>
     <%= form_for(:session, url: update_budget_path) do |f| %>
       <h3>Enter the new monthly budget</h3>
-
       <%= f.text_field :budget, :placeholder => "Enter the budget" %>
       <%= f.submit "Enter", class: "btn-submit" %>
     <% end %>
@@ -19,13 +17,10 @@
     <center>
     <%= form_for(:session, url: input_meal_path) do |f| %>
       <h3>Amount spent</h3>
-     
       <%= f.text_field :amount, :placeholder => "Enter amount spent" %>
       <br/>
       <h3>Meal Category</h3>
-        
       <%= select :session, :meal, ['Breakfast','Lunch','Dinner','Miscellaneous'] %>
-        
       <%= f.submit "Enter", class: "btn-submit" %>
     <% end %>
     </center>
@@ -97,7 +92,6 @@
   </table>
   </div>
   
-
   <div class="tableContainer">
   <p>Lunch</p>
   <table border="1">
@@ -123,7 +117,6 @@
   </table>
   </div>
   
-
   <div class="tableContainer">
   <p>Dinner</p>
   <table border="1">

@@ -9,9 +9,7 @@ $E_START = Time.utc(2000,01,01, 23,31,00)
 $E_FINISH = Time.utc(2000,01,01, 23,51,00)
 
 # Splitting budget
-# Good days - exotic food items
 # Login through Facebook
-# Profile page
 # Graphs - date vs money
 
 class SessionsController < ApplicationController
@@ -181,8 +179,6 @@ class SessionsController < ApplicationController
             user.update(:exotic => "Its not the last day of the month yet. :(")
         end
         
-        
-        
     end
     
     def parse_meals(meals)
@@ -200,6 +196,7 @@ class SessionsController < ApplicationController
     def get_plan(budget, start, finish, luxury)
         plan = ""
         fillers = ["Bread", "Rice", "Roti"]
+        lums = ["PDC", "Khokha", "Superstore"]
         
         foods = Food.where("((start_at between ? and ?) OR (end_at between ? and ?) OR (start_at < ? and end_at > ?) OR (start_at < ? and end_at < start_at)) AND (price <= ?)", start, finish, start, finish, start, finish, start, budget)
         sides = Array.new
@@ -209,9 +206,9 @@ class SessionsController < ApplicationController
                 sides.append(food)
                 mains.append(food)
             else
-                if(luxury && food.restaurant!="PDC" && food.restaurant!="Khokha" && food.restaurant != "Superstore")
+                if (luxury && !lums.include?(food.restaurant))
                     plan << "#{food.restaurant},#{food.name},#{food.price}\n"
-                elsif (!luxury && (food.restaurant=="PDC" || food.restaurant=="Khokha" || food.restaurant=="Superstore"))
+                elsif (!luxury && lums.include?(food.restaurant))
                     plan << "#{food.restaurant},#{food.name},#{food.price}\n"
                 end
             end

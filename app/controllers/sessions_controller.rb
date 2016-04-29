@@ -158,22 +158,22 @@ class SessionsController < ApplicationController
 
     def update_meals(user, budget)
         if user.meals >= 3
-            breakfast = get_plan(budget, $B_START, $B_FINISH, false)
+            breakfast = get_plan(budget, $B_START, $B_FINISH)
             user.update(:breakfast => breakfast)
         end
 
         if user.meals >= 2
-            lunch = get_plan(budget, $L_START, $L_FINISH, false)
+            lunch = get_plan(budget, $L_START, $L_FINISH)
             user.update(:lunch => lunch)
         end
 
         if user.meals >= 1
-            dinner = get_plan(budget, $D_START, $D_FINISH, false)
+            dinner = get_plan(budget, $D_START, $D_FINISH)
             user.update(:dinner => dinner)
         end
         
         if user.remaining_days == 1
-            exotic = get_plan(500, $E_START, $E_FINISH, true)
+            exotic = get_luxury(500, $E_START, $E_FINISH)
             user.update(:exotic => exotic)
         else
             user.update(:exotic => "Its not the last day of the month yet. :(")
@@ -193,11 +193,10 @@ class SessionsController < ApplicationController
         return meal
     end
 
-    def get_plan(budget, start, finish, luxury)
+    def get_plan(budget, start, finish)
         plan = ""
         fillers = ["Bread", "Rice", "Roti"]
-        lums = ["PDC", "Khokha", "Superstore"]
-        
+
         foods = Food.where("((start_at between ? and ?) OR (end_at between ? and ?) OR (start_at < ? and end_at > ?) OR (start_at < ? and end_at < start_at)) AND (price <= ?)", start, finish, start, finish, start, finish, start, budget)
         sides = Array.new
         mains = Array.new
@@ -206,11 +205,7 @@ class SessionsController < ApplicationController
                 sides.append(food)
                 mains.append(food)
             else
-                if (luxury && !lums.include?(food.restaurant))
-                    plan << "#{food.restaurant},#{food.name},#{food.price}\n"
-                elsif (!luxury && lums.include?(food.restaurant))
-                    plan << "#{food.restaurant},#{food.name},#{food.price}\n"
-                end
+                plan << "#{food.restaurant},#{food.name},#{food.price}\n"
             end
         end
         sides.each do |side|
@@ -224,6 +219,20 @@ class SessionsController < ApplicationController
                         end
                     end
                 end
+            end
+        end
+
+        return plan
+    end
+    
+    def get_luxury(budget, start, finish)
+        plan = ""
+        lums = ["PDC", "Khokha", "Superstore"]
+        
+        foods = Food.where("((start_at between ? and ?) OR (end_at between ? and ?) OR (start_at < ? and end_at > ?) OR (start_at < ? and end_at < start_at)) AND (price <= ?)", start, finish, start, finish, start, finish, start, budget)
+        foods.each do |food|
+            if !lums.include?(food.restaurant)
+                plan << "#{food.restaurant},#{food.name},#{food.price}\n"
             end
         end
 

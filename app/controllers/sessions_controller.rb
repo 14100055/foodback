@@ -5,6 +5,8 @@ $L_START = Time.utc(2000,01,01, 12,30,00)
 $L_FINISH = Time.utc(2000,01,01, 16,00,00)
 $D_START = Time.utc(2000,01,01, 19,00,00)
 $D_FINISH = Time.utc(2000,01,01, 23,00,00)
+$E_START = Time.utc(2000,01,01, 23,31,00)
+$E_FINISH = Time.utc(2000,01,01, 23,51,00)
 
 # Splitting budget
 # Good days - exotic food items
@@ -40,6 +42,7 @@ class SessionsController < ApplicationController
             session[:profile] = false
             @id = session[:user_id]
             @user = User.find(@id)
+            @exotic = parse_meals(@user.exotic)
             @breakfast = parse_meals(@user.breakfast)
             @lunch = parse_meals(@user.lunch)
             @dinner = parse_meals(@user.dinner)
@@ -157,19 +160,29 @@ class SessionsController < ApplicationController
 
     def update_meals(user, budget)
         if user.meals >= 3
-            breakfast = get_plan(budget, $B_START, $B_FINISH)
+            breakfast = get_plan(budget, $B_START, $B_FINISH, false)
             user.update(:breakfast => breakfast)
         end
 
         if user.meals >= 2
-            lunch = get_plan(budget, $L_START, $L_FINISH)
+            lunch = get_plan(budget, $L_START, $L_FINISH, false)
             user.update(:lunch => lunch)
         end
 
         if user.meals >= 1
-            dinner = get_plan(budget, $D_START, $D_FINISH)
+            dinner = get_plan(budget, $D_START, $D_FINISH, false)
             user.update(:dinner => dinner)
         end
+        
+        if user.remaining_days == 1
+            exotic = get_plan(500, $E_START, $E_FINISH, true)
+            user.update(:exotic => exotic)
+        else
+            user.update(:exotic => "Its not the last day of the month yet. :(")
+        end
+        
+        
+        
     end
     
     def parse_meals(meals)
@@ -184,10 +197,10 @@ class SessionsController < ApplicationController
         return meal
     end
 
-    def get_plan(budget, start, finish)
+    def get_plan(budget, start, finish, luxury)
         plan = ""
         fillers = ["Bread", "Rice", "Roti"]
-
+        
         foods = Food.where("((start_at between ? and ?) OR (end_at between ? and ?) OR (start_at < ? and end_at > ?) OR (start_at < ? and end_at < start_at)) AND (price <= ?)", start, finish, start, finish, start, finish, start, budget)
         sides = Array.new
         mains = Array.new
@@ -196,7 +209,11 @@ class SessionsController < ApplicationController
                 sides.append(food)
                 mains.append(food)
             else
-                plan << "#{food.restaurant},#{food.name},#{food.price}\n"
+                if(luxury && food.restaurant!="PDC" && food.restaurant!="Khokha" && food.restaurant != "Superstore")
+                    plan << "#{food.restaurant},#{food.name},#{food.price}\n"
+                elsif (!luxury && (food.restaurant=="PDC" || food.restaurant=="Khokha" || food.restaurant=="Superstore"))
+                    plan << "#{food.restaurant},#{food.name},#{food.price}\n"
+                end
             end
         end
         sides.each do |side|

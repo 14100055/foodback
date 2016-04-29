@@ -28,6 +28,12 @@ foods = [   {:restaurant => 'Khokha', :name => 'Cheese roll', :price => 120, :st
             {:restaurant => 'Superstore', :name => 'Pizza', :price => 60, :start_at => '10:00', :end_at => '01:00'},
             {:restaurant => 'Superstore', :name => 'Burger', :price => 200, :start_at => '10:00', :end_at => '01:00'},
             {:restaurant => 'Superstore', :name => 'Sandwich', :price => 180, :start_at => '10:00', :end_at => '01:00'},
+            {:restaurant => 'Bomnbay', :name => 'Chicken Burger', :price => 350, :start_at => '23:35', :end_at => '23:55'},
+            {:restaurant => 'Subway', :name => 'Sandwich', :price => 400, :start_at => '23:35', :end_at => '23:55'},
+            {:restaurant => 'Jammin Java', :name => 'Pasta', :price => 400, :start_at => '23:35', :end_at => '23:55'},
+            {:restaurant => 'Bomnbay', :name => 'Beef Burger', :price => 430, :start_at => '23:35', :end_at => '23:55'},
+            {:restaurant => 'Jammin Java', :name => 'Sandwich', :price => 400, :start_at => '23:35', :end_at => '23:55'}
+            
 ]
 
 Food.delete_all

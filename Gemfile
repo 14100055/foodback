@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-
+gem 'chartjs-ror'
+# gem 'chart-js-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use SCSS for stylesheets

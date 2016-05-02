@@ -10,7 +10,6 @@ $E_FINISH = Time.utc(2000,01,01, 23,51,00)
 
 # Splitting budget
 # Login through Facebook
-# Graphs - date vs money
 
 class SessionsController < ApplicationController
     def new
@@ -31,6 +30,8 @@ class SessionsController < ApplicationController
         session[:profile] = true
         @id = session[:user_id]
         @user = User.find(@id)
+        @days = @user.days.split(",")
+        @moneySpent = @user.money_spent.split(",").map{ |x| x.to_i }
     end
 
     def mainpage
@@ -80,6 +81,10 @@ class SessionsController < ApplicationController
             user.update(:budget => budget)
             user.update(:meals => 3)
             update_meals(user, budget/3)
+            
+            user.update(:daily_spent => 0)
+            user.update(:days => "")
+            user.update(:money_spent => "")
         end
 
         redirect_to '/mainpage'
@@ -90,6 +95,7 @@ class SessionsController < ApplicationController
         user = User.find(id)
 
         if user.update(:budget => (user.budget - (params[:session][:amount].to_i)))
+            user.daily_spent = user.daily_spent + params[:session][:amount].to_i
             amount = params[:session][:amount].to_i
             budget = user.budget.to_i
             meal = params[:session][:meal]
@@ -144,6 +150,13 @@ class SessionsController < ApplicationController
             month_budget = user.month_budget + user.budget
             budget = month_budget/remaining_days
             month_budget = month_budget - budget
+            
+            day = "," + (31 - user.remaining_days).to_s
+            dSpent = "," + user.daily_spent.to_s
+
+            user.update(:days => (user.days + day))
+            user.update(:money_spent => (user.money_spent + dSpent))
+            user.update(:daily_spent => 0)
 
             user.update(:remaining_days => remaining_days)
             user.update(:month_budget => month_budget)
@@ -176,7 +189,7 @@ class SessionsController < ApplicationController
             exotic = get_luxury(500, $E_START, $E_FINISH)
             user.update(:exotic => exotic)
         else
-            user.update(:exotic => "Its not the last day of the month yet. :(")
+            user.update(:exotic => "It's not the last day of the month yet. :(")
         end
         
     end

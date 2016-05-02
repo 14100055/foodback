@@ -21,4 +21,22 @@
   </b>
 </div>
 
+<%
+@data = {
+  labels: @days,
+  datasets: [
+    { label: 'Money spent',
+      fillColor: "rgba(220,220,220,0.5)",
+      strokeColor: "rgba(220,220,220,1)",
+      pointColor: "rgba(220,220,220,1)",
+      pointStrokeColor: "#fff",
+      data: @moneySpent
+    }
+  ]
+}
+%>
+<% @options = {} %>
+<h3>Days Versus Money Spent</h3>
+<%= line_chart @data, @options %>
+
 </div>

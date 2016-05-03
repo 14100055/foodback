@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160502104844) do
+ActiveRecord::Schema.define(version: 20160503102935) do
 
   create_table "foods", force: :cascade do |t|
     t.string   "restaurant"
@@ -28,26 +28,29 @@ ActiveRecord::Schema.define(version: 20160502104844) do
     t.string   "last_name"
     t.string   "email"
     t.string   "password_digest"
-    t.datetime "created_at",                                                       null: false
-    t.datetime "updated_at",                                                       null: false
-    t.integer  "budget",          default: 0
-    t.text     "favourites",      default: ""
-    t.text     "breakfast",       default: "You have no breakfast plan in place!"
-    t.text     "lunch",           default: "You have no lunch plan in place!"
-    t.text     "dinner",          default: "You have no dinner plan in place!"
-    t.integer  "meals",           default: 0
-    t.integer  "good_days",       default: 0
-    t.integer  "bad_days",        default: 0
-    t.integer  "original_budget", default: 0
-    t.integer  "month_budget",    default: 0
-    t.integer  "start_days",      default: -1
-    t.integer  "middle_days",     default: 0
-    t.integer  "end_days",        default: 0
-    t.integer  "remaining_days",  default: 0
-    t.text     "exotic",          default: "Its not the last day yet. :( "
-    t.text     "days",            default: ""
-    t.text     "money_spent",     default: ""
-    t.integer  "daily_spent",     default: 0
+    t.datetime "created_at",                                                            null: false
+    t.datetime "updated_at",                                                            null: false
+    t.integer  "budget",               default: 0
+    t.text     "favourites",           default: ""
+    t.text     "breakfast",            default: "You have no breakfast plan in place!"
+    t.text     "lunch",                default: "You have no lunch plan in place!"
+    t.text     "dinner",               default: "You have no dinner plan in place!"
+    t.integer  "meals",                default: 0
+    t.integer  "good_days",            default: 0
+    t.integer  "bad_days",             default: 0
+    t.integer  "original_budget",      default: 0
+    t.integer  "month_budget",         default: 0
+    t.integer  "start_days",           default: -1
+    t.integer  "middle_days",          default: 0
+    t.integer  "end_days",             default: 0
+    t.integer  "remaining_days",       default: 0
+    t.text     "exotic",               default: "Its not the last day yet. :( "
+    t.text     "days",                 default: ""
+    t.text     "money_spent",          default: ""
+    t.integer  "daily_spent",          default: 0
+    t.integer  "split_budget",         default: 0
+    t.integer  "deadline",             default: 0
+    t.integer  "days_before_deadline", default: 0
   end
 
 end

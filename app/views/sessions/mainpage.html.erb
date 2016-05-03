@@ -7,6 +7,11 @@
     <%= form_for(:session, url: update_budget_path) do |f| %>
       <h3>Enter the new monthly budget</h3>
       <%= f.text_field :budget, :placeholder => "Enter the budget" %>
+      
+      <h4>Enter the budget split and days split in the boxes below</h4>
+      <%= f.text_field :split_budget, :placeholder => "Enter the budget for before the deadline" %>
+      <%= f.text_field :deadline, :placeholder => "Enter the number of days this budget should be used."%>
+      
       <%= f.submit "Enter", class: "btn-submit" %>
     <% end %>
     </center>

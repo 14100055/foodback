@@ -85,8 +85,24 @@ class SessionsController < ApplicationController
             user.update(:daily_spent => 0)
             user.update(:days => "")
             user.update(:money_spent => "")
+            
+            if (params[:session][:split_budget]!="" && params[:session][:deadline]!="")
+                user.update(:split_budget => params[:session][:split_budget])
+                user.update(:deadline => params[:session][:deadline])
+                theSplit = user.split_budget
+                remainingBudget = user.original_budget - theSplit
+                user.update(:split_budget => remainingBudget)
+                user.update(:original_budget => theSplit)
+                newBudget = user.original_budget/user.deadline
+                original_budget = user.original_budget
+                user.update(:month_budget => original_budget - newBudget)
+                user.update(:budget => newBudget)
+                user.update(:days_before_deadline => user.deadline)
+            end
+            
         end
-
+        
+        
         redirect_to '/mainpage'
     end
     
@@ -145,10 +161,23 @@ class SessionsController < ApplicationController
             else
                 user.update(:bad_days => user[:bad_days]+1)
             end
-
+            
             remaining_days = user.remaining_days - 1
-            month_budget = user.month_budget + user.budget
-            budget = month_budget/remaining_days
+            daysBeforeDeadline = user.days_before_deadline - 1
+            deadL = user.deadline
+            
+            if(daysBeforeDeadline == 0)
+                month_budget = user.budget + user.month_budget + user.split_budget
+                budget = month_budget/ remaining_days
+            elsif(daysBeforeDeadline < 0)
+                month_budget = user.month_budget + user.budget
+                budget = month_budget/remaining_days
+            else 
+                month_budget = user.month_budget + user.budget
+                budget = month_budget/daysBeforeDeadline
+            end
+            
+            
             month_budget = month_budget - budget
             
             day = "," + (31 - user.remaining_days).to_s
@@ -159,6 +188,7 @@ class SessionsController < ApplicationController
             user.update(:daily_spent => 0)
 
             user.update(:remaining_days => remaining_days)
+            user.update(:days_before_deadline => daysBeforeDeadline)
             user.update(:month_budget => month_budget)
             user.update(:budget => budget)
             user.update(:meals => 3)

@@ -4,12 +4,13 @@
   <title>Foodapp</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body>
 <div class="header">
   <div class="first">
-    <img class="logo" src="/LOGO.jpg" />
+    <a href="<%= mainpage_path %>" ><img class="logo" src="/LOGO.jpg" /></a>
   </div>
 
   <div class="second">

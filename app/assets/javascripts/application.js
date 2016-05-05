@@ -14,15 +14,16 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require turbolinks
+//= require owl.carousel
 //= require_tree .
 //= require Chart
 
 $(document).ready(function(){
   
-  addDlg(".openDlg1", ".dialog1", "Update Budget", 300, 325);
-  addDlg(".openDlg2", ".dialog2", "Input Meal Cost", 300, 250);
-  addDlg(".openDlg3", ".dialog3", "Select Favourites", $(window).height()*0.95, 500);
-  addDlg(".openDlg4", ".dialog4", "New Day", 400, 500);
+  addDlg(".openDlg1", ".dialog1", "Update Budget", 500, 400);
+  addDlg(".openDlg2", ".dialog2", "Input Meal Cost", 500, 400);
+  addDlg(".openDlg3", ".dialog3", "Select Favourites", $(window).height()*0.95, 700);
+  addDlg(".openDlg4", ".dialog4", "New Day", 400, 425);
 
   window.fbAsyncInit = function() {
     FB.init({
@@ -31,7 +32,12 @@ $(document).ready(function(){
       version    : 'v2.6'
     });
   };
-
+  $(".owl-carousel").owlCarousel({
+    autoPlay: 3000,
+    items: 1,
+    autoWidth: true,
+  });
+  
   (function(d, s, id){
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) {return;}

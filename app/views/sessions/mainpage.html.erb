@@ -7,11 +7,13 @@
     <%= form_for(:session, url: update_budget_path) do |f| %>
       <h3>Enter the new monthly budget</h3>
       <%= f.text_field :budget, :placeholder => "Enter the budget" %>
+      <br/>
       
       <h4>Enter the budget split and days split in the boxes below</h4>
-      <%= f.text_field :split_budget, :placeholder => "Enter the budget for before the deadline" %>
-      <%= f.text_field :deadline, :placeholder => "Enter the number of days this budget should be used."%>
-      
+      <%= f.text_field :split_budget, :placeholder => "Budget before deadline" %>
+      <br/>
+      <%= f.text_field :deadline, :placeholder => "Days till deadline"%>
+      <br/>
       <%= f.submit "Enter", class: "btn-submit" %>
     <% end %>
     </center>
@@ -26,6 +28,7 @@
       <br/>
       <h3>Meal Category</h3>
       <%= select :session, :meal, ['Breakfast','Lunch','Dinner','Miscellaneous'] %>
+      <br/>
       <%= f.submit "Enter", class: "btn-submit" %>
     <% end %>
     </center>
@@ -70,9 +73,13 @@
 
   <hr>
   <p class="heading">Meal Plans - Daily Budget: Rs. <%= @user.budget %></p>
-  <p class="heading">Remaining Days - <%= @user.remaining_days %></p>
+  <p class="heading">Remaining Days: <%= @user.remaining_days %></p>
   <hr>
-
+  <div class="owl-carousel">
+    <div> <%= image_tag "slide1.jpg" %> </div>
+    <div> <%= image_tag "slide2.jpg" %> </div>
+    <div> <%= image_tag "slide3.jpg" %> </div>
+  </div>
 
   <div class="tableContainer">
   <p>Exotic Food Items</p>

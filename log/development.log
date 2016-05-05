@@ -52044,3 +52044,45 @@ Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0
 Processing by SessionsController#new as HTML
   Rendered sessions/new.html.erb within layouts/application (0.6ms)
 Completed 200 OK in 238ms (Views: 237.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 110.93.234.9 at 2016-05-05 04:02:39 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (32.3ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/layouts/application.html.erb:39: syntax error, unexpected tSYMBEG, expecting '('
+...g, class: "alert alert-info". :style );@output_buffer.safe_a...
+...                               ^):
+  app/views/layouts/application.html.erb:39: syntax error, unexpected tSYMBEG, expecting '('
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.8ms)
+
+
+Started GET "/login" for 110.93.234.9 at 2016-05-05 04:03:40 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 703ms (Views: 702.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 111.68.103.163 at 2016-05-05 04:03:47 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J5veMVlVBEEP9/Lbkaq3CHmGhA0lfRnBJ7lp1q3TcxM3rARD5vgica3fkcqAtajFFhiB/GcafVN4NNHaTmwbBA==", "session"=>{"email"=>"s.nismail@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "s.nismail@gmail.com"]]
+Redirected to https://foodback-saadnismail.c9users.io/login
+Completed 302 Found in 28ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for 111.68.103.163 at 2016-05-05 04:03:49 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 326ms (Views: 324.7ms | ActiveRecord: 0.0ms)

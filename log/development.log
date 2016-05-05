@@ -51591,3 +51591,425 @@ Processing by SessionsController#mainpage as HTML
   Rendered sessions/mainpage.html.erb within layouts/application (9.4ms)
   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
 Completed 200 OK in 304ms (Views: 301.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 221.120.220.11 at 2016-05-05 03:15:34 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (1.4ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (682.8ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+Completed 200 OK in 1342ms (Views: 1253.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.self-04ff6a1bbef7c40e448f6633c9f1549b658315eafb3742a0e8bf36383f27601e.js?body=1" for 221.120.220.11 at 2016-05-05 03:15:39 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started DELETE "/logout" for 221.120.220.11 at 2016-05-05 03:15:41 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qwX7hW2h5Zrc7KMWINE7oF/PCsPN8sHbD66GMdTxtEa7MiH30gzDqn7EwAcxziRtMFEPMo+VpUlQIz49N07cUQ=="}
+Redirected to https://foodback-saadnismail.c9users.io/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 221.120.220.11 at 2016-05-05 03:15:43 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 337ms (Views: 336.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 110.93.234.9 at 2016-05-05 03:15:48 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 265ms (Views: 264.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 110.93.234.9 at 2016-05-05 03:16:14 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 254ms (Views: 253.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 111.68.103.163 at 2016-05-05 03:16:48 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 367ms (Views: 366.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 110.93.234.9 at 2016-05-05 03:20:41 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqTeTiqWSznc13KnSXKo+DltpJelVLOioVG0iSsZ5ndKkwQ8lTttCX7/EbZYbbc1VvOhZucz1zD+3AyFyKaOYA==", "session"=>{"email"=>"saad.nismail@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "saad.nismail@gmail.com"]]
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 99ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-05-05 03:20:43 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (7.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+Completed 200 OK in 329ms (Views: 323.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/input_meal" for 221.120.220.11 at 2016-05-05 03:20:55 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#input_meal as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/IPvI1jOdzE8IBtoygA1JSs/1OFmg+EN+tOesCYOy3XstDVR52NRAZ4IeHnbHyroRKHRECTkhZ+lXia8xbGjYg==", "session"=>{"amount"=>"2000", "meal"=>"Breakfast"}, "commit"=>"Enter"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "budget" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["budget", -1000], ["updated_at", "2016-05-05 03:20:55.480283"], ["id", 10]]
+  [1m[36m (11.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "daily_spent" = ?, "meals" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["daily_spent", 2000], ["meals", 2], ["updated_at", "2016-05-05 03:20:55.602628"], ["id", 10]]
+  [1m[36m (11.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "breakfast" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["breakfast", "You have had breakfast,-,2000"], ["updated_at", "2016-05-05 03:20:55.617577"], ["id", 10]]
+  [1m[36m (14.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mFood Load (0.3ms)[0m  SELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (end_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at > '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at < start_at)) AND (price <= -500))
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "lunch" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["lunch", ""], ["updated_at", "2016-05-05 03:20:55.635969"], ["id", 10]]
+  [1m[35m (13.8ms)[0m  commit transaction
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (end_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at > '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at < start_at)) AND (price <= -500))[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "dinner" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["dinner", ""], ["updated_at", "2016-05-05 03:20:55.654372"], ["id", 10]]
+  [1m[36m (11.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 218ms (ActiveRecord: 66.8ms)
+
+
+Started GET "/mainpage" for 221.120.220.11 at 2016-05-05 03:20:57 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.4ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (5.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+Completed 200 OK in 268ms (Views: 265.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/new_day" for 221.120.220.11 at 2016-05-05 03:21:03 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new_day as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9+eddSRTqjy1567Uy3b02Sbh2wMEiZ+4KC9F5WJ0P9bn0EcHm/6MDBfPzcXaaesUSX/e8kbu+yp3ov3pgctXwQ==", "commit"=>"Yes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "bad_days" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["bad_days", 1], ["updated_at", "2016-05-05 03:21:03.985828"], ["id", 10]]
+  [1m[35m (14.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "remaining_days" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remaining_days", 29], ["updated_at", "2016-05-05 03:21:04.004968"], ["id", 10]]
+  [1m[35m (10.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "users" SET "deadline" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["deadline", -1], ["updated_at", "2016-05-05 03:21:04.020491"], ["id", 10]]
+  [1m[35m (12.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "month_budget" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["month_budget", 27035], ["updated_at", "2016-05-05 03:21:04.039837"], ["id", 10]]
+  [1m[36m (10.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "days" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["days", ",2"], ["updated_at", "2016-05-05 03:21:04.054309"], ["id", 10]]
+  [1m[36m (12.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "money_spent" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["money_spent", ",2000"], ["updated_at", "2016-05-05 03:21:04.070654"], ["id", 10]]
+  [1m[36m (12.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "daily_spent" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["daily_spent", 0], ["updated_at", "2016-05-05 03:21:04.087171"], ["id", 10]]
+  [1m[36m (7.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "budget" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["budget", 965], ["updated_at", "2016-05-05 03:21:04.099273"], ["id", 10]]
+  [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "meals" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["meals", 3], ["updated_at", "2016-05-05 03:21:04.111654"], ["id", 10]]
+  [1m[36m (10.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mFood Load (0.5ms)[0m  SELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 07:00:00.000000' and '2000-01-01 11:00:00.000000') OR (end_at between '2000-01-01 07:00:00.000000' and '2000-01-01 11:00:00.000000') OR (start_at < '2000-01-01 07:00:00.000000' and end_at > '2000-01-01 11:00:00.000000') OR (start_at < '2000-01-01 07:00:00.000000' and end_at < start_at)) AND (price <= 321))
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "breakfast" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["breakfast", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\nKhokha,Chicken roll,100\nSuperstore,Roll,130\nSuperstore,Shawarma,120\nSuperstore,Pizza,60\nSuperstore,Burger,200\nSuperstore,Sandwich,180\nPDC,Bread+Omelette,40\n"], ["updated_at", "2016-05-05 03:21:04.133273"], ["id", 10]]
+  [1m[35m (12.7ms)[0m  commit transaction
+  [1m[36mFood Load (0.5ms)[0m  [1mSELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (end_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at > '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at < start_at)) AND (price <= 321))[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "lunch" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["lunch", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\nKhokha,Chicken roll,100\nChop Chop,Chowmein,170\nChop Chop,Tamarind,240\nChop Chop,Mongolian,240\nChop Chop,Fried fish,160\nSuperstore,Roll,130\nSuperstore,Shawarma,120\nSuperstore,Pizza,60\nSuperstore,Burger,200\nSuperstore,Sandwich,180\nPDC,Rice+Chicken,170\nPDC,Rice+Daal,85\nPDC,Roti+Chicken,130\nPDC,Roti+Daal,45\n"], ["updated_at", "2016-05-05 03:21:04.151310"], ["id", 10]]
+  [1m[36m (10.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mFood Load (0.4ms)[0m  SELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (end_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at > '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at < start_at)) AND (price <= 321))
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "dinner" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["dinner", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\nKhokha,Chicken roll,100\nChop Chop,Chowmein,170\nChop Chop,Tamarind,240\nChop Chop,Mongolian,240\nChop Chop,Fried fish,160\nSuperstore,Roll,130\nSuperstore,Shawarma,120\nSuperstore,Pizza,60\nSuperstore,Burger,200\nSuperstore,Sandwich,180\nPDC,Rice+Chicken,170\nPDC,Rice+Daal,85\nPDC,Roti+Chicken,130\nPDC,Roti+Daal,45\n"], ["updated_at", "2016-05-05 03:21:04.167245"], ["id", 10]]
+  [1m[35m (12.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 368ms (ActiveRecord: 145.4ms)
+
+
+Started GET "/mainpage" for 221.120.220.11 at 2016-05-05 03:21:05 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (6.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+Completed 200 OK in 284ms (Views: 281.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/profile" for 221.120.220.11 at 2016-05-05 03:21:12 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#profile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+  Rendered sessions/profile.html.erb within layouts/application (1.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+Completed 200 OK in 314ms (Views: 312.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mainpage" for 221.120.220.11 at 2016-05-05 03:21:29 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.3ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (9.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+Completed 200 OK in 285ms (Views: 282.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile" for 221.120.220.11 at 2016-05-05 03:21:36 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#profile as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  Rendered sessions/profile.html.erb within layouts/application (0.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+Completed 200 OK in 354ms (Views: 352.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mainpage" for 221.120.220.11 at 2016-05-05 03:21:40 +0000
+Cannot render console from 221.120.220.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (9.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+Completed 200 OK in 299ms (Views: 296.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-05-05 03:21:49 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.3ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (6.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+Completed 200 OK in 396ms (Views: 392.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/input_meal" for 110.93.234.9 at 2016-05-05 03:21:58 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#input_meal as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p7bGNKZVfOlYDFELsohbtKIKlP3cLqF/7wZ0yGe6LC63gRxGGfha2fokMhqjl0R5zZSRDJ5Jxe2wi8zEhAVEOQ==", "session"=>{"amount"=>"800", "meal"=>"Breakfast"}, "commit"=>"Enter"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "budget" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["budget", 165], ["updated_at", "2016-05-05 03:21:58.058011"], ["id", 10]]
+  [1m[35m (125.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "daily_spent" = ?, "meals" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["daily_spent", 800], ["meals", 2], ["updated_at", "2016-05-05 03:21:58.187282"], ["id", 10]]
+  [1m[35m (8.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "breakfast" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["breakfast", "You have had breakfast,-,800"], ["updated_at", "2016-05-05 03:21:58.199834"], ["id", 10]]
+  [1m[35m (9.9ms)[0m  commit transaction
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (end_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at > '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at < start_at)) AND (price <= 82))[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "lunch" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["lunch", "Superstore,Pizza,60\nPDC,Roti+Daal,45\n"], ["updated_at", "2016-05-05 03:21:58.214117"], ["id", 10]]
+  [1m[36m (12.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mFood Load (0.4ms)[0m  SELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (end_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at > '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at < start_at)) AND (price <= 82))
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "dinner" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["dinner", "Superstore,Pizza,60\nPDC,Roti+Daal,45\n"], ["updated_at", "2016-05-05 03:21:58.231129"], ["id", 10]]
+  [1m[35m (11.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 192ms (ActiveRecord: 172.1ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-05-05 03:21:59 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (6.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+Completed 200 OK in 283ms (Views: 280.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/new_day" for 111.68.103.163 at 2016-05-05 03:22:19 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/new_day"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (16.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (164.7ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-05-05 03:22:27 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.3ms)[0m  SELECT DISTINCT restaurant, name, price FROM "foods"
+  Rendered sessions/mainpage.html.erb within layouts/application (7.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+Completed 200 OK in 382ms (Views: 379.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/new_day" for 110.93.234.9 at 2016-05-05 03:22:32 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new_day as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cp8xW6+2TvzoVLBzXWwYFFpA1Qo2dWBFpjCFrDrfm9BiqOspEBtozEp802JMcwfZNd7Q+3QSBNf5vT2g2WDzxw==", "commit"=>"Yes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "good_days" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["good_days", 1], ["updated_at", "2016-05-05 03:22:32.582054"], ["id", 10]]
+  [1m[35m (11.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "remaining_days" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remaining_days", 28], ["updated_at", "2016-05-05 03:22:32.597308"], ["id", 10]]
+  [1m[35m (9.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "deadline" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["deadline", -2], ["updated_at", "2016-05-05 03:22:32.610574"], ["id", 10]]
+  [1m[35m (11.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "month_budget" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["month_budget", 26229], ["updated_at", "2016-05-05 03:22:32.626941"], ["id", 10]]
+  [1m[36m (11.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "days" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["days", ",2,3"], ["updated_at", "2016-05-05 03:22:32.642053"], ["id", 10]]
+  [1m[36m (9.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "money_spent" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["money_spent", ",2000,800"], ["updated_at", "2016-05-05 03:22:32.654647"], ["id", 10]]
+  [1m[36m (9.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "daily_spent" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["daily_spent", 0], ["updated_at", "2016-05-05 03:22:32.667260"], ["id", 10]]
+  [1m[36m (7.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "budget" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["budget", 971], ["updated_at", "2016-05-05 03:22:32.678206"], ["id", 10]]
+  [1m[36m (9.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "meals" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["meals", 3], ["updated_at", "2016-05-05 03:22:32.691319"], ["id", 10]]
+  [1m[36m (8.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mFood Load (0.4ms)[0m  SELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 07:00:00.000000' and '2000-01-01 11:00:00.000000') OR (end_at between '2000-01-01 07:00:00.000000' and '2000-01-01 11:00:00.000000') OR (start_at < '2000-01-01 07:00:00.000000' and end_at > '2000-01-01 11:00:00.000000') OR (start_at < '2000-01-01 07:00:00.000000' and end_at < start_at)) AND (price <= 323))
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "breakfast" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["breakfast", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\nKhokha,Chicken roll,100\nSuperstore,Roll,130\nSuperstore,Shawarma,120\nSuperstore,Pizza,60\nSuperstore,Burger,200\nSuperstore,Sandwich,180\nPDC,Bread+Omelette,40\n"], ["updated_at", "2016-05-05 03:22:32.704527"], ["id", 10]]
+  [1m[35m (9.8ms)[0m  commit transaction
+  [1m[36mFood Load (0.4ms)[0m  [1mSELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (end_at between '2000-01-01 12:30:00.000000' and '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at > '2000-01-01 16:00:00.000000') OR (start_at < '2000-01-01 12:30:00.000000' and end_at < start_at)) AND (price <= 323))[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "lunch" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["lunch", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\nKhokha,Chicken roll,100\nChop Chop,Chowmein,170\nChop Chop,Tamarind,240\nChop Chop,Mongolian,240\nChop Chop,Fried fish,160\nSuperstore,Roll,130\nSuperstore,Shawarma,120\nSuperstore,Pizza,60\nSuperstore,Burger,200\nSuperstore,Sandwich,180\nPDC,Rice+Chicken,170\nPDC,Rice+Daal,85\nPDC,Roti+Chicken,130\nPDC,Roti+Daal,45\n"], ["updated_at", "2016-05-05 03:22:32.719178"], ["id", 10]]
+  [1m[36m (10.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mFood Load (0.4ms)[0m  SELECT "foods".* FROM "foods" WHERE (((start_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (end_at between '2000-01-01 19:00:00.000000' and '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at > '2000-01-01 23:00:00.000000') OR (start_at < '2000-01-01 19:00:00.000000' and end_at < start_at)) AND (price <= 323))
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "dinner" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["dinner", "Khokha,Cheese roll,120\nKhokha,Mayo roll,120\nKhokha,Chicken roll,100\nChop Chop,Chowmein,170\nChop Chop,Tamarind,240\nChop Chop,Mongolian,240\nChop Chop,Fried fish,160\nSuperstore,Roll,130\nSuperstore,Shawarma,120\nSuperstore,Pizza,60\nSuperstore,Burger,200\nSuperstore,Sandwich,180\nPDC,Rice+Chicken,170\nPDC,Rice+Daal,85\nPDC,Roti+Chicken,130\nPDC,Roti+Daal,45\n"], ["updated_at", "2016-05-05 03:22:32.735217"], ["id", 10]]
+  [1m[35m (10.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'saad.nismail@gmail.com' AND "users"."id" != 10) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://foodback-saadnismail.c9users.io/mainpage
+Completed 302 Found in 172ms (ActiveRecord: 129.5ms)
+
+
+Started GET "/mainpage" for 110.93.234.9 at 2016-05-05 03:22:34 +0000
+Cannot render console from 110.93.234.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#mainpage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT restaurant, name, price FROM "foods"[0m
+  Rendered sessions/mainpage.html.erb within layouts/application (6.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+Completed 200 OK in 294ms (Views: 291.5ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/logout" for 111.68.103.163 at 2016-05-05 03:25:23 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"h5wWGc8QASPR7pIB+idMrTIa5evN0uPEaGOA6T9llruXq8xrcL0nE3PG8RDrOFNgXYTgGo+1h1Y37jjl3Nr+rA=="}
+Redirected to https://foodback-saadnismail.c9users.io/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 111.68.103.163 at 2016-05-05 03:25:24 +0000
+Cannot render console from 111.68.103.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 308ms (Views: 307.5ms | ActiveRecord: 0.0ms)

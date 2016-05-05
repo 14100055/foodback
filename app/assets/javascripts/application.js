@@ -35,7 +35,7 @@ $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
     autoPlay: 3000,
     items: 1,
-    autoWidth: true,
+    autoWidth: true
   });
   
   (function(d, s, id){

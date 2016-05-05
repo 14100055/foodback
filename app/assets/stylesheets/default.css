@@ -125,11 +125,20 @@ input[type="submit"]:hover {
 }
 
 .formContainer {
-    width: 16%;
-    height: 32px;
-    padding: 25px;
-    background: #69D2E7;
-    border-radius: 40px;
+  width: 16%;
+  height: 32px;
+  padding: 25px;
+  background: #69D2E7;
+  border-radius: 40px;
+}
+
+.fb-login {
+  background: #2A30FF;
+  margin: 10px;
+  position: relative;
+  bottom: -40px;
+  padding: 16px;
+  border-radius: 18px;
 }
 
 .tableContainer > p {

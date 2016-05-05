@@ -24,6 +24,22 @@ $(document).ready(function(){
   addDlg(".openDlg3", ".dialog3", "Select Favourites", $(window).height()*0.95, 500);
   addDlg(".openDlg4", ".dialog4", "New Day", 400, 500);
 
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '600186960136254',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
   function addDlg(dom1, dom2, title1, height1, width1) {
     $(dom1).click(function() {
       $(dom2).dialog({

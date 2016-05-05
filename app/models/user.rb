@@ -9,4 +9,14 @@ class User < ActiveRecord::Base
         puts self.inspect
     end
     
+    def self.omniauth(auth)
+        where(provider: auth.provider, uid: auth.uid).first_or_initialize do |user|
+            user.first_name = auth.info.name.split[0]
+            user.last_name = auth.info.name.split[1]
+            user.email = auth.info.email
+            user.password = auth.uid
+            user.save!
+        end
+    end
+
 end

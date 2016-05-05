@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   get 'signup' => 'users#new'
   resources :users
   
+  get 'auth/:provider/callback', to: 'facebook#create'
+  get 'auth/failure', to: redirect('/')
+  get 'logout', to: 'facebook#destroy'
+  
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'

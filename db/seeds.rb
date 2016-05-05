@@ -37,6 +37,7 @@ foods = [   {:restaurant => 'Khokha', :name => 'Cheese roll', :price => 120, :st
 ]
 
 Food.delete_all
+User.delete_all
 
 foods.each do |food|
     Food.create!(food)

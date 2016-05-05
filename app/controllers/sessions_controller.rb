@@ -163,7 +163,7 @@ class SessionsController < ApplicationController
                 user.update(:split_budget => (split_budget - budget))
             end
 
-            user.update(:days => (user.days + "," + (31 - user.remaining_days).to_s))
+            user.update(:days => (user.days + "," + (30 - user.remaining_days).to_s))
             user.update(:money_spent => (user.money_spent + "," + user.daily_spent.to_s))
             user.update(:daily_spent => 0)
 
